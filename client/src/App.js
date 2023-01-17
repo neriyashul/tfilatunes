@@ -7,32 +7,54 @@ import Home from "./components/Home";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Button } from "@mui/material";
+import AppBarMenu from "./components/AppBar";
+import rtlPlugin from 'stylis-plugin-rtl';
+import { prefixer } from 'stylis';
+import { CacheProvider } from '@emotion/react';
+import createCache from '@emotion/cache';
 
 function App() {
     const [mode, setMode] = useState("dark");
     const darkTheme = createTheme({
+        direction: "rtl",
         palette: {
             mode: mode,
         },
     });
 
+    const cacheRtl = createCache({
+        key: 'muirtl',
+        stylisPlugins: [prefixer, rtlPlugin],
+      });
+      
+
     return (
         <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-            <Button
-                variant="contained"
-                sx={{ m: 1, bottom: 0, position: "absolute" }}
-                onClick={() =>
-                    setMode((state) => (state === "dark" ? "light" : "dark"))
-                }
-            >
-                mode
-            </Button>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/playlist/:key" element={<TextPlaylist />} />
-                <Route path="*" element={<NotFound />} status={404} />
-            </Routes>
+            <CacheProvider value={cacheRtl}>
+                <div dir="rtl" sx={{ textAlign: "right" }}>
+                    <CssBaseline />
+                    <AppBarMenu />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route
+                            path="/playlist/:key"
+                            element={<TextPlaylist />}
+                        />
+                        <Route path="*" element={<NotFound />} status={404} />
+                    </Routes>
+                    <Button
+                        variant="contained"
+                        sx={{ m: 1, bottom: 0, position: "absolute" }}
+                        onClick={() =>
+                            setMode((state) =>
+                                state === "dark" ? "light" : "dark"
+                            )
+                        }
+                    >
+                        mode
+                    </Button>
+                </div>
+            </CacheProvider>
         </ThemeProvider>
     );
 }
