@@ -6,7 +6,7 @@ import NotFound from "./components/NotFound";
 import Home from "./components/Home";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Button } from "@mui/material";
+import { Button, Toolbar } from "@mui/material";
 import AppBarMenu from "./components/AppBar";
 import rtlPlugin from 'stylis-plugin-rtl';
 import { prefixer } from 'stylis';
@@ -33,7 +33,7 @@ function App() {
             <CacheProvider value={cacheRtl}>
                 <div dir="rtl" sx={{ textAlign: "right" }}>
                     <CssBaseline />
-                    <AppBarMenu />
+                    <AppBarMenu setMode={setMode} />
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route
@@ -42,17 +42,6 @@ function App() {
                         />
                         <Route path="*" element={<NotFound />} status={404} />
                     </Routes>
-                    <Button
-                        variant="contained"
-                        sx={{ m: 1, bottom: 0, position: "absolute" }}
-                        onClick={() =>
-                            setMode((state) =>
-                                state === "dark" ? "light" : "dark"
-                            )
-                        }
-                    >
-                        mode
-                    </Button>
                 </div>
             </CacheProvider>
         </ThemeProvider>

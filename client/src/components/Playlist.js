@@ -1,10 +1,8 @@
-import {
-    Typography,
-    List,
-} from "@mui/material";
+import { Typography, List, Grid, Divider, Box } from "@mui/material";
 import usePlaylist from "../hooks/playlist";
 import React, { useState } from "react";
 import PlaylistItem from "./PlaylistItem";
+import PlaylistDrawer from "./PlaylistDrawer";
 
 function onClickHandle(setClickedTune, key) {
     setClickedTune((prev) => {
@@ -28,25 +26,27 @@ export default function Playlist(id) {
         return <Typography>loading...</Typography>;
     } else {
         return (
-            <List>
-                {tunes.map((tune, key) => {
-                    
-                    if (key === clickedTune?.key) {
-                        var playingStatus = clickedTune?.status;;
-                    }
+            <Box>
+                <List>
+                    {tunes.map((tune, key) => {
+                        if (key === clickedTune?.key) {
+                            var playingStatus = clickedTune?.status;
+                        }
 
-                    return (
-                        <PlaylistItem
-                            key={key}
-                            tune={tune}
-                            playingStatus={playingStatus}
-                            onClickHandle={() => {
-                                onClickHandle(setClickedTune, key);
-                            }}
-                        />
-                    );
-                })}
-            </List>
+                        return (
+                            <PlaylistItem
+                                key={key}
+                                tune={tune}
+                                playingStatus={playingStatus}
+                                onClickHandle={() => {
+                                    onClickHandle(setClickedTune, key);
+                                }}
+                            />
+                        );
+                    })}
+                </List>
+                <PlaylistDrawer/>
+            </Box>
         );
     }
 }

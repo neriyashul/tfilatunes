@@ -9,7 +9,10 @@ const parentNewSx = {
 }
 
 const childNewSx = {
-    position: "absolute"
+    position: "absolute",
+    // display: "flex",
+    // alignItems: "center",
+    // justifyContent: "center"
 };
 
 
