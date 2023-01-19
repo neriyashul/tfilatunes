@@ -1,40 +1,37 @@
-import { Box } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import React from "react";
 
-const childSx = {
-    position: "absolute",
+const parentNewSx = {
+    position: "relative",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+}
+
+const childNewSx = {
+    position: "absolute"
 };
 
+
 export default function Overlap(props) {
-    const boxSx = {
-        position: "relative",
-        right: 0,
-        top: 0,
-        bottom: 0,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+    const StyledParent = styled(Box)({
         width: props?.width,
         height: props?.height,
-        ...props.sx
-    };
+        ...parentNewSx,
+        ...props.sx,
+        ...props.style
+    });
 
-    const clones = React.Children.map(props.children, (child) => {
+    const children = React.Children.map(props.children, (child) => {
         if (React.isValidElement(child)) {
-            const sx = { ...childSx, ...child.props.sx };
-            const a = React.cloneElement(child, { sx: sx });
-            var f = 3;
-            f+=3;
-            return a;
+            const sx = { ...childNewSx, ...child.props.sx };
+            return React.cloneElement(child, { sx: sx });
         }
     });
 
     return (
-        <Box component="div" sx={boxSx} style={props.style}>
-            {clones}
-        </Box>
+        <StyledParent>
+            {children}
+        </StyledParent>
     );
 }

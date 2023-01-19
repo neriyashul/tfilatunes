@@ -1,26 +1,24 @@
 import {
     Typography,
-    ListItemAvatar,
-    Avatar,
-    ListItemText,
-    ListItem,
     List,
-    ListItemButton,
-    Checkbox,
-    Button,
-    ListItemIcon,
-    Box,
 } from "@mui/material";
 import usePlaylist from "../hooks/playlist";
 import React, { useState } from "react";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import PauseIcon from "@mui/icons-material/Pause";
-import LongMenu from "./TuneMenu";
 import PlaylistItem from "./PlaylistItem";
 
-export default function Playlist(id) {
+function onClickHandle(setClickedTune, key) {
+    setClickedTune((prev) => {
+        if (prev?.key === key && prev.status === "playing") {
+            return { key: key, status: "stopped" };
+        } else {
+            return { key: key, status: "playing" };
+        }
+    });
+}
 
+export default function Playlist(id) {
     const { isLoading, tunes, error } = usePlaylist(id);
+    const [clickedTune, setClickedTune] = useState();
 
     if (error) {
         console.error(error);
@@ -31,9 +29,23 @@ export default function Playlist(id) {
     } else {
         return (
             <List>
-                {tunes.map((tune, num) => (
-                    <PlaylistItem tune={tune} number={num} />
-                ))}
+                {tunes.map((tune, key) => {
+                    
+                    if (key === clickedTune?.key) {
+                        var playingStatus = clickedTune?.status;;
+                    }
+
+                    return (
+                        <PlaylistItem
+                            key={key}
+                            tune={tune}
+                            playingStatus={playingStatus}
+                            onClickHandle={() => {
+                                onClickHandle(setClickedTune, key);
+                            }}
+                        />
+                    );
+                })}
             </List>
         );
     }
