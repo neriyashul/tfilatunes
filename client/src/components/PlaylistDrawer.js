@@ -10,6 +10,8 @@ import Drawer from "@mui/material/Drawer";
 import Typography from "@mui/material/Typography";
 import {
     Divider,
+    FormControl,
+    Input,
     List,
     Menu,
     MenuItem,
@@ -61,84 +63,102 @@ function PlaylistDrawer({
     const [paragraph, setParagraph] = React.useState(1);
 
     return (
-        <Root>
-            <CssBaseline />
-            <Global
-                styles={{
-                    ".MuiDrawer-root > .MuiPaper-root": {
-                        height: `calc(${height} - ${drawerBleeding}px)`,
-                        overflow: "visible",
-                    },
-                }}
-            />
-            <Drawer
-                variant="permanent"
-                anchor="bottom"
-                ModalProps={{
-                    keepMounted: true,
+        <Box
+            sx={{
+                position: "fixed",
+                bottom: 0,
+                right: 0,
+                width: "100%",
+                height: { height },
+            }}
+        >
+            <StyledHeader
+                sx={{
+                    top: -drawerBleeding,
+                    borderTopLeftRadius: 8,
+                    borderTopRightRadius: 8,
+                    visibility: "visible",
+                    left: 0,
+                    px: 1.5,
                 }}
             >
-                <StyledHeader
-                    sx={{
-                        position: "absolute",
-                        top: -drawerBleeding,
-                        borderTopLeftRadius: 8,
-                        borderTopRightRadius: 8,
-                        visibility: "visible",
-                        right: 0,
-                        left: 0,
-                        px: 1.5,
+                <Puller />
+                <Select
+                    MenuProps={{
+                        disableScrollLock: true,
                     }}
-                >
-                    <Puller />
-                    <Tabs value={0}>
-                        <Tab label="לכה דודי" />
-                        <Tab label="ארבעים שנה" />
-                    </Tabs>
-                    {/* <Button onClick={() => setParagraph("2")}>hello</Button> */}
-                    {/* <Select
-                        id="123"
-                        disabled
-                    
-                        sx={{
-                            color: "text.primary",
-                            ".MuiOutlinedInput-notchedOutline": { border: 0 },
-                        }}
-                        value={paragraph}
-                        onChange={(event) => setParagraph(event.target.value)}
-                    >
-                        <MenuItem value={1}>לכו נרננה</MenuItem>
-                        <MenuItem value={2}>ארבעים שנה</MenuItem>
-                    </Select> */}
-                </StyledHeader>
-                <StyledBox
                     sx={{
-                        height: "100%",
-                        overflow: "auto",
+                        minHeight: 40,
+                        borderRadius: 0.2,
+                        ml: 3,
+                        pl: 1,
+                        pr: 1,
+                        color: "text.primary",
+                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        "&:hover": { backgroundColor: "transparent" },
+                        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                            border: "1px solid transparent",
+                        },
+                        "& .MuiSelect-select:focus": {
+                            backgroundColor: "transparent",
+                        },
+                        "&.MuiInput-underline:before": {
+                            borderBottom: "2px solid white",
+                        },
+                        /* hover */
+                        "&.MuiInput-underline:hover:before": {
+                            borderBottom: "2px solid lightblue",
+                        },
+                        /* focused */
+                        "&.MuiInput-underline:after": {
+                            borderBottom: "2px solid transparent",
+                            border: "1px solid transparent",
+                        },
                     }}
+                    value={paragraph}
+                    onChange={(event) => setParagraph(event.target.value)}
+                    input={
+                        <Input
+                            style={{ mx: 10 }}
+                            sx={{
+                                ":before": { borderBottomColor: "red" },
+                                // underline when selected
+                                ":after": { borderBottomColor: "red" },
+                            }}
+                        />
+                    }
                 >
-                    <List>
-                        {tunes.map((tune, key) => {
-                            if (key === clickedTune?.key) {
-                                var playingStatus = clickedTune?.status;
-                            }
+                    <MenuItem value={1}>לכו נרננה</MenuItem>
+                    <MenuItem value={2}>ארבעים שנה</MenuItem>
+                </Select>
+            </StyledHeader>
+            <StyledBox
+                sx={{
+                    height: "100%",
+                    overflow: "auto",
+                }}
+            >
+                <List>
+                    {tunes.map((tune, key) => {
+                        if (key === clickedTune?.key) {
+                            var playingStatus = clickedTune?.status;
+                        }
 
-                            return (
-                                <PlaylistItem
-                                    key={key}
-                                    number={key + 1}
-                                    tune={tune}
-                                    playingStatus={playingStatus}
-                                    onClickHandle={() => {
-                                        onClickHandle(setClickedTune, key);
-                                    }}
-                                />
-                            );
-                        })}
-                    </List>
-                </StyledBox>
-            </Drawer>
-        </Root>
+                        return (
+                            <PlaylistItem
+                                key={key}
+                                number={key + 1}
+                                tune={tune}
+                                playingStatus={playingStatus}
+                                onClickHandle={() => {
+                                    onClickHandle(setClickedTune, key);
+                                }}
+                            />
+                        );
+                    })}
+                </List>
+            </StyledBox>
+        </Box>
     );
 }
 
