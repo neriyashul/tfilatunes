@@ -3,16 +3,23 @@ import PropTypes from "prop-types";
 import { Global } from "@emotion/react";
 import { styled } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { grey, black, blueGrey } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Typography from "@mui/material/Typography";
-import { Divider, Menu, MenuItem, Select } from "@mui/material";
-
-const drawerBleeding = 56;
-
-const darkGrey = "#272727"
+import {
+    Divider,
+    List,
+    Menu,
+    MenuItem,
+    Select,
+    Tab,
+    Tabs,
+} from "@mui/material";
+import PlaylistItem from "./PlaylistItem";
+import colors from "../utils/colors";
+const drawerBleeding = 36;
 
 const Root = styled("div")(({ theme }) => ({
     height: "100%",
@@ -23,24 +30,34 @@ const Root = styled("div")(({ theme }) => ({
 }));
 
 const StyledBox = styled(Box)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "light" ? "#fff" : darkGrey,
+    backgroundColor:
+        theme.palette.mode === "light" ? colors.lightGrey : colors.darkGrey,
 }));
 
 const StyledHeader = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "light" ? "#f0f0f0" : darkGrey,
+    backgroundColor:
+        theme.palette.mode === "light" ? colors.lightGrey : colors.darkGrey,
 }));
 
 const Puller = styled(Box)(({ theme }) => ({
     width: 30,
     height: 6,
-    backgroundColor: theme.palette.mode === "light" ? grey[300] : grey[900],
+    backgroundColor:
+        theme.palette.mode === "light" ? grey[300] : colors.background,
     borderRadius: 3,
     position: "absolute",
     top: 8,
     left: "calc(50% - 15px)",
 }));
 
-function SwipeableEdgeDrawer(props) {
+function PlaylistDrawer({
+    tunes,
+    clickedTune,
+    setClickedTune,
+    onClickHandle,
+    height = "50%",
+    ...props
+}) {
     const [paragraph, setParagraph] = React.useState(1);
 
     return (
@@ -49,7 +66,7 @@ function SwipeableEdgeDrawer(props) {
             <Global
                 styles={{
                     ".MuiDrawer-root > .MuiPaper-root": {
-                        height: `calc(50% - ${drawerBleeding}px)`,
+                        height: `calc(${height} - ${drawerBleeding}px)`,
                         overflow: "visible",
                     },
                 }}
@@ -70,102 +87,59 @@ function SwipeableEdgeDrawer(props) {
                         visibility: "visible",
                         right: 0,
                         left: 0,
-                        px: 1.5
+                        px: 1.5,
                     }}
                 >
                     <Puller />
-                    <Select
+                    <Tabs value={0}>
+                        <Tab label="לכה דודי" />
+                        <Tab label="ארבעים שנה" />
+                    </Tabs>
+                    {/* <Button onClick={() => setParagraph("2")}>hello</Button> */}
+                    {/* <Select
+                        id="123"
+                        disabled
+                    
                         sx={{
                             color: "text.primary",
                             ".MuiOutlinedInput-notchedOutline": { border: 0 },
                         }}
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
                         value={paragraph}
-                        label="Age"
                         onChange={(event) => setParagraph(event.target.value)}
                     >
                         <MenuItem value={1}>לכו נרננה</MenuItem>
                         <MenuItem value={2}>ארבעים שנה</MenuItem>
-                    </Select>
+                    </Select> */}
                 </StyledHeader>
                 <StyledBox
                     sx={{
-                        p: 2,
-                        px: 3,
                         height: "100%",
                         overflow: "auto",
                     }}
                 >
-                    <Typography sx={{ fontSize: "1.5rem" }}>
-                        לְכָה דוֹדִי לִקְרַאת כַּלָּה
-                        פְּנֵי שַׁבָּת נְקַבְּלָה
-                        <br />
-                        <br />
+                    <List>
+                        {tunes.map((tune, key) => {
+                            if (key === clickedTune?.key) {
+                                var playingStatus = clickedTune?.status;
+                            }
 
-
-                        שָׁמוֹר וְזָכוֹר בְּדִבּוּר אֶחָד
-                        הִשְׁמִיעָנוּ אֵל
-                        הַמְּיֻחָד<br />
-                        ה' אֶחָד וּשְׁמוֹ אֶחָד
-                        לְשֵׁם וּלְתִפְאֶרֶת
-                        וְלִתְהִלָּה
-                        <br />
-                        <br />
-                        לִקְרַאת שַׁבָּת לְכוּ וְנֵלְכָה
-                        כִּי הִיא מְקוֹר הַבְּרָכָה<br />
-                        מֵרֹאשׁ מִקֶּדֶם נְסוּכָה
-                        סוֹף מַעֲשֶׂה בְּמַחֲשָׁבָה תְּחִלָּה
-                        <br />
-                        <br />
-                        מִקְדַּשׁ מֶלֶךְ עִיר מְלוּכָה
-                        קוּמִי צְאִי מִתּוֹךְ הַהֲפֵכָה<br />
-                         רַב לָךְ שֶׁבֶת בְּעֵמֶק הַבָּכָא
-                         וְהוּא יַחֲמוֹל עָלַיִךְ חֶמְלָה
-                        <br />
-
-                        <br />
-                        הִתְנַעֲרִי מֵעָפָר קוּמִי
-                         לִבְשִׁי בִּגְדֵי תִפְאַרְתֵּךְ עַמִּי<br />
-                         עַל יַד בֶּן יִשַׁי בֵּית הַלַּחְמִי
-                          קָרְבָה אֶל נַפְשִׁי גְּאָלָהּ
-                        <br />
-                        <br />
-                        הִתְעוֹרְרִי הִתְעוֹרְרִי
-                        כִּי בָא אוֹרֵךְ קוּמִי אוֹרִי<br />
-                        עוּרִי עוּרִי שִׁיר דַּבֵּרִי
-                        כְּבוֹד ה' עָלַיִךְ נִגְלָה
-                        <br />
-                        <br />
-                        לֹא תֵבֹשִׁי וְלֹא תִכָּלְמִי
-                        מַה תִּשְׁתּוֹחֲחִי וּמַה תֶּהֱמִי<br />
-                        בָּךְ יֶחֱסוּ עֲנִיֵּי עַמִּי
-                        וְנִבְנְתָה עִיר עַל תִּלָּהּ
-                        <br />
-                        <br />
-                        וְהָיוּ לִמְשִׁסָּה שֹׁאסָיִךְ
-                        וְרָחֲקוּ כָּל מְבַלְּעָיִךְ<br />
-                        יָשִׂישׂ עָלַיִךְ אֱלֹהָיִךְ
-                        כִּמְשׂוֹשׂ חָתָן עַל כַּלָּה
-                        <br />
-                        <br />
-                        יָמִין וּשְׂמֹאל תִּפְרֹצִי
-                        וְאֶת ה' תַּעֲרִיצִי<br />
-                        עַל יַד אִישׁ בֶּן פַּרְצִי
-                        וְנִשְׂמְחָה וְנָגִילָה
-                        <br />
-                        <br />
-                        בֹּאִי בְשָׁלוֹם עֲטֶרֶת בַּעְלָהּ
-                        גַּם בְּשִׂמְחָה (בְּרִנָה) וּבְצָהֳלָה<br />
-                        תּוֹךְ אֱמוּנֵי עַם סְגֻלָּה
-                        בּוֹאִי כַלָּה בּוֹאִי כַלָּה<br />
-                        (תּוֹךְ אֱמוּנֵי עַם
-                        סְגֻלָּה בּוֹאִי כַלָּה שַׁבָּת מַלְכְּתָא)
-                    </Typography>
+                            return (
+                                <PlaylistItem
+                                    key={key}
+                                    number={key + 1}
+                                    tune={tune}
+                                    playingStatus={playingStatus}
+                                    onClickHandle={() => {
+                                        onClickHandle(setClickedTune, key);
+                                    }}
+                                />
+                            );
+                        })}
+                    </List>
                 </StyledBox>
             </Drawer>
         </Root>
     );
 }
 
-export default SwipeableEdgeDrawer;
+export default PlaylistDrawer;

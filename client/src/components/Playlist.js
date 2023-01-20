@@ -3,6 +3,7 @@ import usePlaylist from "../hooks/playlist";
 import React, { useState } from "react";
 import PlaylistItem from "./PlaylistItem";
 import PlaylistDrawer from "./PlaylistDrawer";
+import Text from "./Text";
 
 function onClickHandle(setClickedTune, key) {
     setClickedTune((prev) => {
@@ -14,7 +15,7 @@ function onClickHandle(setClickedTune, key) {
     });
 }
 
-export default function Playlist(id) {
+export default function Playlist({id, height}) {
     const { isLoading, tunes, error } = usePlaylist(id);
     const [clickedTune, setClickedTune] = useState();
 
@@ -26,27 +27,13 @@ export default function Playlist(id) {
         return <Typography>loading...</Typography>;
     } else {
         return (
-            <Box>
-                <List>
-                    {tunes.map((tune, key) => {
-                        if (key === clickedTune?.key) {
-                            var playingStatus = clickedTune?.status;
-                        }
-
-                        return (
-                            <PlaylistItem
-                                key={key}
-                                tune={tune}
-                                playingStatus={playingStatus}
-                                onClickHandle={() => {
-                                    onClickHandle(setClickedTune, key);
-                                }}
-                            />
-                        );
-                    })}
-                </List>
-                <PlaylistDrawer/>
-            </Box>
+            <PlaylistDrawer
+                tunes={tunes}
+                clickedTune={clickedTune}
+                setClickedTune={setClickedTune}
+                onClickHandle={onClickHandle}
+                height={height}
+            />
         );
     }
 }
