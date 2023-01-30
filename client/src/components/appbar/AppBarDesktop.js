@@ -6,7 +6,7 @@ import {
     StyledTabs,
 } from "./style";
 import React from "react";
-import LogoLinkToHome from "../logo";
+import LogoLinkToHome from "../logo/LogoLinkToHome";
 import { Link, useLocation } from "react-router-dom";
 
 const links = {

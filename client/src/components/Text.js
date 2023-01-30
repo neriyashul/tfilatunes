@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import useText from "../hooks/text";
 
 export default function Text({ id, ...props }) {
-    const { isLoading, text, error } = useText(id);
+    const { isLoading,  error } = useText(id);
     if (error) {
         console.error(error);
     } else if (isLoading) {

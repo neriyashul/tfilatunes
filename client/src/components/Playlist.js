@@ -1,9 +1,7 @@
-import { Typography, List, Grid, Divider, Box } from "@mui/material";
+import { Typography } from "@mui/material";
 import usePlaylist from "../hooks/playlist";
 import React, { useState } from "react";
-import PlaylistItem from "./PlaylistItem";
 import PlaylistDrawer from "./PlaylistDrawer";
-import Text from "./Text";
 
 function onClickHandle(setClickedTune, key) {
     setClickedTune((prev) => {

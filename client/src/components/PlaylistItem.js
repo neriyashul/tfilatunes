@@ -3,11 +3,9 @@ import {
     ListItemText,
     ListItemButton,
     ListItemIcon,
-    IconButton,
     Typography,
 } from "@mui/material";
 import React, { useState } from "react";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ShortRating from "./Rating";
 import Playable from "./Playable";
 

@@ -5,7 +5,7 @@ import {
     ListItemButton,
     Toolbar,
 } from "@mui/material";
-import LogoLinkToHome from "../logo";
+import LogoLinkToHome from "../logo/LogoLinkToHome";
 import { StyledDrawer, StyledListItemText } from "./style";
 import React from "react";
 import { Link } from "react-router-dom";

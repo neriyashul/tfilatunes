@@ -1,35 +1,24 @@
 import * as React from "react";
-import PropTypes from "prop-types";
-import { Global } from "@emotion/react";
 import { styled } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
 import { grey } from "@mui/material/colors";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import Typography from "@mui/material/Typography";
 import {
-    Divider,
-    FormControl,
     Input,
     List,
-    Menu,
     MenuItem,
     Select,
-    Tab,
-    Tabs,
 } from "@mui/material";
 import PlaylistItem from "./PlaylistItem";
 import colors from "../utils/colors";
 const drawerBleeding = 36;
 
-const Root = styled("div")(({ theme }) => ({
-    height: "100%",
-    backgroundColor:
-        theme.palette.mode === "light"
-            ? grey[100]
-            : theme.palette.background.default,
-}));
+// const Root = styled("div")(({ theme }) => ({
+//     height: "100%",
+//     backgroundColor:
+//         theme.palette.mode === "light"
+//             ? grey[100]
+//             : theme.palette.background.default,
+// }));
 
 const StyledBox = styled(Box)(({ theme }) => ({
     backgroundColor:
@@ -103,7 +92,7 @@ function PlaylistDrawer({
                             backgroundColor: "transparent",
                         },
                         "&.MuiInput-underline:before": {
-                            borderBottom: "2px solid white",
+                            borderBottom: "2px solid ",
                         },
                         /* hover */
                         "&.MuiInput-underline:hover:before": {
