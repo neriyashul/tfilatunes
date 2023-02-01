@@ -1,9 +1,9 @@
 import Logo from ".";
 import { StyledLink } from "./style";
 
-export default function LogoLinkToHome() {
+export default function LogoLinkToHome({ props }) {
     return (
-        <StyledLink to="/">
+        <StyledLink to="/" {...props}>
             <Logo />
         </StyledLink>
     );
