@@ -49,7 +49,7 @@ export default function Drawer({ width = 240, isOpen, setIsOpen }) {
             width={width}
         >
             <Toolbar>
-                <LogoLinkToHome />
+                <LogoLinkToHome onClick={handleDrawerToggle} />
             </Toolbar>
             <Divider />
 
