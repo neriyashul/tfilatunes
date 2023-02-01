@@ -9,7 +9,7 @@ import {
 import styled from "@mui/system/styled";
 
 export const StyledAppBar = styled(AppBar)({
-    position: "sticky",
+    position: "fixed",
 });
 
 export const StyledHeader = (props) => (

@@ -10,29 +10,32 @@ export default function AppBarMenu({ setMode }) {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <StyledAppBar>
-            <Toolbar>
-                <StyledIconButton
-                    edge="start"
-                    onClick={() => setIsOpen(true)}
-                >
-                    <MenuIcon />
-                </StyledIconButton>
-                <StyledHeader>{projectName}</StyledHeader>
-                <SideDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
+        <>
+            <StyledAppBar>
+                <Toolbar>
+                    <StyledIconButton
+                        edge="start"
+                        onClick={() => setIsOpen(true)}
+                    >
+                        <MenuIcon />
+                    </StyledIconButton>
+                    <StyledHeader>{projectName}</StyledHeader>
+                    <SideDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
 
-                <Box sx={{ flexGrow: 1 }} />
-                <Button
-                    variant="contained"
-                    onClick={() =>
-                        setMode((state) =>
-                            state === "dark" ? "light" : "dark"
-                        )
-                    }
-                >
-                    mode
-                </Button>
-            </Toolbar>
-        </StyledAppBar>
+                    <Box sx={{ flexGrow: 1 }} />
+                    <Button
+                        variant="contained"
+                        onClick={() =>
+                            setMode((state) =>
+                                state === "dark" ? "light" : "dark"
+                            )
+                        }
+                    >
+                        mode
+                    </Button>
+                </Toolbar>
+            </StyledAppBar>
+            <Toolbar />
+        </>
     );
 }
