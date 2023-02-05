@@ -6,8 +6,8 @@ import {
     Typography,
 } from "@mui/material";
 import React, { useState } from "react";
-import ShortRating from "./Rating";
-import Playable from "./Playable";
+import ShortRating from "./rating/ShortRating";
+import Playable from "./PlayablelIcon";
 
 export default function PlaylistItem({ number, tune, playingStatus, onClickHandle }) {
     const [isHovering, setIsHovering] = useState(false);

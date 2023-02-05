@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
-import usePlaylist from "../hooks/playlist";
+import usePlaylist from "../../hooks/playlist";
 import React, { useState } from "react";
-import PlaylistDrawer from "./PlaylistDrawer";
+import PlaylistDrawer from "../PlaylistDrawer";
 
 function onClickHandle(setClickedTune, key) {
     setClickedTune((prev) => {

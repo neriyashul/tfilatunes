@@ -1,16 +1,11 @@
-import {
-    AppBar,
-    Box,
-    IconButton,
-    Tab,
-    Tabs,
-    Typography,
-} from "@mui/material";
-import styled from "@mui/system/styled";
+import styled from "@emotion/styled";
+import { AppBar, Box, IconButton, Tab, Tabs, Typography } from "@mui/material";
 
 export const StyledAppBar = styled(AppBar)({
     position: "fixed",
+    backgroundColor: "#1c1c1c"
 });
+StyledAppBar.defaultProps = { elevation: 4 };
 
 export const StyledHeader = (props) => (
     <Typography sx={{ fontSize: "1.3rem", mx: 0.5 }}>

@@ -17,7 +17,7 @@ export default function AppBarMenu({ setMode }) {
 
     return (
         <>
-            <StyledAppBar>
+            <StyledAppBar elavation={0}>
                 <Toolbar>
                     <LogoLinkToHome />
                     <StyledMargin />
