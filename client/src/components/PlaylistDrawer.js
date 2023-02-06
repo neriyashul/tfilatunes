@@ -69,6 +69,8 @@ function PlaylistDrawer({
                     visibility: "visible",
                     left: 0,
                     px: 1.5,
+                    mb: -1,
+                    pb: 1
                 }}
             >
                 <Puller />
