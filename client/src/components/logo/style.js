@@ -3,7 +3,7 @@ import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 
 export const StyledImage = styled("img")({
-    width: 30,
+    width: 15,
     height: 30,
 });
 
