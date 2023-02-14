@@ -21,10 +21,10 @@ import MenuSelect from "../../components/select/MenuSelect";
 import TuneList from "./TuneList";
 
 export default function PlaylistDesktop() {
-    const { id } = useParams();
-    const { isLoading, text, error } = useText(id);
+    const { key } = useParams();
+    const { isLoading, text, error } = useText(key);
+    const { isLoading: isTunesLoading, tunes, tunesError } = usePlaylist(key);
 
-    const { isLoading: isTunesLoading, tunes, tunesError } = usePlaylist(id);
     const navigate = useNavigate();
     const theme = useTheme();
 

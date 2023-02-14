@@ -12,10 +12,10 @@ import MenuSelect from "../../components/select/MenuSelect";
 import TuneList from "./TuneList";
 
 export default function PlaylistPageMobile() {
-    const { id } = useParams();
-    const { isLoading, text, error } = useText(id);
+    const { key } = useParams();
+    const { isLoading, text, error } = useText(key);
 
-    const { isLoading: isTunesLoading, tunes, tunesError } = usePlaylist(id);
+    const { isLoading: isTunesLoading, tunes, tunesError } = usePlaylist(key);
     const navigate = useNavigate();
 
     if (isLoading) {
