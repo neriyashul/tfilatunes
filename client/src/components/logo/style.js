@@ -1,24 +1,18 @@
-import { Typography } from "@mui/material";
-import { styled } from "@mui/system";
-import { Link } from "react-router-dom";
+const styles = {
+    link: {
+        color: "white",
+        textDecoration: "none",
+    },
 
-export const StyledImage = styled("img")({
-    width: 15,
-    height: 30,
-});
+    image: {
+        width: 15,
+        height: 35,
+    },
 
-export const StyledHeader = (props) => (
-    <Typography
-        sx={{
-            ml: 0.75,
-            fontSize: "1.3rem",
-        }}
-    >
-        {props.children}
-    </Typography>
-);
+    text: {
+        ml: 1,
+        fontSize: "1.35rem",
+    },
+};
 
-export const StyledLink = styled(Link)({
-    textDecoration: "none",
-    color: "inherit",
-});
+export default styles;
