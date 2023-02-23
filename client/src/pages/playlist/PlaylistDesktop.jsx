@@ -1,78 +1,97 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
     AppBar,
     Box,
     Drawer,
     IconButton,
-    List,
+    Menu,
     MenuItem,
     Toolbar,
     Typography,
     useTheme,
 } from "@mui/material";
-import { useNavigate, useParams } from "react-router-dom";
 import North from "@mui/icons-material/North";
 import South from "@mui/icons-material/South";
-import useText from "../../hooks/text";
 import { sideDrawerProps, desktopStyles as styles } from "./style";
-import usePlaylist from "../../hooks/playlist";
-import NotFound from "../404";
-import MenuSelect from "../../components/select/MenuSelect";
+import useTunes from "../../hooks/tunes";
 import TuneList from "./TuneList";
+import { useFirstVisible } from "../../hooks/screen";
+import { usePrevious } from "../../hooks/state";
+import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
 
-export default function PlaylistDesktop() {
-    const { key } = useParams();
-    const { isLoading, text, error } = useText(key);
-    const { isLoading: isTunesLoading, tunes, tunesError } = usePlaylist(key);
-
-    const navigate = useNavigate();
+export default function PlaylistDesktop({ tefila }) {
     const theme = useTheme();
 
-    if (isLoading || isTunesLoading) {
-        return <p>טוען מידע...</p>;
-    } else if (error) {
-        return <NotFound />;
+    const sectionRefs = useRef([]);
+    const sectionsArea = useRef();
+    const [sectionIndex, setSection] = useFirstVisible(
+        sectionRefs,
+        sectionsArea,
+        styles.rootMarginTop
+    );
+    const prevSectionIndex = usePrevious(sectionIndex) || 0;
+    const section = tefila.sections[sectionIndex];
+
+    const anchorState = React.useState(null);
+    const [, setAnchorEl] = anchorState;
+
+    const subsectionState = useState(0);
+    const [subsectionIndex, setSubsectionIndex] = subsectionState;
+
+    if (prevSectionIndex != sectionIndex && subsectionIndex != 0) {
+        setSubsectionIndex(0);
     }
+    const subsection = section.subsections[subsectionIndex];
+
+    const tunes = useTunes(subsection?.id);
 
     return (
-        <Box component="main" sx={styles.main}>
+        <Box sx={styles.main}>
             <Box sx={styles.textContainer}>
                 <AppBar sx={styles.textAppBar}>
                     <Toolbar>
                         <IconButton
                             sx={styles.iconButton}
-                            onClick={() => alert("down")}
+                            onClick={() => setSection(sectionIndex + 1)}
                         >
                             <South />
                         </IconButton>
                         <IconButton
                             sx={styles.iconButton}
-                            onClick={() => alert("up")}
+                            onClick={() => setSection(sectionIndex - 1)}
                         >
                             <North />
                         </IconButton>
-                        <Typography sx={styles.textHeader}>
-                            מזמור צ&quot;ה
+                        <Typography
+                            onClick={(e) => setAnchorEl(e.currentTarget)}
+                            sx={styles.textHeader}
+                        >
+                            {section.name}
                         </Typography>
+                        <SectionsMenu
+                            tefila={tefila}
+                            anchorState={anchorState}
+                            setSection={setSection}
+                            sx={styles.sectionsMenu}
+                        />
                     </Toolbar>
                 </AppBar>
-
-                <Typography sx={styles.text}>
-                    {isLoading ? "טוען..." : text}
-                </Typography>
+                <Toolbar />
+                <Box sx={styles.sectionsArea} ref={sectionsArea} />
+                <Sections
+                    tefila={tefila}
+                    sectionRefs={sectionRefs}
+                    sx={styles.sections}
+                />
             </Box>
             <Drawer {...sideDrawerProps}>
                 <AppBar sx={styles.listAppBar}>
                     <Toolbar>
-                        <MenuSelect
-                            value={1}
-                            onChange={(event) => alert(event.target.value)}
-                            // onChange={(event) => setParagraph(event.target.value)}
-                            fontSize="1.2rem"
-                        >
-                            <MenuItem value={1}>לכו נרננה</MenuItem>
-                            <MenuItem value={2}>ארבעים שנה</MenuItem>
-                        </MenuSelect>
+                        <SubsectionsMenu
+                            section={section}
+                            state={subsectionState}
+                            {...styles.subsectionProps}
+                        />
                     </Toolbar>
                 </AppBar>
                 <Toolbar />
@@ -83,14 +102,7 @@ export default function PlaylistDesktop() {
                 >
                     <Box dir={theme.direction} /** reset direction **/>
                         <Box sx={styles.listContainer}>
-                            <List>
-                                <TuneList
-                                    tunes={tunes}
-                                    onClickHandle={(tune) =>
-                                        navigate(`/tune/${tune.name}`)
-                                    }
-                                />
-                            </List>
+                            <TuneList tunes={tunes.tunes} />
                         </Box>
                     </Box>
                 </Box>

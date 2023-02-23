@@ -49,6 +49,7 @@ export const desktopStyles = {
 
 export const mobileStyles = {
     player: {
+        position: "absolute",
         width: "100%",
         zIndex: 2,
     },

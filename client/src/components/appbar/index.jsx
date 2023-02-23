@@ -1,7 +1,7 @@
 import React from "react";
 import AppBarMobile from "./AppBarMobile";
 import AppBarDesktop from "./AppBarDesktop";
-import useScreenSize from "../../hooks/screensize";
+import { useScreenSize } from "../../hooks/screen";
 
 import HomeIcon from "@mui/icons-material/Home";
 import AddCircleIcon from "@mui/icons-material/AddCircle";

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Divider, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import LongRating from "../../components/rating/LongRating";
 import SelectionList from "../../components/select/list";
 import { ratingProps, mobileStyles as styles } from "./style";
@@ -13,6 +13,9 @@ export default function TuneMobile({ player, rate }) {
 
     return (
         <div>
+            <Box>
+                <Box sx={player.styles.aspectRatio} />
+            </Box>
             <Typography sx={styles.videoName}>
                 דוד מלך - רבי שלמה קרליבך הופעה בישראל בשנת 1987
             </Typography>

@@ -1,4 +1,16 @@
+const common = {
+
+    sectionsArea: {
+        width: "100vw",
+        height: "100vh",
+        position: "fixed",
+        zIndex: -1,
+    },
+};
+
 export const desktopStyles = {
+    ...common,
+
     main: {
         display: "flex",
     },
@@ -13,7 +25,7 @@ export const desktopStyles = {
         // backgroundColor: "#252525",
         position: "fixed",
         top: "inherit",
-        zIndex: 0,
+        zIndex: 1,
         pl: 10,
     },
 
@@ -24,13 +36,24 @@ export const desktopStyles = {
     textHeader: {
         fontSize: "2rem",
         ml: 1,
+        cursor: "pointer",
     },
 
-    text: {
+    sectionsMenu: {
+        px: 2,
+        fontSize: "1.2rem",
+    },
+
+    sections: {
         paddingBottom: "50px",
-        mx: 15,
-        my: 14,
+        mb: "50vh",
+    },
+
+    section: {
         fontSize: "2rem",
+        pt: 2,
+        pb: 3,
+        mx: 15,
     },
 
     tunesDrawer: {},
@@ -71,16 +94,49 @@ export const desktopStyles = {
 
     listContainer: {
         overflow: "auto",
-        backgroundColor: "#252525",
+        // my: 0.5
     },
+
+    rootMarginTop: -45,
 };
 
 export const mobileStyles = {
-    text: {
+    ...common,
+    rootMarginTop: -25, 
+
+    appbar: {
+        appbar: {
+            position: "fixed",
+            backgroundColor: "#1c1c1c",
+        },
+    },
+
+    moreButton: {
+        marginRight: 1,
+        // marginLeft: 0.5,
+        "&.MuiIconButton-edgeStart": true,
+    },
+
+    sectionName: {
+        fontSize: "1.3rem",
+        mx: 0.5,
+    },
+
+    gap: { flexGrow: 1 },
+
+    backButton: {
+        // marginX: 1,
+        "&.MuiIconButton-edgeStart": true,
+    },
+
+    sectionsMenu: {
+        fontSize: "1.3rem",
+        mx: 0.5,
+    },
+
+    sections: {
+        mb: "34vh",
         paddingBottom: "50vh",
-        my: 1,
-        mx: 3,
-        fontSize: "1.4rem",
     },
 
     bottomContainer: {
@@ -89,18 +145,27 @@ export const mobileStyles = {
         right: 0,
         width: "100%",
         height: "50vh",
+        overflow: "auto",
+        "::-webkit-scrollbar": {
+            display: "none",
+        },
+        scrollbarWidth: "none",
+        backgroundColor: "#272727",
     },
 
-    paragraphBar: {
+    subsectionBar: {
+        position: "sticky",
+        top: "0",
         // top: -36,
-        borderTopLeftRadius: 8,
-        borderTopRightRadius: 8,
-        visibility: "visible",
-        left: 0,
+        // borderTopLeftRadius: 8,
+        // borderTopRightRadius: 8,
+        // visibility: "visible",
+        // left: 0,
         px: 1.5,
-        backgroundColor: "#272727",
         mb: -1,
         pb: 1,
+        zIndex: 3,
+        backgroundColor: "#272727",
         // backgroundColor: theme.palette.mode === "light" ? lightGrey : darkGrey,
     },
 
@@ -110,18 +175,38 @@ export const mobileStyles = {
         backgroundColor: "background.default",
         // backgroundColor: theme.palette.mode === "light" ? grey[300] : background,
         borderRadius: 3,
-        position: "absolute",
+        position: "relative",
+        // position: "absolute",
+        // top: 1,
         top: 8,
+        mb: 0.5,
         left: "calc(50% - 15px)",
     },
 
     tunesContainer: {
-        height: "100%",
-        overflow: "auto",
-        backgroundColor: "#272727",
+        // height: "100%",
+        height: "100vh",
+        // overflow: "auto",
+        // backgroundColor: "#272727",
+        zIndex: 15,
         // backgroundColor: theme.palette.mode === "light" ? lightGrey : darkGrey,
     },
 };
+
+export const subsectionProps = {
+    fontSize: "1.2rem",
+};
+
+export const sectionsStyles = {
+
+    section: {
+        pt: {xs: "10px", md: 2},
+        pb: {xs: "10px", md: 3},
+        mx: {xs: 3, md: 15},
+        fontSize: {xs: "1.4rem", md: "2rem" }
+
+    }
+}
 
 export const tuneListStyles = {
     playableButton: {
@@ -140,9 +225,10 @@ export const sideDrawerProps = {
     variant: "permanent",
     anchor: "right",
     sx: {
-        zIndex: 0,
+        zIndex: 1,
         width: width,
         flexShrink: 0,
+
         "& .MuiDrawer-paper": {
             borderWidth: 0,
             width: width,

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import TuneMobile from "./TuneMobile";
 import TuneDesktop from "./TuneDesktop";
 import AppBarMenu from "../../components/appbar";
-import useScreenSize from "../../hooks/screensize";
+import { useScreenSize } from "../../hooks/screen";
 
 export default function TunePage({ player }) {
     const rate = 4;
