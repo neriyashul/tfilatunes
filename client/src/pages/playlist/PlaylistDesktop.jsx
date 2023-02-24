@@ -1,11 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
     AppBar,
     Box,
     Drawer,
     IconButton,
-    Menu,
-    MenuItem,
     Toolbar,
     Typography,
     useTheme,
@@ -13,7 +11,7 @@ import {
 import North from "@mui/icons-material/North";
 import South from "@mui/icons-material/South";
 import { sideDrawerProps, desktopStyles as styles } from "./style";
-import useTunes from "../../hooks/tunes";
+import { useTunes } from "../../hooks/tunes";
 import TuneList from "./TuneList";
 import { useFirstVisible } from "../../hooks/screen";
 import { usePrevious } from "../../hooks/state";
@@ -102,7 +100,7 @@ export default function PlaylistDesktop({ tefila }) {
                 >
                     <Box dir={theme.direction} /** reset direction **/>
                         <Box sx={styles.listContainer}>
-                            <TuneList tunes={tunes.tunes} />
+                            <TuneList tunes={tunes.tunes} subsection={subsection}/>
                         </Box>
                     </Box>
                 </Box>

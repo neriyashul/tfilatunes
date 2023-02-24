@@ -11,13 +11,13 @@ import Playable from "../../components/playable";
 import { tuneListStyles as styles } from "./style";
 import { useNavigate } from "react-router-dom";
 
-export default function TuneList({ tunes }) {
+export default function TuneList({ tunes, subsection }) {
     const [hoveringItem, setHoveringItem] = useState();
     const [clickedTune, setClickedTune] = useState();
     const navigate = useNavigate();
 
     const onTuneClickHandle = (key, tune) => {
-        navigate(`/tune/${tune.id}`)
+        navigate(`/tune/${tune.id}/${subsection?.id}`);
         setClickedTune((prev) => {
             if (prev?.key === key && prev.status === "playing") {
                 return { key: key, status: "stopped" };
@@ -25,7 +25,7 @@ export default function TuneList({ tunes }) {
                 return { key: key, status: "playing" };
             }
         });
-    }
+    };
 
     return tunes?.map((tune, key) => {
         let playingStatus;
@@ -37,7 +37,7 @@ export default function TuneList({ tunes }) {
             <ListItem
                 key={key}
                 onMouseEnter={() => setHoveringItem(key)}
-                onMouseLeave={() => setHoveringItem('')}
+                onMouseLeave={() => setHoveringItem("")}
                 onClick={() => onTuneClickHandle(key, tune)}
                 secondaryAction={
                     <ListItemIcon>

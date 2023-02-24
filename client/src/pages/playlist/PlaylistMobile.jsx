@@ -1,22 +1,13 @@
 import { useNavigate, useParams } from "react-router-dom";
-// import useTextPlaylist from "../../hooks/text-playlist";
-import NotFound from "../404";
-// import Playlist from "../playlist";
 import React, { useRef, useState } from "react";
-import {
-    AppBar,
-    Box,
-    IconButton,
-    Toolbar,
-    Typography,
-} from "@mui/material";
+import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { mobileStyles as styles } from "./style";
 import TuneList from "./TuneList";
 import { useFirstVisible } from "../../hooks/screen";
 import { useTefila } from "../../hooks/tefila";
-import useTunes from "../../hooks/tunes";
+import { useTunes } from "../../hooks/tunes";
 import { usePrevious } from "../../hooks/state";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
 
@@ -94,7 +85,7 @@ export default function PlaylistPageMobile() {
                         />
                     </Box>
                     <Box sx={styles.tunesContainer}>
-                        <TuneList tunes={tunes.tunes} />
+                        <TuneList tunes={tunes.tunes} subsection={subsection}/>
                     </Box>
                 </Box>
             </Box>

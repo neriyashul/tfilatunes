@@ -8,7 +8,8 @@ export default function ShortRating({ rate }) {
     if (rate) {
         return (
             <Stack direction="row">
-                <StarRoundedIcon sx={styles.notSelectedStar} />
+                <StarRoundedIcon sx={styles.fullStar} />
+                {/* <StarRoundedIcon sx={styles.notSelectedStar} /> */}
                 <Typography sx={styles.rate}>{rate}</Typography>
             </Stack>
         );

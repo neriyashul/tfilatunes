@@ -32,7 +32,7 @@ export default function App() {
                 />
                 <Route path="/playlist/:key" element={<Playlist />} />
                 <Route
-                    path="/tune/:id"
+                    path="/tune/:id/:subsectionId"
                     element={
                         <>
                             <YoutubeEmbed>

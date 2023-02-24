@@ -21,20 +21,23 @@ export const desktopStyles = {
     },
     text: {
         zIndex: 1,
-        fontSize: "1.5rem",
+        fontSize: "1.7rem",
         pt: 2,
-        paddingBottom: 3,
+        pb: 5,
         ml: "9vw",
         mr: "8vw",
     },
 
     sideContainer: {
+        position: "fixed",
         paddingTop: 3.3,
-        backgroundColor: "#252525",
+        backgroundColor: "#272727",
         // backgroundColor: theme.palette.mode === "dark" ? "#252525" : "#f5f5f5",
         color: "text.secondary",
-        width: "100%",
-        height: "100%",
+        maxWidth: "inherit",
+        width: "100vw",
+        height: "100vh",
+        // right: 0,
     },
     ratingHeader: {
         ml: 5.5,
@@ -48,6 +51,8 @@ export const desktopStyles = {
 };
 
 export const mobileStyles = {
+    gap: { flexGrow: 1 },
+
     player: {
         position: "absolute",
         width: "100%",

@@ -44,8 +44,8 @@ export function SubsectionsMenu({ section, state, ...props }) {
         >
             {section.subsections.map((subsection, index) => {
                 return (
-                    <MenuItem key={subsection.id} value={index}>
-                        {subsection.name}
+                    <MenuItem key={subsection?.id} value={index}>
+                        {subsection?.name}
                     </MenuItem>
                 );
             })}
