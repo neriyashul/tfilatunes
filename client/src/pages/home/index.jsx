@@ -14,15 +14,15 @@ export default function Home() {
                     <Grid item>
                         <Button
                             component="a"
-                            href="/playlist/123"
+                            href="/playlist/kabbalat-shabbat"
                             {...buttonProps}
                         >
-                            פלייליסט
+                            קבלת שבת
                         </Button>
                     </Grid>
                     <Grid item>
-                        <Button component="a" href="/tune/123" {...buttonProps}>
-                            לכה דודי - דוד מלך
+                        <Button component="a" href="/playlist/hallel" {...buttonProps}>
+                            הלל
                         </Button>
                     </Grid>
                 </Grid>

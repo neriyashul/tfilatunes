@@ -25,7 +25,7 @@ export default function AppBarMenu({ links, getIcon }) {
 
     return (
         <>
-            <AppBar style={styles.appbar}>
+            <AppBar sx={styles.appbar}>
                 <Toolbar>
                     <IconButton
                         sx={styles.menuIcon}

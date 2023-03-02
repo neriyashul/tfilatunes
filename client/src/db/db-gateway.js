@@ -1,4 +1,36 @@
-// import { useQuery } from "react-query";
+const tunes = [
+    {
+        id: "1",
+        name: "דוד מלך ישראל",
+        composer: "ר' שלמה קרליבך",
+        rate: "5",
+        performances: [
+            {
+                label: "דוד מלך - רבי שלמה קרליבך",
+                videoId: "lBfa7fGPpxQ",
+                startAt: "24",
+            },
+            {
+                label: "Lazer storch. Dovid melech yisroel chai vekayom",
+                videoId: "C7Zx4rWKNxo",
+                startAt: "76",
+            },
+        ],
+    },
+    {
+        id: "2",
+        name: "לכה דודי",
+        composer: "מודז'יץ",
+        rate: "4",
+        performances: [
+            {
+                label: "ניגון לכה דודי - מודז'יץ // יצחק מאיר",
+                videoId: "FLZXap_0zlw",
+                startAt: "5",
+            },
+        ],
+    },
+];
 
 export default class DBGateway {
     // const {
@@ -12,163 +44,26 @@ export default class DBGateway {
     //     dbGateway.getText(key)
     // );
 
+    getTune(id) {
+        switch (id) {
+            case "1":
+                return tunes[0];
+            case "2":
+                return tunes[1];
+            default:
+                return tunes[1];
+        }
+    }
+
     async getTunes(key) {
-        return {
-            tunes: [
-                {
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },
-                {
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },{
-                    id: "1",
-                    name: "לכה דודי",
-                    composer: "מודז'יץ",
-                    link: "https://youtu.be/FLZXap_0zlw?t=5",
-                    image: "https://i.ytimg.com/vi/FLZXap_0zlw/mqdefault.jpg",
-                    rate: "4",
-                },
-                {
-                    id: "2",
-                    name: "דוד מלך ישראל",
-                    composer: "ר' שלמה קרליבך",
-                    link: "https://youtu.be/lBfa7fGPpxQ?t=24",
-                    image: "https://i.ytimg.com/vi/lBfa7fGPpxQ/mqdefault.jpg",
-                    rate: "5",
-                },
-            ],
-        };
+        switch (key) {
+            case "1":
+                return { tunes: tunes.slice(1) };
+            case "2":
+                return { tunes: tunes.slice(0, 1) };
+            default:
+                return { tunes };
+        }
     }
 
     async getText(key) {
