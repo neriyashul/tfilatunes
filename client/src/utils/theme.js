@@ -2,6 +2,16 @@ import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
     direction: "rtl",
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    overflowY: "scroll",
+                },
+            },
+        },
+    },
+
     palette: {
         mode: "dark",
         background: {
