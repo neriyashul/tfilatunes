@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Box, Divider, Grid, Paper, Typography } from "@mui/material";
+import React, { useEffect, useLayoutEffect } from "react";
+import { Box, Divider, Grid, Typography } from "@mui/material";
 import { desktopStyles as styles, ratingProps } from "./style";
 import LongRating from "../../components/rating/LongRating";
 import SelectionList from "../../components/select/list";
@@ -11,7 +11,7 @@ export default function TuneDesktop({
     performanceLabels,
     performanceIndexState,
 }) {
-    useEffect(() => player.setProps({ style: styles.player }), []);
+    useLayoutEffect(() => player.setProps({ style: styles.player }), []);
 
     return (
         <Grid container>

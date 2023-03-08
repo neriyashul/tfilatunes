@@ -1,5 +1,5 @@
 import { Box, Skeleton } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import styles, { reactPlayerProps } from "./style";
 import ReactPlayer from "react-player";
 
@@ -10,7 +10,7 @@ export default function YoutubeEmbed(initialProps) {
     const [props, setProps] = React.useState({ ...initialProps });
     const [children, setChildren] = React.useState();
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const newChildern = React.Children.map(
             initialProps.children,
             (child) => {
