@@ -1,105 +1,69 @@
-import React, { Fragment } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { Suspense, useState } from "react";
+import { Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
+
 import About from "./pages/about";
-import AppBarMenu from "./components/appbar";
-import NotFound from "./pages/404";
 import Playlist from "./pages/playlist";
-import YoutubeEmbed from "./components/youtube-embed";
+import NotFound from "./pages/404";
 import TunePage from "./pages/tune";
 
+import YoutubeEmbed from "./components/youtube-embed";
+import AppBarMenu from "./components/appbar";
+import BackBarMenu from "./components/appbar/BackAppBar";
+
 export default function App() {
+    const [header, setHeader] = useState();
+    const [onMenuClick, setOnMenuClick] = useState();
+
     return (
-        <Fragment>
-            <Routes>
+        <Routes>
+            <Route
+                path="/"
+                element={
+                    <>
+                        <BackBarMenu
+                            header={header}
+                            onMenuClick={onMenuClick}
+                        />
+                        <Outlet />
+                    </>
+                }
+            >
                 <Route
-                    path="/"
+                    path="/playlist/:key"
                     element={
-                        <>
-                            <AppBarMenu />
-                            <Home />
-                        </>
+                        <Playlist
+                            setHeader={setHeader}
+                            setOnMenuClick={setOnMenuClick}
+                        />
                     }
                 />
-                <Route
-                    path="/about"
-                    element={
-                        <>
-                            <AppBarMenu />
-                            <About />
-                        </>
-                    }
-                />
-                <Route path="/playlist/:key" element={<Playlist />} />
                 <Route
                     path="/tune/:id/:subsectionId"
                     element={
-                        <>
-                            <YoutubeEmbed>
-                                <TunePage />
-                            </YoutubeEmbed>
-                        </>
+                        <YoutubeEmbed>
+                            <TunePage
+                                setHeader={setHeader}
+                                setOnMenuClick={setOnMenuClick}
+                            />
+                        </YoutubeEmbed>
                     }
                 />
-                <Route
-                    path="*"
-                    element={
-                        <>
-                            <AppBarMenu />
-                            <NotFound />
-                        </>
-                    }
-                    status={404}
-                />
-            </Routes>
-        </Fragment>
+            </Route>
+            <Route
+                path="/"
+                element={
+                    <>
+                        <AppBarMenu />
+                        <Outlet />
+                    </>
+                }
+            >
+                <Route index element={<Home />} />
+                <Route path="about" element={<About />} />
+
+                <Route path="*" element={<NotFound />} status={404} />
+            </Route>
+        </Routes>
     );
 }
-
-// function App() {
-//     const [mode, setMode] = useState("dark");
-//     const playerRef = useRef();
-
-//     const darkTheme = createTheme({
-//         direction: "rtl",
-//         palette: {
-//             mode: mode,
-//         },
-//     });
-
-//     const cacheRtl = createCache({
-//         key: "muirtl",
-//         stylisPlugins: [prefixer, rtlPlugin],
-//     });
-
-//     return (
-//         <ThemeProvider theme={darkTheme}>
-//             <CacheProvider value={cacheRtl}>
-//                 <div dir="rtl">
-//                     <CssBaseline />
-//                     {/* <CssBaseline enableColorScheme /> */}
-//                     <AppBarMenu setMode={setMode} />
-//                     <Routes>
-//                         <Route path="/" element={<Home />} />
-//                         <Route
-//                             path="/playlist/:key"
-//                             element={<PlaylistPage />}
-//                         />
-//                         <Route
-//                             path="/tune/:key"
-//                             element={
-//                                 <YoutubeEmbed>
-//                                     <TunePage />
-//                                 </YoutubeEmbed>
-//                             }
-//                         />
-//                         <Route path="/dummy" element={<Dummy />} />
-//                         <Route path="*" element={<NotFound />} status={404} />
-//                     </Routes>
-//                 </div>
-//             </CacheProvider>
-//         </ThemeProvider>
-//     );
-// }
-
-// export default App;

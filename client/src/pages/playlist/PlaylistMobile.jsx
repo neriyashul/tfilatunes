@@ -1,20 +1,17 @@
-import { useNavigate, useParams } from "react-router-dom";
-import React, { useRef, useState } from "react";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { Box } from "@mui/material";
 import { mobileStyles as styles } from "./style";
 import TuneList from "./TuneList";
 import { useFirstVisible } from "../../hooks/screen";
-import { useTefila } from "../../hooks/tefila";
 import { useTunes } from "../../hooks/tunes";
 import { usePrevious } from "../../hooks/state";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
 
-export default function PlaylistPageMobile() {
-    const navigate = useNavigate();
-    const { key } = useParams();
-    const tefila = useTefila(key);
+export default function PlaylistPageMobile({
+    tefila,
+    setHeader,
+    setOnMenuClick,
+}) {
 
     const sectionRefs = useRef([]);
     const sectionsArea = useRef();
@@ -39,40 +36,26 @@ export default function PlaylistPageMobile() {
 
     const tunes = useTunes(subsection?.id);
 
+    useEffect(() => {
+        setOnMenuClick(() => (e) => setAnchorEl(e.currentTarget));
+    }, []);
+
+    useLayoutEffect(() => setHeader(section.name), [section]);
+
     return (
         <>
-            <AppBar sx={styles.appbar}>
-                <Toolbar>
-                    <IconButton
-                        onClick={(e) => setAnchorEl(e.currentTarget)}
-                        sx={styles.moreButton}
-                    >
-                        <MoreVertIcon />
-                    </IconButton>
-                    <SectionsMenu
-                        tefila={tefila}
-                        anchorState={anchorState}
-                        setSection={setSection}
-                        sx={styles.sectionsMenu}
-                    />
-                    <Typography sx={styles.sectionName}>
-                        {section.name}
-                    </Typography>
-                    <Box sx={styles.gap} />
-                    <IconButton
-                        onClick={() => navigate(-1)}
-                        sx={styles.backButtom}
-                    >
-                        <ArrowBackIosIcon />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-            <Toolbar />
+            <SectionsMenu
+                tefila={tefila}
+                anchorState={anchorState}
+                setSection={setSection}
+                sx={styles.sectionsMenu}
+            />
             <Box>
                 <Box sx={styles.sectionsArea} ref={sectionsArea} />
                 <Sections
                     tefila={tefila}
                     sectionRefs={sectionRefs}
+                    onClick={(index) => setSection(index)}
                     sx={styles.sections}
                 />
                 <Box sx={styles.bottomContainer}>
@@ -85,7 +68,7 @@ export default function PlaylistPageMobile() {
                         />
                     </Box>
                     <Box sx={styles.tunesContainer}>
-                        <TuneList tunes={tunes.tunes} subsection={subsection}/>
+                        <TuneList tunes={tunes.tunes} subsection={subsection} />
                     </Box>
                 </Box>
             </Box>

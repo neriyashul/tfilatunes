@@ -1,12 +1,8 @@
-const common = {
+export const desktopStyles = {
     appbar: {
         position: "fixed",
         backgroundColor: "#1c1c1c",
     },
-};
-
-export const desktopStyles = {
-    ...common,
     logo: {
         margin: "auto 10px",
     },
@@ -16,7 +12,10 @@ export const desktopStyles = {
 };
 
 export const mobileStyles = {
-    ...common,
+    appbar: {
+        position: "fixed",
+        backgroundColor: "#1c1c1c",
+    },
     header: {
         fontSize: "1.3rem",
         mx: 0.5,
@@ -72,5 +71,31 @@ export const drawerProps = {
             boxSizing: "border-box",
             width: 240,
         },
+    },
+};
+
+export const backAppBarStyles = {
+    appbar: {
+        position: "fixed",
+        backgroundColor: "#1c1c1c",
+    },
+
+    moreButton: {
+        marginRight: 1,
+        "&.MuiIconButton-edgeStart": true,
+    },
+
+    header: {
+        fontSize: "1.3rem",
+        mx: 0.5,
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+        textOverflow: "ellipsis",
+    },
+
+    gap: { flexGrow: 1 },
+
+    backIcon: {
+        fontSize: "17px",
     },
 };

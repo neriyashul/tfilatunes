@@ -2,7 +2,6 @@ export const desktopStyles = {
     player: {
         position: "absolute",
         width: "50%",
-        marginTop: "64px",
         paddingTop: "25px",
         right: "8.5%",
         // right: isRtl ? "8.5%" : 100 / 3 + 8.5 + "%",
@@ -16,7 +15,6 @@ export const desktopStyles = {
     header: {
         fontSize: "2rem",
         pt: "25px",
-        // pt: { md: "33vw", lg: "32vw", xl: "31vw" },
         ml: "8vw",
     },
     text: {
@@ -37,7 +35,6 @@ export const desktopStyles = {
         maxWidth: "inherit",
         width: "100vw",
         height: "100vh",
-        // right: 0,
     },
     ratingHeader: {
         ml: 5.5,
@@ -51,7 +48,23 @@ export const desktopStyles = {
 };
 
 export const mobileStyles = {
+    moreButton: {
+        "&.MuiIconButton-edgeStart": true,
+    },
+
+    header: {
+        fontSize: "1.2rem",
+        mx: 0.5,
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+        textOverflow: "ellipsis",
+    },
+
     gap: { flexGrow: 1 },
+
+    backIcon: {
+        fontSize: "17px",
+    },
 
     player: {
         position: "absolute",
@@ -59,14 +72,15 @@ export const mobileStyles = {
         zIndex: 2,
     },
     videoName: {
-        fontSize: "1.5rem",
+        fontSize: "1.4rem",
         mx: 3,
         mt: 1,
     },
     divider: { margin: 2 },
     ratingHeader: {
+        mt: 1,
         ml: 3,
-        fontSize: "1.4rem",
+        fontSize: "1.5rem",
     },
     performanceHeader: {
         ml: 3,
@@ -87,13 +101,12 @@ export const mobileStyles = {
 export const ratingProps = {
     desktop: {
         labelSize: "1.4rem",
-        iconsSize: "large",
-        sx: { ml: 7 },
+        iconsSize: "36px",
+        sx: { ml: 5.5 },
     },
     mobile: {
         labelSize: "1.2rem",
-        iconsSize: "medium",
+        iconsSize: "29px",
         sx: { ml: 4 },
     },
 };
-

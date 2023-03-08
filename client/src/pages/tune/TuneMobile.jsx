@@ -1,18 +1,9 @@
-import { useEffect, useRef } from "react";
-import {
-    AppBar,
-    Box,
-    Divider,
-    IconButton,
-    Toolbar,
-    Typography,
-} from "@mui/material";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import { useLayoutEffect, useRef } from "react";
+import { Box, Divider, Typography } from "@mui/material";
 
 import LongRating from "../../components/rating/LongRating";
 import SelectionList from "../../components/select/list";
 import { ratingProps, mobileStyles as styles } from "./style";
-import { useNavigate } from "react-router-dom";
 
 export default function TuneMobile({
     player,
@@ -20,26 +11,28 @@ export default function TuneMobile({
     subsection,
     performanceLabels,
     performanceIndexState,
+    setHeader,
+    // setOnMenuClick,
 }) {
     const ref = useRef();
-    useEffect(() => player.setProps({ 
-        style: {...styles.player, top: ref.current.offsetTop }
-    }), []);
+    useLayoutEffect(
+        () =>
+            player.setProps({
+                style: { ...styles.player, top: ref.current.offsetTop },
+            }),
+        []
+    );
 
-    const navigate = useNavigate();
     const [performIndex] = performanceIndexState;
+
+    // useEffect(() => {
+    //     setOnMenuClick(() => (e) => setAnchorEl(e.currentTarget));
+    // }, []);
+
+    useLayoutEffect(() => setHeader(subsection?.name), [subsection]);
 
     return (
         <div>
-            <AppBar sx={styles.appbar}>
-                <Toolbar>
-                    <Box sx={styles.gap} />
-                    <IconButton onClick={() => navigate(-1)}>
-                        <ArrowBackIosIcon />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-            <Toolbar />
             <Box ref={ref}>
                 <Box sx={player.styles.aspectRatio} />
             </Box>

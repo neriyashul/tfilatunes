@@ -1,21 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import TuneMobile from "./TuneMobile";
 import TuneDesktop from "./TuneDesktop";
-import AppBarMenu from "../../components/appbar";
 import { useScreenSize } from "../../hooks/screen";
 import { useParams } from "react-router-dom";
 import { useTune } from "../../hooks/tunes";
-import { useSubsection } from "../../hooks/tefila";
+import { useSection } from "../../hooks/tefila";
 import NotFound from "../404";
+import Loading from "../../components/loading";
 
-export default function TunePage({ player }) {
-    const { id, subsectionId } = useParams();
+export default function TunePage({ player, setHeader, setOnMenuClick }) {
+    const param = useParams();
+    const id = Number(param.id);
+    const subsectionId = Number(param.subsectionId);
     const { isMobile } = useScreenSize();
 
-    const { isLoading, tune, error } = useTune(id);
-    const subsection = useSubsection(subsectionId);
-
+    const { isLoading, tune, error } = useTune(id, subsectionId);
+    const subsection = useSection(subsectionId);
     const performanceIndexState = useState(0);
+
+    if (isLoading) {
+        return <Loading />;
+    } else if (error || !tune) {
+        return <NotFound />;
+    }
+
     const [performanceIndex] = performanceIndexState;
     const performance = tune?.performances[performanceIndex];
 
@@ -23,45 +31,36 @@ export default function TunePage({ player }) {
     const videoId = performance?.videoId;
     const startAt = performance?.startAt;
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (videoId) {
             player.setId(videoId);
             player.setStartAt(startAt);
         }
     }, [videoId, startAt]);
 
-    if (isLoading) {
-        return <p>טוען מידע...</p>;
-    } else if (error) {
-        return <NotFound />;
-    }
-
     const performanceLabels = tune?.performances.map((p) => p.label);
 
     if (isMobile) {
         return (
-            <>
-                <TuneMobile
-                    player={player}
-                    rate={rate}
-                    subsection={subsection}
-                    performanceLabels={performanceLabels}
-                    performanceIndexState={performanceIndexState}
-                />
-            </>
+            <TuneMobile
+                player={player}
+                rate={rate}
+                subsection={subsection}
+                performanceLabels={performanceLabels}
+                performanceIndexState={performanceIndexState}
+                setHeader={setHeader}
+                setOnMenuClick={setOnMenuClick}
+            />
         );
     } else {
         return (
-            <>
-                <AppBarMenu />
-                <TuneDesktop
-                    player={player}
-                    rate={rate}
-                    subsection={subsection}
-                    performanceLabels={performanceLabels}
-                    performanceIndexState={performanceIndexState}
-                />
-            </>
+            <TuneDesktop
+                player={player}
+                rate={rate}
+                subsection={subsection}
+                performanceLabels={performanceLabels}
+                performanceIndexState={performanceIndexState}
+            />
         );
     }
 }

@@ -26,7 +26,7 @@ export default function AppBarMenu({ links, getIcon }) {
     return (
         <>
             <AppBar sx={styles.appbar}>
-                <Toolbar>
+                <Toolbar variant="dense">
                     <IconButton
                         sx={styles.menuIcon}
                         onClick={() => setIsOpen(true)}
@@ -40,7 +40,7 @@ export default function AppBarMenu({ links, getIcon }) {
                         onClose={handleDrawerToggle}
                         {...drawerProps}
                     >
-                        <Toolbar>
+                        <Toolbar variant="dense">
                             <LogoLinkToHome onClick={handleDrawerToggle} />
                         </Toolbar>
                         <Divider />
@@ -65,7 +65,7 @@ export default function AppBarMenu({ links, getIcon }) {
                     </Drawer>
                 </Toolbar>
             </AppBar>
-            <Toolbar />
+            <Toolbar variant="dense" />
         </>
     );
 }
