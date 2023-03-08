@@ -1,6 +1,7 @@
 import React from "react";
 import styles, { buttonProps } from "./style";
 import { Box, Button, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -13,15 +14,19 @@ export default function Home() {
                 <Grid container sx={styles.grid}>
                     <Grid item>
                         <Button
-                            component="a"
-                            href="/playlist/kabbalat-shabbat"
+                            component={Link}
+                            to="/playlist/kabbalat-shabbat"
                             {...buttonProps}
                         >
                             קבלת שבת
                         </Button>
                     </Grid>
                     <Grid item>
-                        <Button component="a" href="/playlist/hallel" {...buttonProps}>
+                        <Button
+                            component={Link}
+                            to="/playlist/hallel"
+                            {...buttonProps}
+                        >
                             הלל
                         </Button>
                     </Grid>
