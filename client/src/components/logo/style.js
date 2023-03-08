@@ -5,8 +5,8 @@ const styles = {
     },
 
     image: {
-        width: 15,
-        height: 35,
+        width: { xs: 13, md: 15 },
+        height: { xs: 30, md: 35 },
     },
 
     text: {
