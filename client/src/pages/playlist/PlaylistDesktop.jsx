@@ -79,6 +79,7 @@ export default function PlaylistDesktop({ tefila }) {
                 <Sections
                     tefila={tefila}
                     sectionRefs={sectionRefs}
+                    onClick={(index) => setSection(index)}
                     sx={styles.sections}
                 />
             </Box>
