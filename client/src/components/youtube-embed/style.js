@@ -5,7 +5,7 @@ const styles = {
     },
 
     skeleton: {
-        backgroundColor: "#171717",
+        backgroundColor: "#202020",
         // backgroundColor: theme.palette.mode === "dark" ? "black" : "#EBEBEB",
         position: "absolute",
         top: 0,
