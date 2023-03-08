@@ -1,4 +1,3 @@
-import { Style } from "@mui/icons-material";
 import { Box, Menu, MenuItem, Typography } from "@mui/material";
 
 import React from "react";
@@ -53,7 +52,17 @@ export function SubsectionsMenu({ section, state, ...props }) {
     );
 }
 
-export function Sections({ tefila, sectionRefs, ...props }) {
+function parseText(text) {
+    if (Array.isArray(text)) {
+        return text.map((str, i) => {
+            return [str, <hr key={i} style={styles.breakLine}/>];
+        });
+    } else {
+        return text;
+    }
+}
+
+export function Sections({ tefila, sectionRefs, onClick, ...props }) {
     return (
         <>
             <Box {...props}>
@@ -63,9 +72,12 @@ export function Sections({ tefila, sectionRefs, ...props }) {
                             component="section"
                             key={index}
                             ref={(el) => (sectionRefs.current[index] = el)}
+                            onClick={() => {
+                                if (onClick) onClick(index);
+                            }}
                         >
                             <Typography sx={styles.section}>
-                                {section.text}
+                                {parseText(section.text)}
                             </Typography>
                         </Box>
                     );

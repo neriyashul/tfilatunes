@@ -1,5 +1,4 @@
 const common = {
-
     sectionsArea: {
         width: "100vw",
         height: "100vh",
@@ -21,8 +20,6 @@ export const desktopStyles = {
 
     textAppBar: {
         backgroundColor: "#000000",
-        // backgroundColor: "#101010",
-        // backgroundColor: "#252525",
         position: "fixed",
         top: "inherit",
         zIndex: 1,
@@ -47,6 +44,7 @@ export const desktopStyles = {
     sections: {
         paddingBottom: "50px",
         mb: "50vh",
+        cursor: "pointer",
     },
 
     section: {
@@ -60,7 +58,6 @@ export const desktopStyles = {
 
     listAppBar: {
         top: "64px",
-        // backgroundColor: "#282828",
         backgroundColor: "#131313",
         position: "sticky",
         zIndex: 3,
@@ -94,7 +91,6 @@ export const desktopStyles = {
 
     listContainer: {
         overflow: "auto",
-        // my: 0.5
     },
 
     rootMarginTop: -45,
@@ -102,31 +98,30 @@ export const desktopStyles = {
 
 export const mobileStyles = {
     ...common,
-    rootMarginTop: -25, 
+    rootMarginTop: -25,
 
     appbar: {
-        appbar: {
-            position: "fixed",
-            backgroundColor: "#1c1c1c",
-        },
+        position: "fixed",
+        backgroundColor: "#1c1c1c",
     },
 
     moreButton: {
         marginRight: 1,
-        // marginLeft: 0.5,
         "&.MuiIconButton-edgeStart": true,
     },
 
     sectionName: {
         fontSize: "1.3rem",
         mx: 0.5,
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+        textOverflow: "ellipsis",
     },
 
     gap: { flexGrow: 1 },
 
-    backButton: {
-        // marginX: 1,
-        "&.MuiIconButton-edgeStart": true,
+    backIcon: {
+        fontSize: "17px",
     },
 
     sectionsMenu: {
@@ -156,11 +151,6 @@ export const mobileStyles = {
     subsectionBar: {
         position: "sticky",
         top: "0",
-        // top: -36,
-        // borderTopLeftRadius: 8,
-        // borderTopRightRadius: 8,
-        // visibility: "visible",
-        // left: 0,
         px: 1.5,
         mb: -1,
         pb: 1,
@@ -173,21 +163,15 @@ export const mobileStyles = {
         width: 30,
         height: 6,
         backgroundColor: "background.default",
-        // backgroundColor: theme.palette.mode === "light" ? grey[300] : background,
         borderRadius: 3,
         position: "relative",
-        // position: "absolute",
-        // top: 1,
         top: 8,
         mb: 0.5,
         left: "calc(50% - 15px)",
     },
 
     tunesContainer: {
-        // height: "100%",
         height: "100vh",
-        // overflow: "auto",
-        // backgroundColor: "#272727",
         zIndex: 15,
         // backgroundColor: theme.palette.mode === "light" ? lightGrey : darkGrey,
     },
@@ -198,15 +182,17 @@ export const subsectionProps = {
 };
 
 export const sectionsStyles = {
-
     section: {
-        pt: {xs: "10px", md: 2},
-        pb: {xs: "10px", md: 3},
-        mx: {xs: 3, md: 15},
-        fontSize: {xs: "1.4rem", md: "2rem" }
-
-    }
-}
+        pt: { xs: "10px", md: 2 },
+        pb: { xs: "10px", md: 3 },
+        mx: { xs: 3, md: 15 },
+        fontSize: { xs: "1.4rem", md: "2rem" },
+    },
+    breakLine: {
+        visibility: "hidden",
+        margin: "3px",
+    },
+};
 
 export const tuneListStyles = {
     playableButton: {
