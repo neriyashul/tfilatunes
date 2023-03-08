@@ -25,6 +25,7 @@ export default styles;
 export const reactPlayerProps = {
     width: "100%",
     height: "100%",
+    playing: true,
     style: {
         position: "absolute",
         top: "0",
