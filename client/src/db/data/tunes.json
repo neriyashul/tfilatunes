@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "דוד מלך ישראל",
+        "composer": "ר' שלמה קרליבך",
+        "performance": {
+            "videoId": "lBfa7fGPpxQ",
+            "startAt": 24
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Kippalive - קבלת שבת קרליבך",
+                        "videoId": "80Bv83ljgUw",
+                        "startAt": 319,
+                        "endAt": 295
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "לכה דודי",
+        "composer": "מודז'יץ",
+        "performance": {
+            "label": "לכה דודי מודז'יץ // יצחק מאיר",
+            "videoId": "FLZXap_0zlw",
+            "startAt": 5
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "originalText": true,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "שומרים הפקד",
+        "composer": "ר' שלמה קרליבך",
+        "performance": {
+            "videoId": "CIAWk9Im_DA",
+            "startAt": 69
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Kippalive - קבלת שבת קרליבך",
+                        "videoId": "80Bv83ljgUw",
+                        "startAt": 295,
+                        "endAt": 346
+                    }
+                ]
+            }
+        ]
+    }
+]
