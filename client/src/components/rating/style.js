@@ -2,6 +2,7 @@ const styles = {
     label: {
         color: "text.secondary",
         marginTop: -1.1,
+        ml: .5
     },
 
     fullStar: {

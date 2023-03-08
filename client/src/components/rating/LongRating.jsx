@@ -16,10 +16,9 @@ export default function LongRating({ rate, labelSize, iconsSize, ...props }) {
     return (
         <Box {...props}>
             <Rating
-                // name="read-only"
                 value={rate}
-                icon={<StarRoundedIcon fontSize={iconsSize} sx={styles.fullStar} />}
-                emptyIcon={<StarBorderRoundedIcon fontSize={iconsSize} />}
+                icon={<StarRoundedIcon sx={{...styles.fullStar, fontSize: iconsSize}} />}
+                emptyIcon={<StarBorderRoundedIcon sx={{fontSize: iconsSize}} />}
                 readOnly
             />
             <Typography
