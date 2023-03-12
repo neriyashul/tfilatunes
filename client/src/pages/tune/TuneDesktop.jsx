@@ -1,8 +1,9 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { Box, Divider, Grid, Typography } from "@mui/material";
 import { desktopStyles as styles, ratingProps } from "./style";
 import LongRating from "../../components/rating/LongRating";
 import SelectionList from "../../components/select/list";
+import { parseText } from "../../utils/styles";
 
 export default function TuneDesktop({
     player,
@@ -20,7 +21,9 @@ export default function TuneDesktop({
                     <Box sx={player.styles.aspectRatio} />
                 </Box>
                 <Typography sx={styles.header}>{subsection?.name}</Typography>
-                <Typography sx={styles.text}>{subsection?.text}</Typography>
+                <Typography component="div" sx={styles.text}>
+                    {parseText(subsection?.text)}
+                </Typography>
             </Grid>
             <Grid item xs={4}>
                 <Box sx={styles.sideContainer}>

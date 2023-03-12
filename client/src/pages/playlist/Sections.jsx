@@ -3,6 +3,7 @@ import { Box, Menu, MenuItem, Typography } from "@mui/material";
 import React from "react";
 import { sectionsStyles as styles } from "./style";
 import MenuSelect from "../../components/select/MenuSelect";
+import { parseText } from "../../utils/styles";
 
 export function SectionsMenu({ tefila, anchorState, setSection, ...props }) {
     const [anchorEl, setAnchorEl] = anchorState;
@@ -50,16 +51,6 @@ export function SubsectionsMenu({ section, state, ...props }) {
             })}
         </MenuSelect>
     );
-}
-
-function parseText(text) {
-    if (Array.isArray(text)) {
-        return text.map((str, i) => {
-            return [str, <hr key={i} style={styles.breakLine} />];
-        });
-    } else {
-        return text;
-    }
 }
 
 export function Sections({ tefila, sectionRefs, onClick, ...props }) {

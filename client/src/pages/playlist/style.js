@@ -188,10 +188,6 @@ export const sectionsStyles = {
         mx: { xs: 3, md: 15 },
         fontSize: { xs: "1.4rem", md: "2rem" },
     },
-    breakLine: {
-        visibility: "hidden",
-        margin: "3px",
-    },
 };
 
 export const tuneListStyles = {
