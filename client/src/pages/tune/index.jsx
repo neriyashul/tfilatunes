@@ -2,20 +2,37 @@ import React, { useLayoutEffect, useState } from "react";
 import TuneMobile from "./TuneMobile";
 import TuneDesktop from "./TuneDesktop";
 import { useScreenSize } from "../../hooks/screen";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useTune } from "../../hooks/tunes";
 import { useSection } from "../../hooks/tefila";
 import NotFound from "../404";
 import Loading from "../../components/loading";
+import { unpack } from "../../utils/tune";
 
 export default function TunePage({ player, setHeader, setOnMenuClick }) {
     const param = useParams();
+    const { state } = useLocation();
+
     const id = Number(param.id);
     const subsectionId = Number(param.subsectionId);
-    const { isMobile } = useScreenSize();
 
-    const { isLoading, tune, error } = useTune(id, subsectionId);
-    const subsection = useSection(subsectionId);
+    let isLoading = false;
+    let error;
+    let tune = unpack(state?.tune);
+    let subsection = state?.subsection;
+
+    if (!tune) {
+        const data = useTune(id, subsectionId);
+        isLoading = data.isLoading;
+        error = data.error;
+        tune = data.tune;
+    }
+
+    if (!subsection) {
+        subsection = useSection(subsectionId);
+    }
+
+    const { isMobile } = useScreenSize();
     const performanceIndexState = useState(0);
     const [performanceIndex] = performanceIndexState;
 

@@ -18,7 +18,9 @@ export default function TuneList({ tunes, subsection, isLoading }) {
     const navigate = useNavigate();
 
     const onTuneClickHandle = (key, tune) => {
-        navigate(`/tune/${tune.id}/${subsection?.id}`);
+        navigate(`/tune/${tune.id}/${subsection?.id}`, {
+            state: { tune, subsection },
+        });
         setClickedTune((prev) => {
             if (prev?.key === key && prev.status === "playing") {
                 return { key: key, status: "stopped" };
