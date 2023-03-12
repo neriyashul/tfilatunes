@@ -45,7 +45,7 @@ export default function TuneList({ tunes, subsection, isLoading }) {
                 onClick={() => onTuneClickHandle(key, tune)}
                 secondaryAction={
                     <ListItemIcon>
-                        <ShortRating rate={tune.rate} />
+                        <ShortRating rate={tune.subsections[0].rate} />
                     </ListItemIcon>
                 }
                 disablePadding
