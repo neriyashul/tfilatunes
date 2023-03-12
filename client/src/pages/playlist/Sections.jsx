@@ -55,7 +55,7 @@ export function SubsectionsMenu({ section, state, ...props }) {
 function parseText(text) {
     if (Array.isArray(text)) {
         return text.map((str, i) => {
-            return [str, <hr key={i} style={styles.breakLine}/>];
+            return [str, <hr key={i} style={styles.breakLine} />];
         });
     } else {
         return text;
@@ -76,7 +76,7 @@ export function Sections({ tefila, sectionRefs, onClick, ...props }) {
                                 if (onClick) onClick(index);
                             }}
                         >
-                            <Typography sx={styles.section}>
+                            <Typography component="div" sx={styles.section}>
                                 {parseText(section.text)}
                             </Typography>
                         </Box>
