@@ -1,14 +1,14 @@
 import { useMemo } from "react";
-import useDatabase from "./database";
+import getDB from "../db/db-factory";
+
+const db = getDB("file_system");
 
 export function useTefila(key) {
-    const db = useDatabase();
-    const tefila = useMemo(() => db.getTefila(key), [db, key]);
+    const tefila = useMemo(() => db.getTefila(key), [key]);
     return tefila;
 }
 
 export function useSection(id) {
-    const db = useDatabase();
-    const section = useMemo(() => db.getSection(id), [db, id]);
+    const section = useMemo(() => db.getSection(id), [id]);
     return section;
 }

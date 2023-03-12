@@ -10,8 +10,9 @@ import ShortRating from "../../components/rating/ShortRating";
 import Playable from "../../components/playable";
 import { tuneListStyles as styles } from "./style";
 import { useNavigate } from "react-router-dom";
+import Loading from "../../components/loading";
 
-export default function TuneList({ tunes, subsection }) {
+export default function TuneList({ tunes, subsection, isLoading }) {
     const [hoveringItem, setHoveringItem] = useState();
     const [clickedTune, setClickedTune] = useState();
     const navigate = useNavigate();
@@ -27,12 +28,15 @@ export default function TuneList({ tunes, subsection }) {
         });
     };
 
+    if (isLoading) {
+        return <Loading />;
+    }
+
     return tunes?.map((tune, key) => {
         let playingStatus;
         if (key === clickedTune?.key) {
             playingStatus = clickedTune?.status;
         }
-        const number = key + 1;
         return (
             <ListItem
                 key={key}
@@ -52,7 +56,7 @@ export default function TuneList({ tunes, subsection }) {
                         playingStatus={playingStatus}
                         sx={styles.playableButton}
                     >
-                        <Typography>{number}</Typography>
+                        <Typography>{key + 1}</Typography>
                     </Playable>
                     <ListItemText
                         primaryTypographyProps={styles.listItemText}

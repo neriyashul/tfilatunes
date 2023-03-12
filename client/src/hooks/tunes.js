@@ -1,17 +1,22 @@
-import { useMemo } from "react";
-import useDatabase from "./database";
+import getDB from "../db/db-factory";
+import { useQuery } from "react-query";
 
-export function useTunes(key) {
-    if (!key) return {};
-    const db = useDatabase();
-    const tunes = useMemo(() => db.getTunes(key), [db, key]);
-    return { isLoading: false, tunes, error: null };
+const db_type = import.meta.env.VITE_DB_TYPE;
+const db = getDB(db_type);
+
+export function useTunes(subsectionId) {
+    if (!subsectionId) return {};
+    const { isLoading, data, error } = useQuery(`tunes-${subsectionId}`, () =>
+        Promise.resolve(db.getTunes(subsectionId))
+    );
+    return { isLoading, tunes: data, error };
 }
 
 export function useTune(id, subsectionId) {
     if (!id) return {};
-    const db = useDatabase();
-    let tune = useMemo(() => db.getTune(id, subsectionId), [db, id]);
-
-    return { isLoading: false, tune, error: null };
+    const { isLoading, data, error } = useQuery(
+        `tune-${id}-sub-${subsectionId}`,
+        () => Promise.resolve(db.getTune(id, subsectionId))
+    );
+    return { isLoading, tune: data, error };
 }

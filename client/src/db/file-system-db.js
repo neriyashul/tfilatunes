@@ -6,8 +6,6 @@ export class FileSystemDB {
         this.db = { tefilot: tefilot, tunes: tunes };
     }
 
-    disconnect() {}
-
     getTefila(key) {
         return this.db.tefilot.find((tefila) => tefila.key === key);
     }
@@ -22,12 +20,6 @@ export class FileSystemDB {
                             text: section.text,
                             ...subsection,
                         };
-
-                        /*** return from mongodb: */
-                        // return {
-                        //     key: tefila.key,
-                        //     sections: [section],
-                        // };
                     }
                 }
             }
@@ -54,7 +46,7 @@ export class FileSystemDB {
 
     #joinPerformances(tune, morePerformances) {
         let performance = tune.performance;
-        if (!(Object.hasOwn(performance, "label"))) {
+        if (!Object.hasOwn(performance, "label")) {
             performance.label = tune.composer;
         }
 
@@ -66,23 +58,21 @@ export class FileSystemDB {
     }
 
     getTune(id, subsectionId) {
-        for (const tune of this.db.tunes) {
+        const tunes = this.getTunes(subsectionId);
+
+        for (const tune of tunes) {
             if (tune.id === id) {
-                for (const subsection of tune.subsections) {
-                    if (subsection.id === subsectionId) {
-                        return {
-                            id: tune.id,
-                            name: tune.name,
-                            composer: tune.composer,
-                            rate: subsection.rate,
-                            performances: this.#joinPerformances(
-                                tune,
-                                subsection.performances
-                            ),
-                            subsections: [subsection],
-                        };
-                    }
-                }
+                const subsection = tune.subsections[0];
+                return {
+                    id: tune.id,
+                    name: tune.name,
+                    composer: tune.composer,
+                    rate: subsection.rate,
+                    performances: this.#joinPerformances(
+                        tune,
+                        subsection.performances
+                    ),
+                };
             }
         }
     }

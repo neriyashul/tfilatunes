@@ -16,6 +16,7 @@ import TuneList from "./TuneList";
 import { useFirstVisible } from "../../hooks/screen";
 import { usePrevious } from "../../hooks/state";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
+import Loading from "../../components/loading";
 
 export default function PlaylistDesktop({ tefila }) {
     const theme = useTheme();
@@ -40,8 +41,7 @@ export default function PlaylistDesktop({ tefila }) {
         setSubsectionIndex(0);
     }
     const subsection = section.subsections[subsectionIndex];
-
-    const tunes = useTunes(subsection?.id);
+    const { tunes, isLoading } = useTunes(subsection.id);
 
     return (
         <Box sx={styles.main}>
@@ -101,7 +101,11 @@ export default function PlaylistDesktop({ tefila }) {
                 >
                     <Box dir={theme.direction} /** reset direction **/>
                         <Box sx={styles.listContainer}>
-                            <TuneList tunes={tunes.tunes} subsection={subsection}/>
+                            <TuneList
+                                isLoading={isLoading}
+                                tunes={tunes}
+                                subsection={subsection}
+                            />
                         </Box>
                     </Box>
                 </Box>

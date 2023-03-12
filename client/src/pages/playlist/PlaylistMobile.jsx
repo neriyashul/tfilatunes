@@ -12,7 +12,6 @@ export default function PlaylistPageMobile({
     setHeader,
     setOnMenuClick,
 }) {
-
     const sectionRefs = useRef([]);
     const sectionsArea = useRef();
     const [sectionIndex, setSection] = useFirstVisible(
@@ -68,7 +67,11 @@ export default function PlaylistPageMobile({
                         />
                     </Box>
                     <Box sx={styles.tunesContainer}>
-                        <TuneList tunes={tunes.tunes} subsection={subsection} />
+                        <TuneList
+                            isLoading={tunes.isLoading}
+                            tunes={tunes.tunes}
+                            subsection={subsection}
+                        />
                     </Box>
                 </Box>
             </Box>
