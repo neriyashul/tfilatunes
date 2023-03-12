@@ -21,7 +21,7 @@ export default function TuneDesktop({
                     <Box sx={player.styles.aspectRatio} />
                 </Box>
                 <Typography sx={styles.header}>{subsection?.name}</Typography>
-                <Typography component="div" sx={styles.text}>
+                <Typography sx={styles.text}>
                     {parseText(subsection?.text)}
                 </Typography>
             </Grid>

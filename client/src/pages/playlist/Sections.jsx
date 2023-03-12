@@ -67,7 +67,7 @@ export function Sections({ tefila, sectionRefs, onClick, ...props }) {
                                 if (onClick) onClick(index);
                             }}
                         >
-                            <Typography component="div" sx={styles.section}>
+                            <Typography sx={styles.section}>
                                 {parseText(section.text)}
                             </Typography>
                         </Box>
