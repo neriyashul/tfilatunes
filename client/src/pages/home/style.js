@@ -1,15 +1,18 @@
 const styles = {
+    background: {
+        top: 0,
+        position: "fixed",
+        width: "100%",
+        height: "100vh",
+    },
+
     main: {
         top: 0,
         position: "fixed",
         width: "100%",
         height: "100vh",
-        backgroundImage: {
-            xs: "url(/images/main-mobile.svg)",
-            md: "url(/images/main-desktop.svg)",
-        },
         overflow: "auto",
-        pb: 5
+        pb: 5,
     },
 
     heading: {

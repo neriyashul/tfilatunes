@@ -2,10 +2,12 @@ import React from "react";
 import styles, { buttonProps } from "./style";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import MainBackground from "../../components/background";
 
 export default function Home() {
     return (
         <>
+            <MainBackground sx={styles.background} />
             <Box component="main" sx={styles.main}>
                 <Typography sx={styles.heading}>
                     שיתוף מנגינות לקטעי&nbsp;תפילה
