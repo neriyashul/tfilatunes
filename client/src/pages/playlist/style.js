@@ -152,7 +152,6 @@ export const mobileStyles = {
         position: "sticky",
         top: "0",
         px: 1.5,
-        mb: -1,
         pb: 1,
         zIndex: 3,
         backgroundColor: "#272727",
