@@ -54,7 +54,6 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
         return <NotFound />;
     }
 
-    const rate = Number(tune.rate);
     const performanceLabels = tune.performances.map((p) => p.label);
 
     if (isMobile) {
