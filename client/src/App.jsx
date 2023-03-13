@@ -2,12 +2,12 @@ import React, { Suspense, useState } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 
-import About from "./pages/about";
-import Playlist from "./pages/playlist";
-import NotFound from "./pages/404";
-import TunePage from "./pages/tune";
+const About = React.lazy(() => import("./pages/about"));
+const Playlist = React.lazy(() => import("./pages/playlist"));
+const NotFound = React.lazy(() => import("./pages/404"));
+const TunePage = React.lazy(() => import("./pages/tune"));
+const YoutubeEmbed = React.lazy(() => import("./components/youtube-embed"));
 
-import YoutubeEmbed from "./components/youtube-embed";
 import AppBarMenu from "./components/appbar";
 import BackBarMenu from "./components/appbar/BackAppBar";
 
@@ -32,21 +32,25 @@ export default function App() {
                 <Route
                     path="/playlist/:key"
                     element={
-                        <Playlist
-                            setHeader={setHeader}
-                            setOnMenuClick={setOnMenuClick}
-                        />
+                        <Suspense>
+                            <Playlist
+                                setHeader={setHeader}
+                                setOnMenuClick={setOnMenuClick}
+                            />
+                        </Suspense>
                     }
                 />
                 <Route
                     path="/tune/:id/:subsectionId"
                     element={
-                        <YoutubeEmbed>
-                            <TunePage
-                                setHeader={setHeader}
-                                setOnMenuClick={setOnMenuClick}
-                            />
-                        </YoutubeEmbed>
+                        <Suspense>
+                            <YoutubeEmbed>
+                                <TunePage
+                                    setHeader={setHeader}
+                                    setOnMenuClick={setOnMenuClick}
+                                />
+                            </YoutubeEmbed>
+                        </Suspense>
                     }
                 />
             </Route>
@@ -60,9 +64,24 @@ export default function App() {
                 }
             >
                 <Route index element={<Home />} />
-                <Route path="about" element={<About />} />
+                <Route
+                    path="about"
+                    element={
+                        <Suspense>
+                            <About />
+                        </Suspense>
+                    }
+                />
 
-                <Route path="*" element={<NotFound />} status={404} />
+                <Route
+                    path="*"
+                    element={
+                        <Suspense>
+                            <NotFound />
+                        </Suspense>
+                    }
+                    status={404}
+                />
             </Route>
         </Routes>
     );
