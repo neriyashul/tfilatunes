@@ -71,7 +71,7 @@ export const mobileStyles = {
         width: "100%",
         zIndex: 2,
     },
-    videoName: {
+    tuneName: {
         fontSize: "1.4rem",
         mx: 3,
         mt: 1,

@@ -7,7 +7,7 @@ import { parseText } from "../../utils/styles";
 
 export default function TuneDesktop({
     player,
-    rate,
+    tune,
     subsection,
     performanceLabels,
     performanceIndexState,
@@ -20,19 +20,22 @@ export default function TuneDesktop({
                 <Box sx={styles.playerLocation}>
                     <Box sx={player.styles.aspectRatio} />
                 </Box>
-                <Typography sx={styles.header}>{subsection?.name}</Typography>
+                <Typography sx={styles.header}>{`${subsection?.name} - ${tune.name}`}</Typography>
                 <Typography sx={styles.text}>
                     {parseText(subsection?.text)}
                 </Typography>
             </Grid>
             <Grid item xs={4}>
                 <Box sx={styles.sideContainer}>
-                    {rate && (
+                    {tune.rate && (
                         <>
                             <Typography sx={styles.ratingHeader}>
                                 דירוג:
                             </Typography>
-                            <LongRating rate={rate} {...ratingProps.desktop} />
+                            <LongRating
+                                rate={Number(tune.rate)}
+                                {...ratingProps.desktop}
+                            />
                             <Divider role="presentation" sx={styles.divider} />
                         </>
                     )}

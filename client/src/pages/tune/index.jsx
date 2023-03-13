@@ -61,7 +61,7 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
         return (
             <TuneMobile
                 player={player}
-                rate={rate}
+                tune={tune}
                 subsection={subsection}
                 performanceLabels={performanceLabels}
                 performanceIndexState={performanceIndexState}
@@ -73,7 +73,7 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
         return (
             <TuneDesktop
                 player={player}
-                rate={rate}
+                tune={tune}
                 subsection={subsection}
                 performanceLabels={performanceLabels}
                 performanceIndexState={performanceIndexState}

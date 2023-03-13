@@ -8,7 +8,7 @@ import { parseText } from "../../utils/styles";
 
 export default function TuneMobile({
     player,
-    rate,
+    tune,
     subsection,
     performanceLabels,
     performanceIndexState,
@@ -24,7 +24,7 @@ export default function TuneMobile({
         []
     );
 
-    const [performIndex] = performanceIndexState;
+    // const [performIndex] = performanceIndexState;
 
     // useEffect(() => {
     //     setOnMenuClick(() => (e) => setAnchorEl(e.currentTarget));
@@ -37,12 +37,12 @@ export default function TuneMobile({
             <Box ref={ref}>
                 <Box sx={player.styles.aspectRatio} />
             </Box>
-            <Typography sx={styles.videoName}>
-                {performanceLabels[performIndex]}
+            <Typography sx={styles.tuneName}>
+                {tune.name}
             </Typography>
             <Divider role="presentation" sx={styles.divider} />
             <Typography sx={styles.ratingHeader}>דירוג:</Typography>
-            <LongRating rate={rate} {...ratingProps.mobile} />
+            <LongRating rate={Number(tune.rate)} {...ratingProps.mobile} />
             <Divider role="presentation" sx={styles.divider} />
             <Typography sx={styles.performanceHeader}>ביצועים:</Typography>
             <SelectionList
