@@ -49,8 +49,8 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
     }, [tune, performanceIndex]);
 
     useLayoutEffect(() => {
-        window.scrollTo({ top: 0});
-    }, [])
+        window.scrollTo({ top: 0 });
+    }, []);
 
     if (isLoading) {
         return <Loading />;
