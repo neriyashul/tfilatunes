@@ -14,7 +14,8 @@ export const desktopStyles = {
 export const mobileStyles = {
     appbar: {
         position: "fixed",
-        backgroundColor: "#1c1c1c",
+        backgroundColor: "#121212",
+        backgroundImage: "none",
     },
     header: {
         fontSize: "1.3rem",
@@ -77,7 +78,9 @@ export const drawerProps = {
 export const backAppBarStyles = {
     appbar: {
         position: "fixed",
-        backgroundColor: "#1c1c1c",
+        backgroundColor: "#121212",
+        backgroundImage: "none",
+        // backgroundColor: "#1c1c1c",
     },
 
     moreButton: {
