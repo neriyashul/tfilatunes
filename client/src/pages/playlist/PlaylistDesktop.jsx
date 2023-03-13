@@ -41,6 +41,7 @@ export default function PlaylistDesktop({ tefila }) {
         setSubsectionIndex(0);
     }
     const subsection = section.subsections[subsectionIndex];
+    subsection.text = section.text;
     const { tunes, isLoading } = useTunes(subsection.id);
 
     return (

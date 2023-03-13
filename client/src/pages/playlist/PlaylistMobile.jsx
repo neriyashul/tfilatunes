@@ -32,6 +32,7 @@ export default function PlaylistPageMobile({
         setSubsectionIndex(0);
     }
     const subsection = section.subsections[subsectionIndex];
+    subsection.text = section.text;
 
     const tunes = useTunes(subsection?.id);
 
