@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Router from "./Router";
 import { theme } from "./utils/theme";
 import { cache } from "./utils/cache";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { CacheProvider } from "@emotion/react";
-import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -14,9 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <QueryClientProvider client={new QueryClient()}>
-                    <BrowserRouter>
-                        <App />
-                    </BrowserRouter>
+                    <Router />
                 </QueryClientProvider>
             </ThemeProvider>
         </CacheProvider>
