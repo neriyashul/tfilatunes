@@ -14,7 +14,7 @@ import { sideDrawerProps, desktopStyles as styles } from "./style";
 import { useTunes } from "../../hooks/tunes";
 import TuneList from "./TuneList";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
-import { useSection } from "../../hooks/section";
+import { useSectionIndex } from "../../hooks/section";
 
 export default function PlaylistDesktop({ tfila }) {
     const theme = useTheme();
@@ -25,13 +25,13 @@ export default function PlaylistDesktop({ tfila }) {
     const anchorState = React.useState(null);
     const [, setAnchorEl] = anchorState;
 
-    const sectionState = useSection(
+    const sectionIndexState = useSectionIndex(
         sectionRefs,
         sectionsArea,
         styles.rootMarginTop
     );
     const [sectionIndex, scrollToSection, subsectionIndex, setSubsectionIndex] =
-        sectionState;
+        sectionIndexState;
 
     const section = tfila.sections[sectionIndex];
 

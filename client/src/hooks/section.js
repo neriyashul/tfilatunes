@@ -76,7 +76,7 @@ function useSectionFirstIndexes() {
     return [indexes, setIndexes];
 }
 
-export function useSection(sectionRefs, sectionsArea, rootMarginTop) {
+export function useSectionIndex(sectionRefs, sectionsArea, rootMarginTop) {
     const [indexes, setIndexes] = useSectionFirstIndexes();
 
     const setSectionIndex = (newIndex) =>

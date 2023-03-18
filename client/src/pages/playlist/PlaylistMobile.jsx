@@ -4,7 +4,7 @@ import { mobileStyles as styles } from "./style";
 import TuneList from "./TuneList";
 import { useTunes } from "../../hooks/tunes";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
-import { useSection } from "../../hooks/section";
+import { useSectionIndex } from "../../hooks/section";
 
 export default function PlaylistPageMobile({
     tfila,
@@ -14,13 +14,13 @@ export default function PlaylistPageMobile({
     const sectionRefs = useRef([]);
     const sectionsArea = useRef();
 
-    const sectionState = useSection(
+    const sectionIndexState = useSectionIndex(
         sectionRefs,
         sectionsArea,
         styles.rootMarginTop
     );
     const [sectionIndex, scrollToSection, subsectionIndex, setSubsectionIndex] =
-        sectionState;
+        sectionIndexState;
 
     const section = tfila.sections[sectionIndex];
     const subsection = section.subsections[subsectionIndex];
