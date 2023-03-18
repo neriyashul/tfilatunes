@@ -17,6 +17,8 @@ function useFirstIndex(name) {
         const prevIndex = sessionStorage.getItem(name);
         if (navigationType === POP && prevIndex !== null) {
             firstIndex = parseInt(prevIndex);
+        } else {
+            sessionStorage.removeItem(name);
         }
     }
 
@@ -57,11 +59,11 @@ function updateSubsectionIndex(oldIndex, newIndex) {
 
 function useSectionFirstIndexes() {
     const { pathname } = useLocation();
-    const [subsecFirstIndex, updateSubsecFirstIndex] = useFirstIndex(
-        pathname + "sectionIndex"
-    );
     const [secFirstIndex, updateSecFirstIndex] = useFirstIndex(
-        pathname + "subsectionIndex"
+        `${pathname}-sectionIndex`
+    );
+    const [subsecFirstIndex, updateSubsecFirstIndex] = useFirstIndex(
+        `${pathname}-subsectionIndex`
     );
 
     const [indexes, setIndexes] = useState({ secFirstIndex, subsecFirstIndex });
@@ -92,7 +94,8 @@ export function useSection(sectionRefs, sectionsArea, rootMarginTop) {
 
     const scrollToSection = (index) => {
         scrollToElement(sectionRefs.current, index, sectionsArea.current);
-        setSectionIndex(index);
+        if (index < sectionRefs.current.length && index > 0)
+            setSectionIndex(index);
     };
 
     const setSubsecFirstIndex = (newIndex) =>
