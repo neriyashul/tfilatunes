@@ -38,7 +38,7 @@ export class FileSystemDB {
                 }
             }
         }
-        if (tunes.length > 0) return tunes;
+        return tunes;
     }
 
     getTune(id, subsectionId) {
