@@ -1,39 +1,33 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { Box } from "@mui/material";
 import { mobileStyles as styles } from "./style";
 import TuneList from "./TuneList";
-import { useFirstVisible } from "../../hooks/screen";
 import { useTunes } from "../../hooks/tunes";
-import { usePrevious } from "../../hooks/state";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
+import { useSection } from "../../hooks/section";
 
 export default function PlaylistPageMobile({
-    tefila,
+    tfila,
     setHeader,
     setOnMenuClick,
 }) {
     const sectionRefs = useRef([]);
     const sectionsArea = useRef();
-    const [sectionIndex, setSection] = useFirstVisible(
+
+    const sectionState = useSection(
         sectionRefs,
         sectionsArea,
         styles.rootMarginTop
     );
-    const prevSectionIndex = usePrevious(sectionIndex) || 0;
-    const section = tefila.sections[sectionIndex];
+    const [sectionIndex, scrollToSection, subsectionIndex, setSubsectionIndex] =
+        sectionState;
 
-    const anchorState = React.useState(null);
-    const [, setAnchorEl] = anchorState;
-
-    const subsectionState = useState(0);
-    const [subsectionIndex, setSubsectionIndex] = subsectionState;
-
-    if (prevSectionIndex != sectionIndex && subsectionIndex != 0) {
-        setSubsectionIndex(0);
-    }
+    const section = tfila.sections[sectionIndex];
     const subsection = section.subsections[subsectionIndex];
     subsection.text = section.text;
 
+    const anchorState = React.useState(null);
+    const [, setAnchorEl] = anchorState;
     const tunes = useTunes(subsection?.id);
 
     useEffect(() => {
@@ -45,17 +39,17 @@ export default function PlaylistPageMobile({
     return (
         <>
             <SectionsMenu
-                tefila={tefila}
+                tefila={tfila}
                 anchorState={anchorState}
-                setSection={setSection}
+                setSection={scrollToSection}
                 sx={styles.sectionsMenu}
             />
             <Box>
                 <Box sx={styles.sectionsArea} ref={sectionsArea} />
                 <Sections
-                    tefila={tefila}
+                    tefila={tfila}
                     sectionRefs={sectionRefs}
-                    onClick={(index) => setSection(index)}
+                    onClick={(index) => scrollToSection(index)}
                     sx={styles.sections}
                 />
                 <Box sx={styles.bottomContainer}>
@@ -63,7 +57,7 @@ export default function PlaylistPageMobile({
                         <Box sx={styles.ellipse} />
                         <SubsectionsMenu
                             section={section}
-                            state={subsectionState}
+                            state={[subsectionIndex, setSubsectionIndex]}
                             type="underline"
                         />
                     </Box>

@@ -4,7 +4,7 @@ import TuneDesktop from "./TuneDesktop";
 import { useScreenSize } from "../../hooks/screen";
 import { useLocation, useParams } from "react-router-dom";
 import { useTune } from "../../hooks/tunes";
-import { useSection } from "../../hooks/tefila";
+import { useSection } from "../../hooks/tfila";
 import NotFound from "../404";
 import Loading from "../../components/loading";
 import { unpack } from "../../utils/tune";

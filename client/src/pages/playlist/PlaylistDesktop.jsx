@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import {
     AppBar,
     Box,
@@ -13,35 +13,31 @@ import South from "@mui/icons-material/South";
 import { sideDrawerProps, desktopStyles as styles } from "./style";
 import { useTunes } from "../../hooks/tunes";
 import TuneList from "./TuneList";
-import { useFirstVisible } from "../../hooks/screen";
-import { usePrevious } from "../../hooks/state";
 import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
-import Loading from "../../components/loading";
+import { useSection } from "../../hooks/section";
 
-export default function PlaylistDesktop({ tefila }) {
+export default function PlaylistDesktop({ tfila }) {
     const theme = useTheme();
 
     const sectionRefs = useRef([]);
     const sectionsArea = useRef();
-    const [sectionIndex, setSection] = useFirstVisible(
-        sectionRefs,
-        sectionsArea,
-        styles.rootMarginTop
-    );
-    const prevSectionIndex = usePrevious(sectionIndex) || 0;
-    const section = tefila.sections[sectionIndex];
 
     const anchorState = React.useState(null);
     const [, setAnchorEl] = anchorState;
 
-    const subsectionState = useState(0);
-    const [subsectionIndex, setSubsectionIndex] = subsectionState;
+    const sectionState = useSection(
+        sectionRefs,
+        sectionsArea,
+        styles.rootMarginTop
+    );
+    const [sectionIndex, scrollToSection, subsectionIndex, setSubsectionIndex] =
+        sectionState;
 
-    if (prevSectionIndex != sectionIndex && subsectionIndex != 0) {
-        setSubsectionIndex(0);
-    }
+    const section = tfila.sections[sectionIndex];
+
     const subsection = section.subsections[subsectionIndex];
     subsection.text = section.text;
+
     const { tunes, isLoading } = useTunes(subsection.id);
 
     return (
@@ -51,13 +47,13 @@ export default function PlaylistDesktop({ tefila }) {
                     <Toolbar>
                         <IconButton
                             sx={styles.iconButton}
-                            onClick={() => setSection(sectionIndex + 1)}
+                            onClick={() => scrollToSection(sectionIndex + 1)}
                         >
                             <South />
                         </IconButton>
                         <IconButton
                             sx={styles.iconButton}
-                            onClick={() => setSection(sectionIndex - 1)}
+                            onClick={() => scrollToSection(sectionIndex - 1)}
                         >
                             <North />
                         </IconButton>
@@ -68,9 +64,9 @@ export default function PlaylistDesktop({ tefila }) {
                             {section.name}
                         </Typography>
                         <SectionsMenu
-                            tefila={tefila}
+                            tefila={tfila}
                             anchorState={anchorState}
-                            setSection={setSection}
+                            setSection={scrollToSection}
                             sx={styles.sectionsMenu}
                         />
                     </Toolbar>
@@ -78,9 +74,9 @@ export default function PlaylistDesktop({ tefila }) {
                 <Toolbar />
                 <Box sx={styles.sectionsArea} ref={sectionsArea} />
                 <Sections
-                    tefila={tefila}
+                    tefila={tfila}
                     sectionRefs={sectionRefs}
-                    onClick={(index) => setSection(index)}
+                    onClick={(index) => scrollToSection(index)}
                     sx={styles.sections}
                 />
             </Box>
@@ -89,7 +85,7 @@ export default function PlaylistDesktop({ tefila }) {
                     <Toolbar>
                         <SubsectionsMenu
                             section={section}
-                            state={subsectionState}
+                            state={[subsectionIndex, setSubsectionIndex]}
                             {...styles.subsectionProps}
                         />
                     </Toolbar>
