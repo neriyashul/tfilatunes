@@ -7,6 +7,6 @@ import preload from "vite-plugin-preload";
 export default defineConfig({
     plugins: [svgr(), react(), preload()],
     build: {
-        outDir: "../server/public",
+        outDir: "./dist",
     },
 });

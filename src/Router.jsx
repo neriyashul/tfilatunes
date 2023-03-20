@@ -3,7 +3,6 @@ import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 
 const About = React.lazy(() => import("./pages/about"));
-const AddTune = React.lazy(() => import("./pages/add-tune"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
 const NotFound = React.lazy(() => import("./pages/404"));
 const TunePage = React.lazy(() => import("./pages/tune"));
@@ -70,14 +69,6 @@ export default function Router() {
                         element={
                             <Suspense>
                                 <About />
-                            </Suspense>
-                        }
-                    />
-                    <Route
-                        path="add-tune"
-                        element={
-                            <Suspense>
-                                <AddTune />
                             </Suspense>
                         }
                     />
