@@ -4,6 +4,7 @@ import {
     ListItemButton,
     ListItemIcon,
     Typography,
+    List,
 } from "@mui/material";
 import React, { useState } from "react";
 import ShortRating from "../../components/rating/ShortRating";
@@ -34,7 +35,7 @@ export default function TuneList({ tunes, subsection, isLoading }) {
         return <Loading />;
     }
 
-    return tunes?.map((tune, key) => {
+    const listItems = tunes?.map((tune, key) => {
         let playingStatus;
         if (key === clickedTune?.key) {
             playingStatus = clickedTune?.status;
@@ -69,4 +70,10 @@ export default function TuneList({ tunes, subsection, isLoading }) {
             </ListItem>
         );
     });
+
+    return (
+        <List>
+            {listItems}
+        </List>
+    )
 }
