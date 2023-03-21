@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-export const theme = createTheme({
+let theme = createTheme({
     direction: "rtl",
     components: {
         MuiCssBaseline: {
@@ -34,3 +34,18 @@ export const theme = createTheme({
         },
     },
 });
+
+theme = createTheme(theme, {
+    typography: {
+        h1: {
+            [theme.breakpoints.between("xs", "md")]: {
+                fontSize: "2rem",
+            },
+            [theme.breakpoints.up("md")]: {
+                fontSize: "2.5rem",
+            },
+        },
+    },
+})
+
+export { theme };

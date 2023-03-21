@@ -17,7 +17,6 @@ const styles = {
 
     heading: {
         position: "relative",
-        fontSize: { xs: "2rem", md: "2.5rem" },
         width: "80%",
         left: "10%",
         textAlign: "center",
