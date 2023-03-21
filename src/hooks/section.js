@@ -92,8 +92,8 @@ export function useSectionIndex(sectionRefs, sectionsArea, rootMarginTop) {
         return () => listener.clean();
     }, []);
 
-    const scrollToSection = (index) => {
-        scrollToElement(sectionRefs.current, index, sectionsArea.current);
+    const scrollToSection = (index, behavior="smooth") => {
+        scrollToElement(sectionRefs.current, index, sectionsArea.current, behavior);
         if (index < sectionRefs.current.length && index > 0)
             setSectionIndex(index);
     };

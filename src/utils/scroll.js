@@ -40,7 +40,7 @@ export function onCreepScroll(handler) {
     };
 }
 
-export function scrollToElement(elements, index, root = null) {
+export function scrollToElement(elements, index, root = null, behavior="smooth") {
     if (!elements) return;
     const containerTop = root?.getBoundingClientRect().top ?? 0;
 
@@ -48,7 +48,7 @@ export function scrollToElement(elements, index, root = null) {
         const el = elements[index];
         const top = el.getBoundingClientRect().top;
         const y = top + window.scrollY - containerTop;
-        window.scrollTo({ top: y, behavior: "smooth" });
+        window.scrollTo({ top: y, behavior });
     }
 }
 

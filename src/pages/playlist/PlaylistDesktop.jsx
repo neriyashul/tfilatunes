@@ -66,7 +66,7 @@ export default function PlaylistDesktop({ tfila }) {
                         <SectionsMenu
                             tefila={tfila}
                             anchorState={anchorState}
-                            setSection={scrollToSection}
+                            setSection={(i) => scrollToSection(i, "instant")}
                             sx={styles.sectionsMenu}
                         />
                     </Toolbar>

@@ -41,7 +41,7 @@ export default function PlaylistPageMobile({
             <SectionsMenu
                 tefila={tfila}
                 anchorState={anchorState}
-                setSection={scrollToSection}
+                setSection={(i) => scrollToSection(i, "instant")}
                 sx={styles.sectionsMenu}
                 elevation={0}
             />
