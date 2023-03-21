@@ -19,7 +19,7 @@ export const desktopStyles = {
     },
     text: {
         zIndex: 1,
-        fontSize: "1.7rem",
+        fontSize: "1.5rem",
         pt: 2,
         pb: 5,
         ml: "9vw",
@@ -38,12 +38,12 @@ export const desktopStyles = {
     },
     ratingHeader: {
         ml: 5.5,
-        fontSize: "1.7rem",
+        fontSize: "1.5rem",
     },
     divider: { margin: 3 },
     performanceHeader: {
         ml: 5.5,
-        fontSize: "1.7rem",
+        fontSize: "1.5rem",
     },
 };
 
@@ -63,7 +63,7 @@ export const mobileStyles = {
     gap: { flexGrow: 1 },
 
     backIcon: {
-        fontSize: "17px",
+        fontSize: "1.1rem",
     },
 
     player: {
@@ -84,7 +84,7 @@ export const mobileStyles = {
     },
     performanceHeader: {
         ml: 3,
-        fontSize: "1.4rem",
+        fontSize: "1.5rem",
     },
     textHeader: {
         ml: 3,
@@ -101,12 +101,12 @@ export const mobileStyles = {
 export const ratingProps = {
     desktop: {
         labelSize: "1.4rem",
-        iconsSize: "36px",
+        iconsSize: "2rem",
         sx: { ml: 5.5 },
     },
     mobile: {
         labelSize: "1.2rem",
-        iconsSize: "29px",
+        iconsSize: "2rem",
         sx: { ml: 4 },
     },
 };

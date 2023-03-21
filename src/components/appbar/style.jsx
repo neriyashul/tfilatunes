@@ -18,7 +18,7 @@ export const mobileStyles = {
         backgroundImage: "none",
     },
     header: {
-        fontSize: "1.3rem",
+        fontSize: "1.4rem",
         mx: 0.5,
     },
     menuIcon: {
@@ -96,7 +96,7 @@ export const backAppBarStyles = {
     },
 
     header: {
-        fontSize: "1.3rem",
+        fontSize: "1.4rem",
         mx: 0.5,
         overflow: "hidden",
         whiteSpace: "nowrap",
@@ -106,6 +106,6 @@ export const backAppBarStyles = {
     gap: { flexGrow: 1 },
 
     backIcon: {
-        fontSize: "17px",
+        fontSize: "1.1rem",
     },
 };

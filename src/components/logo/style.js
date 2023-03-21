@@ -11,7 +11,7 @@ const styles = {
 
     text: {
         ml: 1,
-        fontSize: "1.35rem",
+        fontSize: "1.4rem",
     },
 };
 

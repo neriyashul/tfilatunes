@@ -43,6 +43,7 @@ export default function PlaylistPageMobile({
                 anchorState={anchorState}
                 setSection={scrollToSection}
                 sx={styles.sectionsMenu}
+                elevation={0}
             />
             <Box>
                 <Box sx={styles.sectionsArea} ref={sectionsArea} />

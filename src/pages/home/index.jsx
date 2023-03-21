@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <MainBackground sx={styles.background} />
             <Box component="main" sx={styles.main}>
-                <Typography sx={styles.heading}>
+                <Typography component="h1" sx={styles.heading}>
                     שיתוף מנגינות לקטעי&nbsp;תפילה
                 </Typography>
 

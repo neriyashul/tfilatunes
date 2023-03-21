@@ -110,23 +110,33 @@ export const mobileStyles = {
         "&.MuiIconButton-edgeStart": true,
     },
 
-    sectionName: {
-        fontSize: "1.3rem",
-        mx: 0.5,
-        overflow: "hidden",
-        whiteSpace: "nowrap",
-        textOverflow: "ellipsis",
-    },
+    // sectionName: {
+    //     fontSize: "1.4rem",
+    //     mx: 0.5,
+    //     overflow: "hidden",
+    //     whiteSpace: "nowrap",
+    //     textOverflow: "ellipsis",
+    // },
 
     gap: { flexGrow: 1 },
 
     backIcon: {
-        fontSize: "17px",
+        fontSize: "1.1rem",
     },
 
     sectionsMenu: {
-        fontSize: "1.3rem",
         mx: 0.5,
+        my: 0.5,
+        overflow: "auto",
+        "& .MuiPaper-root": {
+            overflow: "auto",
+            p: 0.2,
+            pt: -1,
+            "& .MuiMenuItem-root": {
+                fontSize: "1.1rem",
+                py: 1.4,
+            },
+        },
     },
 
     sections: {
@@ -185,7 +195,7 @@ export const sectionsStyles = {
         pt: { xs: "10px", md: 2 },
         pb: { xs: "10px", md: 3 },
         mx: { xs: 3, md: 15 },
-        fontSize: { xs: "1.4rem", md: "2rem" },
+        fontSize: { xs: "1.4rem", md: "1.5rem" },
     },
 };
 
