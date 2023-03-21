@@ -13,7 +13,7 @@ export default function AppBarMenu({ links }) {
     return (
         <>
             <AppBar sx={styles.appbar}>
-                <Toolbar>
+                <Toolbar component="nav">
                     <LogoLinkToHome sx={styles.logo} />
                     <Box sx={styles.gap} />
                     <Tabs value={value} {...tabsProps}>

@@ -33,6 +33,7 @@ export const mobileStyles = {
 };
 
 export const tabsProps = {
+    "aria-label": "navigation bar",
     sx: {
         "& .MuiTabs-indicator": {
             display: "flex",
@@ -58,6 +59,12 @@ export const tabProps = {
         color: "rgba(255, 255, 255, 0.7)",
         "&.Mui-selected": {
             color: "#fff",
+        },
+        "&:hover": {
+            color: "rgba(255, 255, 255, 0.95)",
+        },
+        "&.Mui-focusVisible": {
+            backgroundColor: "rgba(255, 255, 255, 0.4)",
         },
     },
 };
