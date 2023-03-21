@@ -86,7 +86,6 @@ export default function PlaylistDesktop({ tfila }) {
                         <SubsectionsMenu
                             section={section}
                             state={[subsectionIndex, setSubsectionIndex]}
-                            {...styles.subsectionProps}
                         />
                     </Toolbar>
                 </AppBar>
