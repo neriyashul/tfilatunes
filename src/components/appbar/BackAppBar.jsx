@@ -20,12 +20,18 @@ export default function BackAppBar({ children, header, onMenuClick }) {
                         <IconButton
                             onClick={onMenuClick}
                             sx={styles.moreButton}
+                            aria-label="more"
                         >
                             <MoreVertIcon />
                         </IconButton>
-                        <Typography sx={styles.header}>{header}</Typography>
+                        <Typography sx={styles.header} component="h2">
+                            {header}
+                        </Typography>
                         <Box sx={styles.gap} />
-                        <IconButton onClick={() => navigate(-1)}>
+                        <IconButton
+                            aria-label="return"
+                            onClick={() => navigate(-1)}
+                        >
                             <ArrowBackIosIcon sx={styles.backIcon} />
                         </IconButton>
                     </Toolbar>

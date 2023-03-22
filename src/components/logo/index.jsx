@@ -7,7 +7,7 @@ export default function Logo(props) {
     return (
         <Stack direction="row" {...props}>
             <Box component={LogoImage} sx={styles.image} />
-            <Typography sx={styles.text}>{projectName}</Typography>
+            <Typography component="h2" sx={styles.text}>{projectName}</Typography>
         </Stack>
     );
 }

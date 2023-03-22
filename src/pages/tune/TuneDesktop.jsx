@@ -20,7 +20,10 @@ export default function TuneDesktop({
                 <Box sx={styles.playerLocation}>
                     <Box sx={player.styles.aspectRatio} />
                 </Box>
-                <Typography sx={styles.header}>{`${subsection?.name} - ${tune.name}`}</Typography>
+                <Typography
+                    component="h1"
+                    sx={styles.header}
+                >{`${subsection?.name} - ${tune.name}`}</Typography>
                 <Typography sx={styles.text}>
                     {parseText(subsection?.text)}
                 </Typography>
@@ -29,7 +32,7 @@ export default function TuneDesktop({
                 <Box sx={styles.sideContainer}>
                     {tune.rate && (
                         <>
-                            <Typography sx={styles.ratingHeader}>
+                            <Typography component="h4" sx={styles.ratingHeader}>
                                 דירוג:
                             </Typography>
                             <LongRating
@@ -39,7 +42,7 @@ export default function TuneDesktop({
                             <Divider role="presentation" sx={styles.divider} />
                         </>
                     )}
-                    <Typography sx={styles.performanceHeader}>
+                    <Typography component="h4" sx={styles.performanceHeader}>
                         ביצועים:
                     </Typography>
                     <SelectionList

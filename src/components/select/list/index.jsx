@@ -2,7 +2,7 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import getStyles from "./style";
-import { Box } from "@mui/material";
+import { Box, ListItem } from "@mui/material";
 
 export default function SelectionList({ indexState, labels, ...props }) {
     const styles = getStyles(props);
@@ -15,24 +15,25 @@ export default function SelectionList({ indexState, labels, ...props }) {
 
     return (
         <Box sx={styles.container} {...props}>
-            <List component="nav" sx={styles.list}>
+            <List sx={styles.list}>
                 {labels?.map((label, labelIndex) => {
                     return (
-                        <ListItemButton
-                        sx={styles.listItemButton}
-                            selected={index === labelIndex}
-                            key={labelIndex}
-                            onClick={(event) =>
-                                handleListItemClick(event, labelIndex)
-                            }
-                        >
-                            <ListItemText
-                                primaryTypographyProps={{
-                                    sx: styles.listItemText,
-                                }}
-                                primary={label}
-                            />
-                        </ListItemButton>
+                        <ListItem key={labelIndex} disablePadding>
+                            <ListItemButton
+                                sx={styles.listItemButton}
+                                selected={index === labelIndex}
+                                onClick={(event) =>
+                                    handleListItemClick(event, labelIndex)
+                                }
+                            >
+                                <ListItemText
+                                    primaryTypographyProps={{
+                                        sx: styles.listItemText,
+                                    }}
+                                    primary={label}
+                                />
+                            </ListItemButton>
+                        </ListItem>
                     );
                 })}
             </List>

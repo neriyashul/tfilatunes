@@ -13,7 +13,6 @@ export default function TuneMobile({
     performanceLabels,
     performanceIndexState,
     setHeader,
-    // setOnMenuClick,
 }) {
     const ref = useRef();
     useLayoutEffect(
@@ -24,12 +23,6 @@ export default function TuneMobile({
         []
     );
 
-    // const [performIndex] = performanceIndexState;
-
-    // useEffect(() => {
-    //     setOnMenuClick(() => (e) => setAnchorEl(e.currentTarget));
-    // }, []);
-
     useLayoutEffect(() => setHeader(subsection?.name), [subsection]);
 
     return (
@@ -37,14 +30,18 @@ export default function TuneMobile({
             <Box ref={ref}>
                 <Box sx={player.styles.aspectRatio} />
             </Box>
-            <Typography sx={styles.tuneName}>
+            <Typography component="h1" sx={styles.tuneName}>
                 {tune.name}
             </Typography>
             <Divider role="presentation" sx={styles.divider} />
-            <Typography sx={styles.ratingHeader}>דירוג:</Typography>
+            <Typography component="h4" sx={styles.ratingHeader}>
+                דירוג:
+            </Typography>
             <LongRating rate={Number(tune.rate)} {...ratingProps.mobile} />
             <Divider role="presentation" sx={styles.divider} />
-            <Typography sx={styles.performanceHeader}>ביצועים:</Typography>
+            <Typography component="h4" sx={styles.performanceHeader}>
+                ביצועים:
+            </Typography>
             <SelectionList
                 indexState={performanceIndexState}
                 labels={performanceLabels}

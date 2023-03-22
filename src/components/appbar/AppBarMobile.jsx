@@ -1,5 +1,6 @@
 import {
     AppBar,
+    Box,
     Drawer,
     IconButton,
     ListItemText,
@@ -40,28 +41,30 @@ export default function AppBarMenu({ links, getIcon }) {
                         onClose={handleDrawerToggle}
                         {...drawerProps}
                     >
-                        <Toolbar variant="dense">
-                            <LogoLinkToHome onClick={handleDrawerToggle} />
-                        </Toolbar>
-                        <Divider />
+                        <Box component="nav">
+                            <Toolbar variant="dense">
+                                <LogoLinkToHome onClick={handleDrawerToggle} />
+                            </Toolbar>
+                            <Divider />
 
-                        <List>
-                            {Object.entries(links).map(([url, name]) => (
-                                <ListItem key={url} disablePadding>
-                                    <ListItemButton
-                                        component={Link}
-                                        onClick={handleDrawerToggle}
-                                        to={url}
-                                    >
-                                        {getIcon(url)}
-                                        <ListItemText
-                                            sx={styles.listItemText}
-                                            primary={name}
-                                        />
-                                    </ListItemButton>
-                                </ListItem>
-                            ))}
-                        </List>
+                            <List>
+                                {Object.entries(links).map(([url, name]) => (
+                                    <ListItem key={url} disablePadding>
+                                        <ListItemButton
+                                            component={Link}
+                                            onClick={handleDrawerToggle}
+                                            to={url}
+                                        >
+                                            {getIcon(url)}
+                                            <ListItemText
+                                                sx={styles.listItemText}
+                                                primary={name}
+                                            />
+                                        </ListItemButton>
+                                    </ListItem>
+                                ))}
+                            </List>
+                        </Box>
                     </Drawer>
                 </Toolbar>
             </AppBar>
