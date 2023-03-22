@@ -32,10 +32,9 @@ export const desktopStyles = {
 
     textHeader: {
         color: "white",
-        fontSize: "2rem",
-        ml: 1,
+        fontSize: "1.8rem",
+        ml: 0.5,
         py: 0,
-        my: 0,
         cursor: "pointer",
         borderRadius: 2,
         "&:hover": {
@@ -64,7 +63,7 @@ export const desktopStyles = {
     tunesDrawer: {},
 
     listAppBar: {
-        top: "64px",
+        top: "60px",
         backgroundColor: "#131313",
         position: "sticky",
         zIndex: 3,
