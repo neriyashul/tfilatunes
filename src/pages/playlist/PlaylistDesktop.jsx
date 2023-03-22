@@ -5,7 +5,6 @@ import {
     Button,
     Drawer,
     IconButton,
-    Toolbar,
     useTheme,
 } from "@mui/material";
 import North from "@mui/icons-material/North";
@@ -16,6 +15,7 @@ import TuneList from "./TuneList";
 import { Sections, SectionsMenu } from "./Sections";
 import { useSectionIndex } from "../../hooks/section";
 import MenuSelect from "../../components/select/MenuSelect";
+import MediumToolbar from "../../components/appbar/MediumToolbar";
 
 export default function PlaylistDesktop({ tfila }) {
     const theme = useTheme();
@@ -47,7 +47,7 @@ export default function PlaylistDesktop({ tfila }) {
         <Box sx={styles.main}>
             <Box sx={styles.textContainer}>
                 <AppBar sx={styles.textAppBar}>
-                    <Toolbar>
+                    <MediumToolbar>
                         <IconButton
                             sx={styles.iconButton}
                             aria-label="next section"
@@ -88,9 +88,9 @@ export default function PlaylistDesktop({ tfila }) {
                                 "aria-labelledby": "menu-button",
                             }}
                         />
-                    </Toolbar>
+                    </MediumToolbar>
                 </AppBar>
-                <Toolbar />
+                <MediumToolbar />
                 <Box sx={styles.sectionsArea} ref={sectionsArea} />
                 <Sections
                     tefila={tfila}
@@ -101,7 +101,7 @@ export default function PlaylistDesktop({ tfila }) {
             </Box>
             <Drawer {...sideDrawerProps}>
                 <AppBar sx={styles.listAppBar}>
-                    <Toolbar>
+                    <MediumToolbar>
                         <MenuSelect
                             collection={section.subsections}
                             labelField={"name"}
@@ -109,9 +109,9 @@ export default function PlaylistDesktop({ tfila }) {
                             ariaLabel="subtitle menu"
                             state={[subsectionIndex, setSubsectionIndex]}
                         />
-                    </Toolbar>
+                    </MediumToolbar>
                 </AppBar>
-                <Toolbar />
+                <MediumToolbar />
 
                 <Box
                     sx={styles.scrollbar}
