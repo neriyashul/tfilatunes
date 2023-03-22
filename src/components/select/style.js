@@ -12,7 +12,7 @@ export default function getStyles({ type = "default" }) {
         button: {
             color: "text.primary",
             borderRadius: 1,
-            fontSize: "1rem",
+            fontSize: { xs: "1rem", md: "1.1rem" },
             pb: 1,
             "&:hover": {
                 backgroundColor: "inherit",
@@ -35,43 +35,5 @@ export default function getStyles({ type = "default" }) {
         },
         getUnderlineVisibility: (hovering) =>
             hovering || type === "underline" ? "visible" : "hidden",
-
-        //button: {
-        //     minHeight: 40,
-        //     borderRadius: 0.2,
-        //     fontSize: fontSize,
-        //     ml: 3,
-        //     pl: 1,
-        //     pr: 1,
-        //     color: "text.primary",
-        //     ".MuiOutlinedInput-notchedOutline": {
-        //         border: 0,
-        //     },
-        //     "&:hover": {
-        //         backgroundColor: "transparent",
-        //     },
-        //     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-        //         border: "1px solid transparent",
-        //     },
-        //     "& .MuiSelect-select:focus": {
-        //         backgroundColor: "transparent",
-        //     },
-
-        //     "&.MuiInput-underline:before": {
-        //         borderBottom: type === "underline" ? "2px solid" : "0px solid",
-        //     },
-
-        //     "&.MuiInput-underline:hover": {
-        //         borderBottom: "0px solid ",
-        //     },
-
-        //     "&.MuiInput-underline:hover:before": {
-        //         borderBottom: "2px solid lightblue",
-        //     },
-        //     /* focused */
-        //     "&.MuiInput-underline:after": {
-        //         border: "0px solid transparent",
-        //     },
-        // },
     };
 }
