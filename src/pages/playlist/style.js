@@ -162,7 +162,7 @@ export const mobileStyles = {
             display: "none",
         },
         scrollbarWidth: "none",
-        backgroundColor: "#272727",
+        backgroundColor: "#222222",
     },
 
     subsectionBar: {
@@ -171,7 +171,7 @@ export const mobileStyles = {
         px: 1.5,
         pb: 1,
         zIndex: 3,
-        backgroundColor: "#272727",
+        backgroundColor: "#222222",
         // backgroundColor: theme.palette.mode === "light" ? lightGrey : darkGrey,
     },
 
