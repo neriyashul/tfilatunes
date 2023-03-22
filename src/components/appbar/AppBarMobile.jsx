@@ -28,13 +28,14 @@ export default function AppBarMenu({ links, getIcon }) {
         <>
             <AppBar sx={styles.appbar}>
                 <Toolbar variant="dense">
+                    <LogoLinkToHome sx={styles.logo} />
+                    <Box sx={styles.gap} />
                     <IconButton
                         sx={styles.menuIcon}
                         onClick={() => setIsOpen(true)}
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography sx={styles.header}>{projectName}</Typography>
 
                     <Drawer
                         open={isOpen}
@@ -42,11 +43,6 @@ export default function AppBarMenu({ links, getIcon }) {
                         {...drawerProps}
                     >
                         <Box component="nav">
-                            <Toolbar variant="dense">
-                                <LogoLinkToHome onClick={handleDrawerToggle} />
-                            </Toolbar>
-                            <Divider />
-
                             <List>
                                 {Object.entries(links).map(([url, name]) => (
                                     <ListItem key={url} disablePadding>
@@ -54,6 +50,7 @@ export default function AppBarMenu({ links, getIcon }) {
                                             component={Link}
                                             onClick={handleDrawerToggle}
                                             to={url}
+                                            sx={styles.listItemButton}
                                         >
                                             {getIcon(url)}
                                             <ListItemText
