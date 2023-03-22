@@ -10,6 +10,7 @@ const YoutubeEmbed = React.lazy(() => import("./components/youtube-embed"));
 
 import AppBarMenu from "./components/appbar";
 import BackBarMenu from "./components/appbar/BackAppBar";
+import PageUnderConstruction from "./pages/construction";
 
 export default function Router() {
     const [header, setHeader] = useState();
@@ -65,14 +66,29 @@ export default function Router() {
                 >
                     <Route index element={<Home />} />
                     <Route
-                        path="about"
+                        path="add-tune"
                         element={
                             <Suspense>
-                                <About />
+                                <PageUnderConstruction />
                             </Suspense>
                         }
                     />
-
+                    <Route
+                        path="contribute"
+                        element={
+                            <Suspense>
+                                <PageUnderConstruction />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="about"
+                        element={
+                            <Suspense>
+                                <PageUnderConstruction />
+                            </Suspense>
+                        }
+                    />
                     <Route
                         path="*"
                         element={
