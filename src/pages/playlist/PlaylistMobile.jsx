@@ -3,8 +3,9 @@ import { Box } from "@mui/material";
 import { mobileStyles as styles } from "./style";
 import TuneList from "./TuneList";
 import { useTunes } from "../../hooks/tunes";
-import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
+import { Sections, SectionsMenu } from "./Sections";
 import { useSectionIndex } from "../../hooks/section";
+import MenuSelect from "../../components/select/MenuSelect";
 
 export default function PlaylistPageMobile({
     tfila,
@@ -56,8 +57,11 @@ export default function PlaylistPageMobile({
                 <Box sx={styles.bottomContainer}>
                     <Box sx={styles.subsectionBar}>
                         <Box sx={styles.ellipse} />
-                        <SubsectionsMenu
-                            section={section}
+                        <MenuSelect
+                            collection={section.subsections}
+                            labelField={"name"}
+                            id="menu-select"
+                            ariaLabel="subtitle menu"
                             state={[subsectionIndex, setSubsectionIndex]}
                             type="underline"
                         />

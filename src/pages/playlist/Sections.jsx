@@ -2,7 +2,6 @@ import { Box, Menu, MenuItem, Typography } from "@mui/material";
 
 import React from "react";
 import { sectionsStyles as styles } from "./style";
-import MenuSelect from "../../components/select/MenuSelect";
 import { parseText } from "../../utils/styles";
 
 export function SectionsMenu({ tefila, anchorState, setSection, ...props }) {
@@ -30,26 +29,6 @@ export function SectionsMenu({ tefila, anchorState, setSection, ...props }) {
                 );
             })}
         </Menu>
-    );
-}
-
-export function SubsectionsMenu({ section, state, ...props }) {
-    const [subsectionIndex, setSubsectionIndex] = state;
-
-    return (
-        <MenuSelect
-            value={subsectionIndex}
-            onChange={(e) => setSubsectionIndex(e.target.value)}
-            {...props}
-        >
-            {section.subsections.map((subsection, index) => {
-                return (
-                    <MenuItem key={subsection?.id} value={index}>
-                        {subsection?.name}
-                    </MenuItem>
-                );
-            })}
-        </MenuSelect>
     );
 }
 

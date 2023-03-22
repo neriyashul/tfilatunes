@@ -31,9 +31,16 @@ export const desktopStyles = {
     },
 
     textHeader: {
+        color: "white",
         fontSize: "2rem",
         ml: 1,
+        py: 0,
+        my: 0,
         cursor: "pointer",
+        borderRadius: 2,
+        "&:hover": {
+            backgroundColor: "#292929"
+        },
     },
 
     sectionsMenu: {

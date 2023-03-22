@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
     AppBar,
     Box,
+    Button,
     Drawer,
     IconButton,
     Toolbar,
-    Typography,
     useTheme,
 } from "@mui/material";
 import North from "@mui/icons-material/North";
@@ -13,8 +13,9 @@ import South from "@mui/icons-material/South";
 import { sideDrawerProps, desktopStyles as styles } from "./style";
 import { useTunes } from "../../hooks/tunes";
 import TuneList from "./TuneList";
-import { Sections, SectionsMenu, SubsectionsMenu } from "./Sections";
+import { Sections, SectionsMenu } from "./Sections";
 import { useSectionIndex } from "../../hooks/section";
+import MenuSelect from "../../components/select/MenuSelect";
 
 export default function PlaylistDesktop({ tfila }) {
     const theme = useTheme();
@@ -40,6 +41,8 @@ export default function PlaylistDesktop({ tfila }) {
 
     const { tunes, isLoading } = useTunes(subsection.id);
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <Box sx={styles.main}>
             <Box sx={styles.textContainer}>
@@ -47,27 +50,43 @@ export default function PlaylistDesktop({ tfila }) {
                     <Toolbar>
                         <IconButton
                             sx={styles.iconButton}
+                            aria-label="next section"
                             onClick={() => scrollToSection(sectionIndex + 1)}
                         >
                             <South />
                         </IconButton>
                         <IconButton
                             sx={styles.iconButton}
+                            aria-label="previous section"
                             onClick={() => scrollToSection(sectionIndex - 1)}
                         >
                             <North />
                         </IconButton>
-                        <Typography
-                            onClick={(e) => setAnchorEl(e.currentTarget)}
+                        <Button
+                            variant="text"
+                            onClick={(e) => {
+                                setAnchorEl(e.currentTarget);
+                                setIsMenuOpen((prev) => !prev);
+                            }}
+                            component="h1"
                             sx={styles.textHeader}
+                            id="menu-button"
+                            aria-controls={
+                                isMenuOpen ? "menu-button" : undefined
+                            }
+                            aria-haspopup="true"
+                            aria-expanded={isMenuOpen ? "true" : undefined}
                         >
                             {section.name}
-                        </Typography>
+                        </Button>
                         <SectionsMenu
                             tefila={tfila}
                             anchorState={anchorState}
                             setSection={(i) => scrollToSection(i, "instant")}
                             sx={styles.sectionsMenu}
+                            MenuListProps={{
+                                "aria-labelledby": "menu-button",
+                            }}
                         />
                     </Toolbar>
                 </AppBar>
@@ -83,8 +102,11 @@ export default function PlaylistDesktop({ tfila }) {
             <Drawer {...sideDrawerProps}>
                 <AppBar sx={styles.listAppBar}>
                     <Toolbar>
-                        <SubsectionsMenu
-                            section={section}
+                        <MenuSelect
+                            collection={section.subsections}
+                            labelField={"name"}
+                            id="menu-select"
+                            ariaLabel="subtitle menu"
                             state={[subsectionIndex, setSubsectionIndex]}
                         />
                     </Toolbar>
