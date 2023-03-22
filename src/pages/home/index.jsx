@@ -17,7 +17,7 @@ export default function Home() {
                     <Grid item>
                         <Button
                             component={Link}
-                            to="/playlist/kabbalat-shabbat"
+                            to="/tunes?text=kabbalat-shabbat"
                             {...buttonProps}
                         >
                             קבלת שבת
@@ -26,7 +26,7 @@ export default function Home() {
                     <Grid item>
                         <Button
                             component={Link}
-                            to="/playlist/hallel"
+                            to="/tunes?text=hallel"
                             {...buttonProps}
                         >
                             הלל

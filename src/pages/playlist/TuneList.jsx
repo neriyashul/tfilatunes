@@ -36,7 +36,7 @@ export default function TuneList({ tunes, subsection, isLoading }) {
             >
                 <ListItemButton
                     component={Link}
-                    to={`/tune/${tune.id}/${subsection?.id}`}
+                    to={`/tunes/${tune.id}?subId=${subsection?.id}`}
                     state={{ tune, subsection }}
                 >
                     <Playable

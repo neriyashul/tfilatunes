@@ -31,7 +31,7 @@ export default function Router() {
                     }
                 >
                     <Route
-                        path="/playlist/:key"
+                        path="/tunes"
                         element={
                             <Suspense>
                                 <Playlist
@@ -42,7 +42,7 @@ export default function Router() {
                         }
                     />
                     <Route
-                        path="/tune/:id/:subsectionId"
+                        path="/tunes/:id"
                         element={
                             <Suspense>
                                 <YoutubeEmbed>

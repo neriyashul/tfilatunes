@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useState } from "react";
 import TuneMobile from "./TuneMobile";
 import TuneDesktop from "./TuneDesktop";
 import { useScreenSize } from "../../hooks/screen";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams, useSearchParams } from "react-router-dom";
 import { useTune } from "../../hooks/tunes";
 import { useSection } from "../../hooks/tfila";
 import NotFound from "../404";
@@ -12,9 +12,10 @@ import { unpack } from "../../utils/tune";
 export default function TunePage({ player, setHeader, setOnMenuClick }) {
     const param = useParams();
     const { state } = useLocation();
-
     const id = Number(param.id);
-    const subsectionId = Number(param.subsectionId);
+
+    const [searchParams] = useSearchParams();
+    const subsectionId = Number(searchParams.get("subId"));
 
     let isLoading = false;
     let error;
