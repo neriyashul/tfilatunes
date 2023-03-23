@@ -4,7 +4,6 @@ export const desktopStyles = {
         width: "50%",
         paddingTop: "25px",
         right: "8.5%",
-        // right: isRtl ? "8.5%" : 100 / 3 + 8.5 + "%",
         zIndex: 2,
     },
     playerLocation: {
@@ -30,7 +29,6 @@ export const desktopStyles = {
         position: "fixed",
         paddingTop: 3.3,
         backgroundColor: "#272727",
-        // backgroundColor: theme.palette.mode === "dark" ? "#252525" : "#f5f5f5",
         color: "text.secondary",
         maxWidth: "inherit",
         width: "100vw",

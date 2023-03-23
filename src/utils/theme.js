@@ -20,11 +20,7 @@ let theme = createTheme({
         },
 
         primary: {
-            // main: "#2a96b5",
-            // main: "#2a7792",
-            // main: "#259cc6",
             main: "#196d8a",
-            // main: "#2b6da3",
         },
         secondary: {
             main: "#ffeb3b",

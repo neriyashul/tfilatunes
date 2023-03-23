@@ -24,7 +24,6 @@ export const mobileStyles = {
         mx: 0.5,
     },
     menuIcon: {
-        // mr: 4,
         "&.MuiIconButton-edgeStart": true,
     },
     listItemButton: {
@@ -94,7 +93,6 @@ export const backAppBarStyles = {
         position: "fixed",
         backgroundColor: "#121212",
         backgroundImage: "none",
-        // backgroundColor: "#1c1c1c",
     },
 
     moreButton: {
