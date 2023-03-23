@@ -12,12 +12,11 @@ const styles = {
         width: "100%",
         height: "100vh",
         overflow: "auto",
-        pb: 5,
     },
 
     heading: {
         position: "relative",
-        fontSize: { xs: "2rem", md: "2.5rem" },
+        fontSize: { xs: "2.5rem", md: "2.5rem" },
         width: "80%",
         left: "10%",
         textAlign: "center",
@@ -40,7 +39,7 @@ export const buttonProps = {
         width: "300px",
         height: "70px",
         fontSize: "1.5rem",
-        mx: 12,
+        mx: { md: 12 },
         my: 3,
     },
 };
