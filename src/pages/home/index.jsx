@@ -10,19 +10,10 @@ export default function Home() {
             <MainBackground sx={styles.background} />
             <Box component="main" sx={styles.main}>
                 <Typography component="h1" sx={styles.heading}>
-                    שיתוף מנגינות לקטעי&nbsp;תפילה
+                    <b>מאגר&nbsp;מנגינות שיתופי&nbsp;לתפילות</b>
                 </Typography>
 
                 <Grid container sx={styles.grid}>
-                    <Grid item>
-                        <Button
-                            component={Link}
-                            to="/tunes?text=kabbalat-shabbat"
-                            {...buttonProps}
-                        >
-                            קבלת שבת
-                        </Button>
-                    </Grid>
                     <Grid item>
                         <Button
                             component={Link}
@@ -30,6 +21,15 @@ export default function Home() {
                             {...buttonProps}
                         >
                             הלל
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button
+                            component={Link}
+                            to="/tunes?text=kabbalat-shabbat"
+                            {...buttonProps}
+                        >
+                            קבלת שבת
                         </Button>
                     </Grid>
                 </Grid>

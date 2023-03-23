@@ -81,18 +81,7 @@ export const desktopStyles = {
             borderRadius: "10px",
             backgroundColor: "#454545",
             marginBottom: "0px",
-            // backgroundColor: (theme) => theme.palette.mode === "dark" ? "#454545" : "#c1c1c1",
-            // backgroundColor: "rgba(0,0,0,.1",
-            // outline: "1px solid slategrey",
         },
-        // "::-webkit-scrollbar-thumb:hover": {},
-        // "::-webkit-scrollbar-track": {
-        // backgroundColor: "#00aa00",
-        // "-webkit-box-shadow": "inset 0 0 10px 10px green",
-        // },
-        // "::-webkit-scrollbar-track-piece": {},
-        // "::-webkit-scrollbar-corner": {},
-        // "::-webkit-resizer": {},
     },
 
     listContainer: {
@@ -115,14 +104,6 @@ export const mobileStyles = {
         marginRight: 1,
         "&.MuiIconButton-edgeStart": true,
     },
-
-    // sectionName: {
-    //     fontSize: "1.4rem",
-    //     mx: 0.5,
-    //     overflow: "hidden",
-    //     whiteSpace: "nowrap",
-    //     textOverflow: "ellipsis",
-    // },
 
     gap: { flexGrow: 1 },
 
@@ -171,7 +152,6 @@ export const mobileStyles = {
         pb: 1,
         zIndex: 3,
         backgroundColor: "#222222",
-        // backgroundColor: theme.palette.mode === "light" ? lightGrey : darkGrey,
     },
 
     ellipse: {
@@ -188,7 +168,6 @@ export const mobileStyles = {
     tunesContainer: {
         height: "100vh",
         zIndex: 15,
-        // backgroundColor: theme.palette.mode === "light" ? lightGrey : darkGrey,
     },
 };
 

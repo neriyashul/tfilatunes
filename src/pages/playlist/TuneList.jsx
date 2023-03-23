@@ -38,6 +38,7 @@ export default function TuneList({ tunes, subsection, isLoading }) {
                     component={Link}
                     to={`/tunes/${tune.id}?subId=${subsection?.id}`}
                     state={{ tune, subsection }}
+                    sx={{ pt: 0.3 }}
                 >
                     <Playable
                         isHovering={hoveringItem === key}

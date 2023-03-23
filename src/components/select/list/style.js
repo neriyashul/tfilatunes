@@ -13,11 +13,9 @@ function getStyles({
             borderRadius: 2,
             "&.Mui-selected": {
                 backgroundColor: "#404040",
-                //         theme.palette.mode === "light" ? "#EBEBEB" : "#404040",
             },
             "&.Mui-selected:hover": {
                 backgroundColor: "#404040",
-                //         theme.palette.mode === "light" ? "#EBEBEB" : "#404040",
             },
         },
 
