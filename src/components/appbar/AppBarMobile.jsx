@@ -5,13 +5,11 @@ import {
     IconButton,
     ListItemText,
     Toolbar,
-    Typography,
 } from "@mui/material";
 import React from "react";
-import { projectName } from "../../utils/strings";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import { Divider, List, ListItem, ListItemButton } from "@mui/material";
+import { List, ListItem, ListItemButton } from "@mui/material";
 import LogoLinkToHome from "../logo/LogoLinkToHome";
 import { drawerProps } from "./style";
 import { Link } from "react-router-dom";

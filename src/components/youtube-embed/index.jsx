@@ -1,5 +1,5 @@
 import { Box, Skeleton } from "@mui/material";
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import styles, { reactPlayerProps } from "./style";
 import ReactPlayer from "react-player";
 
