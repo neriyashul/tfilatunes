@@ -17,19 +17,19 @@ export default function Home() {
                     <Grid item>
                         <Button
                             component={Link}
-                            to="/tunes?text=kabbalat-shabbat"
+                            to="/tunes?text=hallel"
                             {...buttonProps}
                         >
-                            קבלת שבת
+                            הלל
                         </Button>
                     </Grid>
                     <Grid item>
                         <Button
                             component={Link}
-                            to="/tunes?text=hallel"
+                            to="/tunes?text=kabbalat-shabbat"
                             {...buttonProps}
                         >
-                            הלל
+                            קבלת שבת
                         </Button>
                     </Grid>
                 </Grid>
