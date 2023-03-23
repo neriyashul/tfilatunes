@@ -4,6 +4,7 @@ export default function getStyles({ type = "default" }) {
             ml: 2,
             pl: 1,
             pr: 1,
+            mb: { xs: -0.5, md: 0 },
             textAlign: "center",
             width: "auto",
             display: "inline-block",
