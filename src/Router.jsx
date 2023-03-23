@@ -2,15 +2,14 @@ import React, { Suspense, useState } from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 
-const About = React.lazy(() => import("./pages/about"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
 const NotFound = React.lazy(() => import("./pages/404"));
 const TunePage = React.lazy(() => import("./pages/tune"));
 const YoutubeEmbed = React.lazy(() => import("./components/youtube-embed"));
+const PageUnderConstruction = React.lazy(() => import("./pages/construction"));
 
 import AppBarMenu from "./components/appbar";
 import BackBarMenu from "./components/appbar/BackAppBar";
-import PageUnderConstruction from "./pages/construction";
 
 export default function Router() {
     const [header, setHeader] = useState();
