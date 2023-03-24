@@ -2,8 +2,8 @@ import { joinURLs } from "../utils/address";
 
 export class MongoDBGateway {
     constructor(env) {
-        this.apiKey = env.API_KEY;
-        this.baseURL = env.BASE_URL;
+        this.apiKey = env.MONGO_API_KEY;
+        this.baseURL = env.MONGO_BASE_URL;
     }
 
     async #get(url) {
