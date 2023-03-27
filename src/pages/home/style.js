@@ -39,7 +39,7 @@ export const buttonProps = {
         width: "300px",
         height: "70px",
         fontSize: "1.5rem",
-        mx: { md: 12 },
+        mx: 12,
         my: 3,
     },
 };
