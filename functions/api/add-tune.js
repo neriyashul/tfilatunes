@@ -141,15 +141,17 @@ export async function onRequestPost({ request, env }) {
         console.log("inputJson", inputJson);
         let tune = formatTune(inputJson);
 
-        const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
-        const hashPwd = await sha256(password);
-        if (hashPwd === hashAdmPwd) {
-            return new Response(JSON.stringify(tune));
-        } else if (!password) {
+        if (password) {
+            const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
+            const hashPwd = await sha256(password);
+            if (hashPwd === hashAdmPwd) {
+                return new Response(JSON.stringify(tune));
+            } else {
+                return new Response("wrong password", { status: 401 });
+            }
+        } else {
             let subject = "מנגינה חדשה - " + tune.id;
             sendEmail(subject, JSON.stringify(tune));
-        } else {
-            return new Response("wrong password", { status: 401 });
         }
 
         return Response.redirect("/upload-successful", 302);
