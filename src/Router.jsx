@@ -5,8 +5,12 @@ import Home from "./pages/home";
 const Playlist = React.lazy(() => import("./pages/playlist"));
 const NotFound = React.lazy(() => import("./pages/404"));
 const TunePage = React.lazy(() => import("./pages/tune"));
+const AddTune = React.lazy(() => import("./pages/add-tune"));
 const YoutubeEmbed = React.lazy(() => import("./components/youtube-embed"));
 const PageUnderConstruction = React.lazy(() => import("./pages/construction"));
+const UploadSuccessfull = React.lazy(() =>
+    import("./pages/add-tune/UploadSuccessful")
+);
 
 import AppBarMenu from "./components/appbar";
 import BackBarMenu from "./components/appbar/BackAppBar";
@@ -68,7 +72,15 @@ export default function Router() {
                         path="add-tune"
                         element={
                             <Suspense>
-                                <PageUnderConstruction />
+                                <AddTune />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="upload-successful"
+                        element={
+                            <Suspense>
+                                <UploadSuccessfull />
                             </Suspense>
                         }
                     />
