@@ -1,8 +1,9 @@
 // import { isUint } from "../utils/validator";
 // import { sendEmail } from "../utils/email";
 // import { MongoDBGateway } from "../db/mongodb-gateway";
-import bcrypt from "bcrypt";
 // import { InvalidParameterResponse } from "../utils/response";
+
+import { sha256 } from "../utils/crypto";
 
 // function getRandomInt(max) {
 //     return Math.floor(Math.random() * max);
@@ -140,8 +141,8 @@ export async function onRequestPost({ request, env }) {
         // console.log("inputJson", inputJson);
         // let tune = formatTune(inputJson);
 
-        // const isAuthorized = await bcrypt.compare(password, env.ADMIN_PASSWORD);
-        // if (isAuthorized) {
+        // const hashPwd = await sha256(password);
+        // if (hashPwd === env.ADMIN_PASSWORD) {
         //     return new Response(JSON.stringify(tune));
         // } else if (!password) {
         //     let subject = "מנגינה חדשה - " + tune.id;
