@@ -94,7 +94,7 @@ function formatPerformances(inputJson) {
 
 function formatTune(inputJson) {
     let tune = {
-        id: Date.now() * 100 + getRandomInt(100),
+        id: getRandomInt(100000),
         name: inputJson.name,
         composer: inputJson.composer,
         performance: {
@@ -114,7 +114,7 @@ function formatTune(inputJson) {
     }
 
     let performances = formatPerformances(inputJson);
-    if (performances) {
+    if (performances.length > 0) {
         tune.subsections[0].performances = performances;
     }
 
@@ -150,10 +150,8 @@ export async function onRequestPost({ request, env }) {
                 return new Response("wrong password", { status: 401 });
             }
         } else {
-            // let subject = "מנגינה חדשה - " + tune.id;
-            // sendEmail(subject, JSON.stringify(tune));
-            tune.pass = "false";
-            return new Response(JSON.stringify(tune));
+            let subject = "מנגינה חדשה - " + tune.id;
+            sendEmail(subject, JSON.stringify(tune));
         }
 
         return Response.redirect("/upload-successful", 302);
