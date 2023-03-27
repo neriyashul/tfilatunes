@@ -150,8 +150,10 @@ export async function onRequestPost({ request, env }) {
                 return new Response("wrong password", { status: 401 });
             }
         } else {
-            let subject = "מנגינה חדשה - " + tune.id;
-            sendEmail(subject, JSON.stringify(tune));
+            // let subject = "מנגינה חדשה - " + tune.id;
+            // sendEmail(subject, JSON.stringify(tune));
+            tune.pass = "false";
+            return new Response(JSON.stringify(tune));
         }
 
         return Response.redirect("/upload-successful", 302);
