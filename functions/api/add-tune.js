@@ -1,7 +1,11 @@
 import { isUint } from "../utils/validator";
 import { sendEmail } from "../utils/email";
 import { MongoDBGateway } from "../db/mongodb-gateway";
-import { InvalidParameterResponse, JsonResponse } from "../utils/response";
+import {
+    InvalidParameterResponse,
+    JsonResponse,
+    ServiceErrorResponse,
+} from "../utils/response";
 
 import { sha256 } from "../utils/crypto";
 
@@ -149,10 +153,13 @@ export async function onRequestPost({ request, env }) {
         //     let subject = "מנגינה חדשה - " + tune.id;
         //     sendEmail(subject, JSON.stringify(tune));
         // }
-
-        return Response.redirect("/upload-successful", 302);
-        // return Response.redirect("/upload-successful", 302);
+        return new Response(null, {
+            status: 302,
+            headers: {
+                Location: "/upload-successful",
+            },
+        });
     } catch (error) {
-        return new JsonResponse(error, 400);
+        return new ServiceErrorResponse(error, 400);
     }
 }
