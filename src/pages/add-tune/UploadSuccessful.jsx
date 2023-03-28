@@ -16,7 +16,7 @@ export default function UploadSuccessful() {
                     המנגינה עלתה בהצלחה
                 </Typography>
                 <Typography component="h2" sx={styles.header2}>
-                    המנגינה תהיה זמינה בעוד מספר ימים. תודה על עזרתך!
+                    המנגינה תהיה זמינה בעוד מספר ימים. תודה&nbsp;על&nbsp;עזרתך!
                 </Typography>
                 <Button component={Link} to="/" sx={{mt: 3}}  variant="outlined">אישור</Button>
             </Stack>

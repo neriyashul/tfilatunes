@@ -96,6 +96,6 @@ export const uploadSuccessfulStyles = {
         width: "30%",
         height: "30%",
     },
-    header1: { fontSize: "2rem" },
-    header2: { fontSize: "1.2rem" },
+    header1: { fontSize: "2rem", textAlign: "center" },
+    header2: { fontSize: "1.2rem", textAlign: "center" },
 };
