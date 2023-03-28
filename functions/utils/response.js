@@ -30,3 +30,14 @@ export class InternalErrorResponse extends JsonResponse {
         super({ error: msg }, 500);
     }
 }
+
+export class RedirectResponse extends Response {
+    constructor(url) {
+        super(null, {
+            status: 302,
+            headers: {
+                Location: url,
+            },
+        });
+    }
+}

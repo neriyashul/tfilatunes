@@ -1,11 +1,7 @@
 import { isUint } from "../utils/validator";
 import { sendEmail } from "../utils/email";
 import { MongoDBGateway } from "../db/mongodb-gateway";
-import {
-    InvalidParameterResponse,
-    JsonResponse,
-    ServiceErrorResponse,
-} from "../utils/response";
+import { InvalidParameterResponse, RedirectResponse, ServiceErrorResponse } from "../utils/response";
 
 import { sha256 } from "../utils/crypto";
 
@@ -140,26 +136,22 @@ export async function onRequestPost({ request, env }) {
         console.log("inputJson", inputJson);
         let tune = formatTune(inputJson);
 
-        // if (password) {
-        //     const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
-        //     const hashPwd = await sha256(password);
-        //     if (hashPwd === hashAdmPwd) {
-        //         const db = new MongoDBGateway(env);
-        //         await db.postTune(tune);
-        //     } else {
-        //         return new Response("wrong password", { status: 401 });
-        //     }
-        // } else {
-        //     let subject = "מנגינה חדשה - " + tune.id;
-        //     sendEmail(subject, JSON.stringify(tune));
-        // }
-        return new Response(null, {
-            status: 302,
-            headers: {
-                Location: "/upload-successful",
-            },
-        });
+        if (password) {
+            const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
+            const hashPwd = await sha256(password);
+            if (hashPwd === hashAdmPwd) {
+                const db = new MongoDBGateway(env);
+                await db.postTune(tune);
+            } else {
+                return new Response("wrong password", { status: 401 });
+            }
+        } else {
+            let subject = "מנגינה חדשה - " + tune.id;
+            sendEmail(subject, JSON.stringify(tune));
+        }
+
+        return new RedirectResponse("/upload-successful")
     } catch (error) {
-        return new ServiceErrorResponse(error, 400);
+        return new InvalidParameterResponse();
     }
 }
