@@ -136,19 +136,19 @@ export async function onRequestPost({ request, env }) {
         console.log("inputJson", inputJson);
         let tune = formatTune(inputJson);
 
-        // if (password) {
-        //     const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
-        //     const hashPwd = await sha256(password);
-        //     if (hashPwd === hashAdmPwd) {
-        //         const db = new MongoDBGateway(env);
-        //         await db.postTune(tune);
-        //     } else {
-        //         return new Response("wrong password", { status: 401 });
-        //     }
-        // } else {
-        //     let subject = "מנגינה חדשה - " + tune.id;
-        //     sendEmail(subject, JSON.stringify(tune));
-        // }
+        if (password) {
+            const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
+            const hashPwd = await sha256(password);
+            if (hashPwd === hashAdmPwd) {
+                const db = new MongoDBGateway(env);
+                await db.postTune(tune);
+            } else {
+                return new Response("wrong password", { status: 401 });
+            }
+        } else {
+            let subject = "מנגינה חדשה - " + tune.id;
+            sendEmail(subject, JSON.stringify(tune));
+        }
 
         return Response.redirect("/upload-successful", 302);
     } catch (error) {
