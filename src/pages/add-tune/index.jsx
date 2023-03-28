@@ -158,7 +158,7 @@ export default function AddTune() {
                     }}
                     {...addTuneProps}
                 >
-                    הוסף ביצוע של המנגינה בקטע מסוים
+                    הוסף סרטון של הקטע עם המנגינה
                 </Button>
             </Stack>
             <Stack spacing={2}>
