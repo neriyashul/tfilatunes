@@ -8,7 +8,7 @@ export class MongoDBGateway {
 
     async #post(url, body) {
         const fullUrl = joinURLs(this.baseURL, url);
-        const response = await fetch(fullUrl, {
+        await fetch(fullUrl, {
             method: "POST",
             headers: {
                 apiKey: this.apiKey,
@@ -17,7 +17,6 @@ export class MongoDBGateway {
             },
             body: body,
         });
-        return response;
     }
 
     async #get(url) {
@@ -51,6 +50,6 @@ export class MongoDBGateway {
     }
 
     async postTune(tune) {
-        return await this.#post(`/tune`, JSON.stringify(tune));
+        await this.#post(`/tune`, JSON.stringify(tune));
     }
 }
