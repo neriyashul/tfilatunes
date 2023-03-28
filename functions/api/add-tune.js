@@ -5,10 +5,6 @@ import { InvalidParameterResponse } from "../utils/response";
 
 import { sha256 } from "../utils/crypto";
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-
 function startsWithNumber(str) {
     return /^\d/.test(str);
 }
@@ -94,7 +90,6 @@ function formatPerformances(inputJson) {
 
 function formatTune(inputJson) {
     let tune = {
-        id: getRandomInt(100000),
         name: inputJson.name,
         composer: inputJson.composer,
         performance: {
@@ -102,7 +97,7 @@ function formatTune(inputJson) {
             startAt:
                 Number(inputJson.startAt) || extractStartAt(inputJson.link),
         },
-        subsections: [{ id: Number(inputJson.subsectionId) }],
+        subsections: { id: Number(inputJson.subsectionId) },
     };
 
     let performer = inputJson.performer;
@@ -110,12 +105,12 @@ function formatTune(inputJson) {
         tune.performance.label = tune.name + " - " + performer;
     }
     if (inputJson.rate) {
-        tune.subsections[0].rate = Number(inputJson.rate);
+        tune.subsections.rate = Number(inputJson.rate);
     }
 
     let performances = formatPerformances(inputJson);
     if (performances.length > 0) {
-        tune.subsections[0].performances = performances;
+        tune.subsections.performances = performances;
     }
 
     return tune;
@@ -145,7 +140,8 @@ export async function onRequestPost({ request, env }) {
             const hashAdmPwd = await sha256(env.ADMIN_PASSWORD);
             const hashPwd = await sha256(password);
             if (hashPwd === hashAdmPwd) {
-                return new Response(JSON.stringify(tune));
+                const db = new MongoDBGateway(env);
+                await db.postTune(tune);
             } else {
                 return new Response("wrong password", { status: 401 });
             }

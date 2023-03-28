@@ -6,6 +6,20 @@ export class MongoDBGateway {
         this.baseURL = env.MONGO_BASE_URL;
     }
 
+    async #post(url, body) {
+        const fullUrl = joinURLs(this.baseURL, url);
+        const response = await fetch(fullUrl, {
+            method: "POST",
+            headers: {
+                apiKey: this.apiKey,
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: body,
+        });
+        return response;
+    }
+
     async #get(url) {
         console.log("url", url);
         console.log("baseURl", this.baseURL);
@@ -34,5 +48,9 @@ export class MongoDBGateway {
 
     async getTune(id, subsectionId) {
         return await this.#get(`/tune?id=${id}&subsectionId=${subsectionId}`);
+    }
+
+    async postTune(tune) {
+        return await this.#post(`/tune`, JSON.stringify(tune));
     }
 }
