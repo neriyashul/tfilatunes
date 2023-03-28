@@ -76,7 +76,7 @@ export default function AddTune() {
                         component="legend"
                         sx={{ fontSize: "1.1rem", color: "text.secondary" }}
                     >
-                        דירוג (אופציונלי)
+                        התאמה למילים (אופציונלי)
                     </Typography>
                     <Rating name="rate" size="large" />
                 </Stack>
