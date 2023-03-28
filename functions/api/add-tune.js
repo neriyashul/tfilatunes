@@ -1,7 +1,7 @@
 import { isUint } from "../utils/validator";
 import { sendEmail } from "../utils/email";
 import { MongoDBGateway } from "../db/mongodb-gateway";
-import { InvalidParameterResponse } from "../utils/response";
+import { InvalidParameterResponse, JsonResponse } from "../utils/response";
 
 import { sha256 } from "../utils/crypto";
 
@@ -151,7 +151,8 @@ export async function onRequestPost({ request, env }) {
         // }
 
         return Response.redirect("/upload-successful", 302);
+        // return Response.redirect("/upload-successful", 302);
     } catch (error) {
-        return new InvalidParameterResponse(error);
+        return new JsonResponse(error, 400);
     }
 }
