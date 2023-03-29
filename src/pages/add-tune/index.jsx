@@ -85,7 +85,7 @@ export default function AddTune() {
                 <Typography component="h4">סרטון הדגמה</Typography>
                 <TextField
                     name="link"
-                    label="קישור לסרטון ביוטיוב"
+                    label="קישור לסרטון ביוטיוב (השיר המקורי ללא שינוי המילים)"
                     variant="outlined"
                     required
                 />
