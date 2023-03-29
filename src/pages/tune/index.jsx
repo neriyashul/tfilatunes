@@ -34,7 +34,9 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
     }
 
     const { isMobile } = useScreenSize();
-    const performanceIndexState = useState(0);
+
+    const idx = tune?.performances.length - 1 || 0
+    const performanceIndexState = useState(idx);
     const [performanceIndex] = performanceIndexState;
 
     useLayoutEffect(() => {
