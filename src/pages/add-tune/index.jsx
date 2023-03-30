@@ -62,13 +62,14 @@ export default function AddTune() {
                     required
                 />
                 <TextField
-                    name="composer"
-                    label="מלחין (אופציונלי)"
+                    name="performer"
+                    label="מבצע"
                     variant="outlined"
+                    required
                 />
                 <TextField
-                    name="performer"
-                    label="מבצע (אופציונלי)"
+                    name="composer"
+                    label="מלחין (אופציונלי)"
                     variant="outlined"
                 />
                 <Stack>

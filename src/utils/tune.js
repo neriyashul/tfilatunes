@@ -1,7 +1,7 @@
 function joinPerformances(tune, morePerformances) {
     let performance = tune.performance;
     if (!Object.hasOwn(performance, "label")) {
-        performance.label = tune.composer;
+        performance.label = tune.composer || tune.performer;
     }
 
     if (morePerformances) {

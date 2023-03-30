@@ -49,7 +49,7 @@ export default function TuneList({ tunes, subsection, isLoading }) {
                     <ListItemText
                         primaryTypographyProps={styles.listItemText}
                         primary={tune.name}
-                        secondary={tune.composer}
+                        secondary={tune.composer || tune.performer}
                     />
                 </ListItemButton>
             </ListItem>

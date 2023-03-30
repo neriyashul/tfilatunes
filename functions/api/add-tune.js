@@ -92,6 +92,7 @@ function formatTune(inputJson) {
     let tune = {
         name: inputJson.name,
         composer: inputJson.composer,
+        performer: inputJson.performer,
         performance: {
             videoId: extractYouTubeId(inputJson.link),
             startAt:
