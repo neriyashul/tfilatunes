@@ -1,7 +1,7 @@
 import { isUint } from "../utils/validator";
 import { sendEmail } from "../utils/email";
 import { MongoDBGateway } from "../db/mongodb-gateway";
-import { InvalidParameterResponse, RedirectResponse, ServiceErrorResponse } from "../utils/response";
+import { InvalidParameterResponse, RedirectResponse } from "../utils/response";
 
 import { sha256 } from "../utils/crypto";
 
@@ -127,9 +127,9 @@ export async function onRequestPost({ request, env }) {
         let password = null;
         for (let [key, value] of input) {
             if (key === "password") {
-                password = value;
+                password = value?.trim();
             } else {
-                inputJson[key] = value;
+                inputJson[key] = value?.trim();
             }
         }
 
