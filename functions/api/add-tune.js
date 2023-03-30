@@ -77,8 +77,8 @@ function formatPerformances(inputJson) {
 
         if (fieldName === "link") {
             performances[id]["videoId"] = formatedValue;
-            if (!performances[id]["startAt"]) {
-                let startAt = extractStartAt(value);
+            let startAt = extractStartAt(value);
+            if (!performances[id]["startAt"] && startAt) {
                 if (startAt) performances[id]["startAt"] = startAt;
             }
         } else {
