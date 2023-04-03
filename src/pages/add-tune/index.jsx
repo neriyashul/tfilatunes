@@ -29,9 +29,9 @@ const subsOptions = tfilot
     .map((tfila) =>
         tfila.sections
             .map((sec) =>
-                sec.subsections.map((sub, index) => ({
+                sec.subsections.map((sub) => ({
                     id: sub.id,
-                    name: index == 0 ? sec.name : sub.name,
+                    name: sub.name,
                     tfila: names[tfila.key],
                 }))
             )
