@@ -98,7 +98,10 @@ function formatTune(inputJson) {
             startAt:
                 Number(inputJson.startAt) || extractStartAt(inputJson.link),
         },
-        subsections: { id: Number(inputJson.subsectionId) },
+        subsections: {
+            id: Number(inputJson.subsectionId),
+            name: inputJson.subsectionName,
+        },
     };
 
     let performer = inputJson.performer;
@@ -147,11 +150,11 @@ export async function onRequestPost({ request, env }) {
                 return new Response("wrong password", { status: 401 });
             }
         } else {
-            let subject = "מנגינה חדשה - " + tune.id;
+            let subject = `מנגינה חדשה: ${tune.name}, לקטע: ${tune.subsections.name}`;
             sendEmail(subject, JSON.stringify(tune));
         }
 
-        return new RedirectResponse("/upload-successful")
+        return new RedirectResponse("/upload-successful");
     } catch (error) {
         return new InvalidParameterResponse();
     }

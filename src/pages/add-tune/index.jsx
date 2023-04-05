@@ -54,10 +54,7 @@ export default function AddTune() {
             {...formProps}
         >
             <Stack spacing={2}>
-                <Typography
-                    component="h1"
-                    sx={styles.header}
-                >
+                <Typography component="h1" sx={styles.header}>
                     הוסף&nbsp;מנגינה&nbsp;חדשה
                 </Typography>
                 <Typography component="h4">פרטי המנגינה</Typography>
@@ -124,11 +121,18 @@ export default function AddTune() {
                         {...autoCompleteProps}
                     />
                     {subsection && (
-                        <input
-                            type="hidden"
-                            name="subsectionId"
-                            value={subsection.id}
-                        />
+                        <>
+                            <input
+                                type="hidden"
+                                name="subsectionId"
+                                value={subsection.id}
+                            />
+                            <input
+                                type="hidden"
+                                name="subsectionName"
+                                value={subsection.name}
+                            />
+                        </>
                     )}
                 </FormControl>
 
