@@ -23,7 +23,7 @@ export default function Contribute() {
                     </MuiLink>
                 </Box>
                 <Box component="li" sx={styles.listItem}>
-                    רוצה להשתתף בפיתוח האתר או בעיצוב שלו? האתר הוא קוד פתוח
+                    רוצה להשתתף בפיתוח האתר או בעיצוב שלו? האתר הוא  עם קוד פתוח
                     ונמצא&nbsp; ב
                     <MuiLink href="https://github.com/neriyashul/tfilatunes">
                         גיטהאב
