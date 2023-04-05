@@ -24,7 +24,6 @@ import tfilot from "../../db/data/tefilot.json";
 import TimeField from "./TimeField";
 import { useSearchParams } from "react-router-dom";
 
-const names = { "kabbalat-shabbat": "קבלת שבת", hallel: "הלל" };
 const subsOptions = tfilot
     .map((tfila) =>
         tfila.sections
@@ -32,7 +31,7 @@ const subsOptions = tfilot
                 sec.subsections.map((sub) => ({
                     id: sub.id,
                     name: sub.name,
-                    tfila: names[tfila.key],
+                    tfila: tfila.name,
                 }))
             )
             .flat()
