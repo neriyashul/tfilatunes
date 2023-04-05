@@ -6,8 +6,10 @@ const Playlist = React.lazy(() => import("./pages/playlist"));
 const NotFound = React.lazy(() => import("./pages/404"));
 const TunePage = React.lazy(() => import("./pages/tune"));
 const AddTune = React.lazy(() => import("./pages/add-tune"));
+const Contribute = React.lazy(() => import("./pages/contribute"));
+const About = React.lazy(() => import("./pages/about"));
+
 const YoutubeEmbed = React.lazy(() => import("./components/youtube-embed"));
-const PageUnderConstruction = React.lazy(() => import("./pages/construction"));
 const UploadSuccessfull = React.lazy(() =>
     import("./pages/add-tune/UploadSuccessful")
 );
@@ -77,6 +79,14 @@ export default function Router() {
                         }
                     />
                     <Route
+                        path="contribute"
+                        element={
+                            <Suspense>
+                                <Contribute />
+                            </Suspense>
+                        }
+                    />
+                    <Route
                         path="upload-successful"
                         element={
                             <Suspense>
@@ -85,18 +95,10 @@ export default function Router() {
                         }
                     />
                     <Route
-                        path="contribute"
-                        element={
-                            <Suspense>
-                                <PageUnderConstruction />
-                            </Suspense>
-                        }
-                    />
-                    <Route
                         path="about"
                         element={
                             <Suspense>
-                                <PageUnderConstruction />
+                                <About />
                             </Suspense>
                         }
                     />
