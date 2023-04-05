@@ -7,6 +7,12 @@ export const styles = {
         },
     },
 
+    header: {
+        textAlign: "center",
+        fontSize: "2rem",
+        my: 3,
+    },
+
     submitButton: {
         width: 150,
         height: 45,

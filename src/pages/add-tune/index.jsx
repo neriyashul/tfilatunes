@@ -54,6 +54,12 @@ export default function AddTune() {
             {...formProps}
         >
             <Stack spacing={2}>
+                <Typography
+                    component="h1"
+                    sx={styles.header}
+                >
+                    הוסף&nbsp;מנגינה&nbsp;חדשה
+                </Typography>
                 <Typography component="h4">פרטי המנגינה</Typography>
                 <TextField
                     name="name"
