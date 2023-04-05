@@ -2,7 +2,7 @@ export const styles = {
     container: {
         marginY: 5,
         maxWidth: "600px",
-        marginX: "auto"
+        marginX: "auto",
     },
 
     header: { my: 4, mb: 7, mx: 3, textAlign: "center" },
