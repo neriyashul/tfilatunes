@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sitemap": "node sitemap.cjs"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
