@@ -41,6 +41,12 @@ export class MongoDBGateway {
         return await this.#get(`/section?subsectionId=${subsectionId}`);
     }
 
+    async getRangeTunes(minSubsectionId, maxSubsectionId) {
+        return await this.#get(
+            `/tunes?minSubsectionId=${minSubsectionId}&maxSubsectionId=${maxSubsectionId}`
+        );
+    }
+
     async getTunes(subsectionId) {
         return await this.#get(`/tunes?subsectionId=${subsectionId}`);
     }

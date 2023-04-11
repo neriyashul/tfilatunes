@@ -1,0 +1,121 @@
+<html lang="he" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                padding-bottom: 50px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .sectionContainer {
+                margin: 0px 2%;
+                padding: 1% 2%;
+                page-break-inside: avoid;
+            }
+
+            ul {
+                column-count: 2;
+                column-gap: 100px;
+            }
+
+            h4 {
+                text-indent: 2%;
+            }
+
+            li {
+                list-style-type: none;
+                page-break-inside: avoid;
+            }
+
+            .footer {
+                display: flex;
+                align-items: center;
+                right: 0;
+                left: 0;
+                display: flex;
+                align-self: flex-end;
+                margin-left: auto;
+            }
+
+            .note {
+                margin-right: 20px;
+                text-align: right;
+            }
+
+            .gap {
+                flex-grow: 1;
+            }
+
+            .pages {
+                margin-bottom: 50px;
+            }
+
+            @media print {
+                @media print {
+                    .footer {
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="pages">
+                            <h1>מנגינות ל{{tfilaName}}</h1>
+                            {{#subsections}}
+                            <div class="sectionContainer">
+                                <h2>{{name}}</h2>
+                                {{#rates}}
+                                <div>
+                                    <h4>{{rateLabel}}</h4>
+                                    <ul>
+                                        {{#tunes}}
+                                        <li>{{label}}</li>
+                                        {{/tunes}}
+                                    </ul>
+                                </div>
+                                {{/rates}}
+                            </div>
+                            {{/subsections}}
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <div class="footer">
+                            <p class="note">
+                                הקובץ מעודכן לתאריך {{date}}<br>
+                                באתר נוספים כל הזמן מנגינות כך שהקובץ עלול להיות
+                                לא מעודכן
+                                <br />
+                                <small>
+                                    כל הזכויות שמורות לאתר מנגינות לתפילה ©
+                                </small>
+                            </p>
+                            <div class="gap"></div>
+                            <img
+                                width="220px"
+                                height="90px"
+                                src="/logo.png"
+                                alt="logo"
+                            />
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
