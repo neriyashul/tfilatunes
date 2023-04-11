@@ -1,11 +1,28 @@
 # tfilatunes
-A collaborative collection of hasidic tunes and music of Israel for tfilot (Jewish prayers).
+## About ##
+Tfilatunes is a collaborative collection of Hasidic tunes and music of Israel for tfilot (Jewish prayers).
 
-To run the project just:
+The url of the website is http://tfilatunes.com
 
+## Contribute ##
+
+1. Clone:
 ```
 git clone https://github.com/neriyashul/tfilatunes.git
+```
+2. Install:
+```
 cd tfilatunes
 npm install
-npm run dev
 ```
+
+3. Run:
+    * To run the client side:
+        ```
+        npm run dev
+        ```
+
+    * To run the "server side" (cloudflare functions):
+        ```
+        npm run server
+        ```

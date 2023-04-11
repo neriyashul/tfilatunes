@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
+    "server": "npx wrangler pages dev .",
     "build": "vite build",
     "preview": "vite preview"
   },
