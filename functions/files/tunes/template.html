@@ -19,18 +19,25 @@
 
             h2 {
                 margin-top: 0.83em;
+                margin-bottom: 0.4em;
                 page-break-after: avoid;
             }
 
+            .sectionContainer {
+                margin: 0px 2%;
+                padding: 1% 2%;
+            }
+
             ul {
-                margin: 0.6em 0;
+                margin-top: 0.6em;
+                margin-bottom: 0.6em;
                 column-count: 2;
                 column-gap: 100px;
             }
 
             h4 {
-                margin: 0.6em 0;
-                page-break-after: avoid;
+                margin-top: 0.6em;
+                margin-bottom: 0.6em;
                 text-indent: 2%;
             }
 
@@ -49,6 +56,7 @@
                 right: 0;
                 left: 0;
                 margin-left: auto;
+                z-index: -1;
             }
 
             .note {
@@ -77,13 +85,13 @@
             <tbody>
                 <tr>
                     <td>
-                        <div class="pages">
+                        <div>
                             <h1>מנגינות ל{{tfilaName}}</h1>
                             {{#subsections}}
                             <div class="sectionContainer">
                                 <h2>{{name}}</h2>
                                 {{#rates}}
-                                <div class="rateContainer">
+                                <div>
                                     <h4>{{rateLabel}}</h4>
                                     <ul>
                                         {{#tunes}}
