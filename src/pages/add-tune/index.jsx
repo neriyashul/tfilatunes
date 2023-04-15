@@ -20,7 +20,7 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete";
 import PerformanceField from "./PerformanceField";
-import tfilot from "../../db/data/tefilot.json";
+import tfilot from "../../db/data/tfilot.json";
 import TimeField from "./TimeField";
 import { useSearchParams } from "react-router-dom";
 

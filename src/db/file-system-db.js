@@ -1,4 +1,4 @@
-import tefilot from "./data/tefilot.json";
+import tefilot from "./data/tfilot.json";
 import tunes from "./data/tunes.json";
 import { unpack } from "../utils/tune";
 
