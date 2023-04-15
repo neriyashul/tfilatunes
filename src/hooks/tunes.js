@@ -5,7 +5,6 @@ const db_type = import.meta.env.VITE_DB_TYPE;
 const db = getDB(db_type);
 
 export function useTunes(subsectionId) {
-    if (!subsectionId) return {};
     const { isLoading, data, error } = useQuery(`tunes-${subsectionId}`, () =>
         Promise.resolve(db.getTunes(subsectionId))
     );
