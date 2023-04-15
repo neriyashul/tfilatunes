@@ -4,7 +4,7 @@ import { Box, Divider, Typography } from "@mui/material";
 import LongRating from "../../components/rating/LongRating";
 import SelectionList from "../../components/select/list";
 import { ratingProps, mobileStyles as styles } from "./style";
-import { parseText } from "../../utils/styles";
+import parse from "html-react-parser";
 
 export default function TuneMobile({
     player,
@@ -49,7 +49,7 @@ export default function TuneMobile({
             <Divider role="presentation" sx={styles.divider} />
             <Typography sx={styles.textHeader}>{subsection?.name}</Typography>
             <Typography sx={styles.text}>
-                {parseText(subsection?.text)}
+                {parse(subsection?.text)}
             </Typography>
         </div>
     );

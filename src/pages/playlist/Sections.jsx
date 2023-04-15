@@ -2,7 +2,7 @@ import { Box, Menu, MenuItem, Typography } from "@mui/material";
 
 import React from "react";
 import { sectionsStyles as styles } from "./style";
-import { parseText } from "../../utils/styles";
+import parse from "html-react-parser";
 
 export function SectionsMenu({ tefila, anchorState, setSection, ...props }) {
     const [anchorEl, setAnchorEl] = anchorState;
@@ -45,9 +45,15 @@ export function Sections({ tefila, sectionRefs, onClick, ...props }) {
                             onClick={() => {
                                 if (onClick) onClick(index);
                             }}
+                            sx={styles.section}
                         >
-                            <Typography sx={styles.section}>
-                                {parseText(section.text)}
+                            {section.note && (
+                                <Typography sx={styles.sectionNote}>
+                                    {section.note.toString()}
+                                </Typography>
+                            )}
+                            <Typography sx={styles.sectionText}>
+                                {parse(section.text.toString())}
                             </Typography>
                         </Box>
                     );

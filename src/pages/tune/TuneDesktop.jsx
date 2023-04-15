@@ -3,7 +3,7 @@ import { Box, Divider, Grid, Typography } from "@mui/material";
 import { desktopStyles as styles, ratingProps } from "./style";
 import LongRating from "../../components/rating/LongRating";
 import SelectionList from "../../components/select/list";
-import { parseText } from "../../utils/styles";
+import parse from "html-react-parser";
 
 export default function TuneDesktop({
     player,
@@ -25,7 +25,7 @@ export default function TuneDesktop({
                     sx={styles.header}
                 >{`${subsection?.name} - ${tune.name}`}</Typography>
                 <Typography sx={styles.text}>
-                    {parseText(subsection?.text)}
+                    {parse(subsection?.text)}
                 </Typography>
             </Grid>
             <Grid item xs={4}>

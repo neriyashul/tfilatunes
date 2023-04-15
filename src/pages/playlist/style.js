@@ -38,7 +38,7 @@ export const desktopStyles = {
         cursor: "pointer",
         borderRadius: 2,
         "&:hover": {
-            backgroundColor: "#292929"
+            backgroundColor: "#292929",
         },
     },
 
@@ -180,6 +180,13 @@ export const sectionsStyles = {
         pt: { xs: "10px", md: 2 },
         pb: { xs: "10px", md: 3 },
         mx: { xs: 3, md: 15 },
+    },
+
+    sectionNote: {
+        lineHeight: 2,
+    },
+
+    sectionText: {
         fontSize: { xs: "1.4rem", md: "1.5rem" },
     },
 };
