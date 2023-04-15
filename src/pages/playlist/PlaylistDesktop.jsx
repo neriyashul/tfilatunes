@@ -36,10 +36,13 @@ export default function PlaylistDesktop({ tfila }) {
 
     const section = tfila.sections[sectionIndex];
 
-    const subsection = section.subsections[subsectionIndex];
-    subsection.text = section.text;
+    let subsection;
+    if (section.subsections) {
+        subsection = section.subsections[subsectionIndex];
+        subsection.text = section.text;
+    }
 
-    const { tunes, isLoading } = useTunes(subsection.id);
+    const { tunes, isLoading } = useTunes(subsection?.id);
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -103,7 +106,7 @@ export default function PlaylistDesktop({ tfila }) {
                 <AppBar sx={styles.listAppBar}>
                     <MediumToolbar>
                         <MenuSelect
-                            collection={section.subsections}
+                            collection={section?.subsections}
                             labelField={"name"}
                             id="menu-select"
                             ariaLabel="subtitle menu"

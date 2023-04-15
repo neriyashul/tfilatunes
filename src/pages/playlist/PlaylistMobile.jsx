@@ -24,8 +24,11 @@ export default function PlaylistPageMobile({
         sectionIndexState;
 
     const section = tfila.sections[sectionIndex];
-    const subsection = section.subsections[subsectionIndex];
-    subsection.text = section.text;
+    let subsection;
+    if (section.subsections) {
+        subsection = section.subsections[subsectionIndex];
+        subsection.text = section.text;
+    }
 
     const anchorState = React.useState(null);
     const [, setAnchorEl] = anchorState;

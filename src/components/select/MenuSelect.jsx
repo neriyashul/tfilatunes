@@ -24,7 +24,7 @@ export default function MenuSelect({
         setAnchorEl(null);
     };
 
-    if (collection.length == 0) return null;
+    if (!collection || collection.length == 0) return null;
 
     return (
         <Box sx={styles.buttonContainer}>

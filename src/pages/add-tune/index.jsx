@@ -25,19 +25,20 @@ import TimeField from "./TimeField";
 import { useSearchParams } from "react-router-dom";
 
 const names = { "kabbalat-shabbat": "קבלת שבת", hallel: "הלל" };
-const subsOptions = tfilot
-    .map((tfila) =>
-        tfila.sections
-            .map((sec) =>
-                sec.subsections.map((sub) => ({
+const subsOptions = [];
+for (let tfila of tfilot) {
+    for (let section of tfila.sections) {
+        if (section.subsections) {
+            for (let sub of section.subsections) {
+                subsOptions.push({
                     id: sub.id,
                     name: sub.name,
                     tfila: names[tfila.key],
-                }))
-            )
-            .flat()
-    )
-    .flat();
+                });
+            }
+        }
+    }
+}
 
 export default function AddTune() {
     const [subsection, setSubsection] = React.useState(null);
