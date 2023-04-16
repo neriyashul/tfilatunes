@@ -166,7 +166,6 @@ export const mobileStyles = {
     },
 
     tunesContainer: {
-        height: "100vh",
         zIndex: 15,
     },
 };
