@@ -16,6 +16,7 @@ const UploadSuccessfull = React.lazy(() =>
 
 import AppBarMenu from "./components/appbar";
 import BackBarMenu from "./components/appbar/BackAppBar";
+import PageCollection from "./pages/collection";
 
 export default function Router() {
     const [header, setHeader] = useState();
@@ -35,6 +36,10 @@ export default function Router() {
                         </>
                     }
                 >
+                    <Route
+                        path="/collection/:key"
+                        element={<PageCollection setHeader={setHeader} />}
+                    />
                     <Route
                         path="/tunes"
                         element={
