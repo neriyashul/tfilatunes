@@ -16,6 +16,7 @@ const UploadSuccessfull = React.lazy(() =>
 
 import AppBarMenu from "./components/appbar";
 import BackBarMenu from "./components/appbar/BackAppBar";
+import FilesForPrinting from "./pages/files-for-printing";
 import PageCollection from "./pages/collection";
 
 export default function Router() {
@@ -75,6 +76,15 @@ export default function Router() {
                     }
                 >
                     <Route index element={<Home />} />
+
+                    <Route
+                        path="files"
+                        element={
+                            <Suspense>
+                                <FilesForPrinting />
+                            </Suspense>
+                        }
+                    />
                     <Route
                         path="add-tune"
                         element={

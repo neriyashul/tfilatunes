@@ -17,6 +17,15 @@ export default function Home() {
                     <Grid item>
                         <Button
                             component={Link}
+                            to="/tunes?text=kabbalat-shabbat"
+                            {...buttonProps}
+                        >
+                            קבלת שבת
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button
+                            component={Link}
                             to="/tunes?text=hallel"
                             {...buttonProps}
                         >
@@ -26,10 +35,10 @@ export default function Home() {
                     <Grid item>
                         <Button
                             component={Link}
-                            to="/tunes?text=kabbalat-shabbat"
+                            to="/collection/yom-haatzmaut"
                             {...buttonProps}
                         >
-                            קבלת שבת
+                            יום העצמאות
                         </Button>
                     </Grid>
                 </Grid>

@@ -1,1 +1,15 @@
-{}
+{
+    "yom-haatzmaut": {
+        "name": "יום העצמאות",
+        "pages": [
+            {
+                "url": "/tunes?text=maariv-yom-haatzmaut",
+                "name": "ערבית"
+            },
+            {
+                "url": "/tunes?text=shacharit-yom-haatzmaut",
+                "name": "שחרית"
+            }
+        ]
+    }
+}

@@ -25,7 +25,7 @@ const styles = {
 
     grid: {
         display: "flex",
-        marginTop: { xs: "20vh", md: "23vh" },
+        marginTop: { xs: "15vh", md: "24vh" },
         alignItems: "center",
         justifyContent: "center",
     },
@@ -36,10 +36,10 @@ export const buttonProps = {
     variant: "contained",
     sx: {
         position: "relative",
-        width: "300px",
-        height: "70px",
+        width: { xs: "300px", md: "250px" },
+        height: "65px",
         fontSize: "1.5rem",
-        mx: 12,
-        my: 3,
+        mx: 3,
+        my: 2,
     },
 };
