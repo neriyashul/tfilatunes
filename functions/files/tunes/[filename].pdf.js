@@ -17,7 +17,7 @@ async function streamToString(stream) {
 function buildJob(filename, html) {
     return {
         tasks: {
-            "send-html": {
+            "import-html": {
                 operation: "import/base64",
                 file: Base64.encode(html),
                 filename: filename + ".html",
@@ -27,7 +27,7 @@ function buildJob(filename, html) {
                 input_format: "html",
                 output_format: "pdf",
                 engine: "chrome",
-                input: ["send-html"],
+                input: ["import-html"],
                 zoom: 1,
                 print_background: true,
                 display_header_footer: false,
