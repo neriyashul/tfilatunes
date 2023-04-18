@@ -29,7 +29,7 @@ function buildJob(filename, html) {
                 engine: "chrome",
                 input: ["send-html"],
                 zoom: 1,
-                print_background: false,
+                print_background: true,
                 display_header_footer: false,
                 wait_until: "load",
                 wait_time: 0,
