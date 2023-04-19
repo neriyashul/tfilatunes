@@ -88,12 +88,21 @@ async function streamToResponse(response) {
 }
 
 export async function onRequestGet({ params, env }) {
+    const cache = new Cache(env.CLOUDFLARE_KV);
+
     const filename = decodeURI(params.filename);
     let pdfUrl;
 
     try {
-        const html = await generateHtml(filename, env);
-        pdfUrl = await convertHtmlToPdf(env, filename, html);
+        pdfUrl = await cache.get(filename);
+        if (!pdfUrl) {
+            const html = await generateHtml(filename, env);
+            pdfUrl = await convertHtmlToPdf(env, filename, html);
+
+            const epochIn24Hours = Math.round(Date.now() / 1000) + 86000;
+            await cache.set(filename, pdfUrl, epochIn24Hours);
+        }
+
         const res = await fetch(pdfUrl);
         return await streamToResponse(res);
     } catch (error) {
