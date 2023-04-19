@@ -1,26 +1,23 @@
 import tfilot from "./data/tfilot.json";
 
-function getSubsectionNames() {
-    const names = {};
-    for (let tfila of tfilot) {
-        for (let section of tfila.sections) {
-            if (section.subsections) {
-                for (let sub of section.subsections) {
-                    names[sub.id] = sub.name;
-                }
-            }
-        }
-    }
-    return names;
-}
-const subsectionNames = getSubsectionNames();
-
 export function getTfilot() {
     return tfilot.map((tfila) => ({ key: tfila.key, name: tfila.name }));
 }
 
-export function getSubsectionName(id) {
-    return subsectionNames[id];
+export function getSubsectionName(tfilaKey, id) {
+    for (let tfila of tfilot) {
+        if (tfila.key === tfilaKey) {
+            for (let section of tfila.sections) {
+                if (section.subsections) {
+                    for (let sub of section.subsections) {
+                        if (sub.id === id) {
+                            return sub.name;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 export function getSubsections(key) {

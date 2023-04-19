@@ -6,15 +6,14 @@ import {
     getSubsectionName,
 } from "../../db/metadata";
 import { MongoDBGateway } from "../../db/mongodb-gateway";
-import { ServiceErrorResponse } from "../../utils/response";
 
 const tfilot = getTfilot();
 
 function filenameToTfila(name) {
-    if (name.includes("קבלת_שבת")) {
-        return tfilot[0];
-    } else if (name.includes("הלל")) {
-        return tfilot[1];
+    for (let tfila of tfilot) {
+        if (name.includes(tfila.name.replace(" ", "_"))) {
+            return tfila;
+        }
     }
 }
 
@@ -84,26 +83,19 @@ function rateToLabel(rate) {
     }
 }
 
-export async function onRequestGet({ params, env }) {
-    const filename = decodeURI(params.filename);
+export async function generateHtml(filename, env) {
     const tfila = filenameToTfila(filename);
     const key = tfila?.key;
-    if (!key) return new Response("invalid page");
+    if (!key) throw new Error("invalid filename");
 
     const subsections = getSubsections(key);
     const minId = subsections[0].id;
     const maxId = subsections[subsections.length - 1].id;
 
-    try {
-        const db = new MongoDBGateway(env);
-        const tunesBySubs = await db.getRangeTunes(minId, maxId);
+    const db = new MongoDBGateway(env);
+    const tunesBySubs = await db.getRangeTunes(minId, maxId);
 
-        const view = generateMustacheView(tfila, tunesBySubs);
-        const output = Mustache.render(template, view);
-        return new Response(output, {
-            headers: { "Content-Type": "text/html" },
-        });
-    } catch (error) {
-        return new ServiceErrorResponse(error);
-    }
+    const view = generateMustacheView(tfila, tunesBySubs);
+    const html = Mustache.render(template, view);
+    return html;
 }
