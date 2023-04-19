@@ -22,7 +22,7 @@ function generateMustacheView(tfila, tunesBySubs) {
     return {
         tfilaName: tfila.name,
         subsections: tunesBySubs.map((obj) => ({
-            name: getSubsectionName(obj._id),
+            name: getSubsectionName(tfila.key, obj._id),
             rates: groupByRate(obj.tunes).map((tunesByRate) => ({
                 rate: tunesByRate.rate,
                 tunes: tunesByRate.tunes.map((tune) => ({
