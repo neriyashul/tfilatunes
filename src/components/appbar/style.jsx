@@ -58,8 +58,7 @@ export const tabsProps = {
 export const tabProps = {
     disableRipple: true,
     sx: {
-        fontSize: "1rem",
-        mx: "0.1vw",
+        fontSize: "0.9rem",
         color: "rgba(255, 255, 255, 0.7)",
         "&.Mui-selected": {
             color: "#fff",

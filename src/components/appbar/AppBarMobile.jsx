@@ -6,7 +6,7 @@ import {
     ListItemText,
     Toolbar,
 } from "@mui/material";
-import React from "react";
+import React, { Suspense } from "react";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { List, ListItem, ListItemButton } from "@mui/material";
@@ -50,7 +50,11 @@ export default function AppBarMenu({ links, getIcon }) {
                                             to={url}
                                             sx={styles.listItemButton}
                                         >
-                                            {getIcon(url)}
+                                            <Suspense
+                                                fallback={<div>Loading...</div>}
+                                            >
+                                                {getIcon(url)}
+                                            </Suspense>
                                             <ListItemText
                                                 sx={styles.listItemText}
                                                 primary={name}

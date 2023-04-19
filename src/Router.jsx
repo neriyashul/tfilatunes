@@ -5,6 +5,7 @@ import Home from "./pages/home";
 const Playlist = React.lazy(() => import("./pages/playlist"));
 const NotFound = React.lazy(() => import("./pages/404"));
 const TunePage = React.lazy(() => import("./pages/tune"));
+const FilesForPrinting = React.lazy(() => import("./pages/files-for-printing"));
 const AddTune = React.lazy(() => import("./pages/add-tune"));
 const Contribute = React.lazy(() => import("./pages/contribute"));
 const About = React.lazy(() => import("./pages/about"));
@@ -75,6 +76,14 @@ export default function Router() {
                     }
                 >
                     <Route index element={<Home />} />
+                    <Route
+                        path="files"
+                        element={
+                            <Suspense>
+                                <FilesForPrinting />
+                            </Suspense>
+                        }
+                    />
                     <Route
                         path="add-tune"
                         element={
