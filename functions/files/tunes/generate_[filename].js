@@ -91,12 +91,11 @@ export async function onRequestGet({ params, env }) {
     if (!key) return new Response("invalid page");
 
     const subsections = getSubsections(key);
-    const minId = subsections[0].id;
-    const maxId = subsections[subsections.length - 1].id;
+    const subsectionIds = subsections.map((sub) => sub.id);
 
     try {
         const db = new MongoDBGateway(env);
-        const tunesBySubs = await db.getRangeTunes(minId, maxId);
+        const tunesBySubs = await db.getTunes(subsectionIds);
 
         const view = generateMustacheView(tfila, tunesBySubs);
         const output = Mustache.render(template, view);

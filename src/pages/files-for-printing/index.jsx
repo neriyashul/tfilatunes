@@ -6,6 +6,7 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import { Box, Button, Typography } from "@mui/material";
 import styles from "./style";
+import tfilot from "../../db/data/tfilot.json";
 
 export default function FilesForPrinting() {
     const [value, setValue] = React.useState("קבלת_שבת");
@@ -16,10 +17,7 @@ export default function FilesForPrinting() {
 
     return (
         <Box sx={styles.center}>
-            <Box
-                component="form"
-                sx={styles.form}
-            >
+            <Box component="form" sx={styles.form}>
                 <Typography component="h1" sx={styles.header}>
                     קבצי&nbsp;מנגינות&nbsp;להדפסה
                 </Typography>
@@ -36,19 +34,16 @@ export default function FilesForPrinting() {
                         value={value}
                         onChange={handleChange}
                     >
-                        <FormControlLabel
-                            value="קבלת_שבת"
-                            control={<Radio />}
-                            label="קבלת שבת"
-                        />
-                        <FormControlLabel
-                            value="הלל"
-                            control={<Radio />}
-                            label="הלל"
-                        />
+                        {tfilot.map((tfila, index) => (
+                            <FormControlLabel
+                                key={index}
+                                value={tfila.name.split(" ").join("_")}
+                                control={<Radio />}
+                                label={tfila.name}
+                            />
+                        ))}
                     </RadioGroup>
                 </FormControl>
-
                 <Box
                     component="a"
                     target="_blank"

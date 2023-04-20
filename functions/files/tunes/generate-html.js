@@ -89,11 +89,10 @@ export async function generateHtml(filename, env) {
     if (!key) throw new Error("invalid filename");
 
     const subsections = getSubsections(key);
-    const minId = subsections[0].id;
-    const maxId = subsections[subsections.length - 1].id;
+    const subIds = subsections.map((sub) => sub.id);
 
     const db = new MongoDBGateway(env);
-    const tunesBySubs = await db.getRangeTunes(minId, maxId);
+    const tunesBySubs = await db.getTunes(subIds);
 
     const view = generateMustacheView(tfila, tunesBySubs);
     const html = Mustache.render(template, view);

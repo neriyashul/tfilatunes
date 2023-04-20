@@ -47,8 +47,17 @@ export class MongoDBGateway {
         );
     }
 
-    async getTunes(subsectionId) {
-        return await this.#get(`/tunes?subsectionId=${subsectionId}`);
+    async getTunes(subsectionIds) {
+        if (!subsectionIds) return null;
+        if (typeof subsectionIds == "string") {
+            return await this.#get(`/tunes?subsectionId=${subsectionIds}`);
+        } else if (subsectionIds.length == 0) {
+            return await this.#get(`/tunes?subsectionId=${subsectionIds[0]}`);
+        } else {
+            return await this.#get(
+                `/tunes?subsectionIds=${JSON.stringify(subsectionIds)}`
+            );
+        }
     }
 
     async getTune(id, subsectionId) {
