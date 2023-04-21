@@ -49,7 +49,7 @@ function buildJob(filename, html) {
             "export-pdf": {
                 operation: "export/url",
                 input: ["convert-html-to-pdf"],
-                inline: false,
+                inline: true,
                 archive_multiple_files: false,
             },
         },

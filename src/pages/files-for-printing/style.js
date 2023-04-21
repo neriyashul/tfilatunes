@@ -40,10 +40,6 @@ const styles = {
         zIndex: 10,
         visibility: isOpen ? "hidden" : "visible",
     }),
-
-    backdropContainer: {
-        textAlign: "center",
-    },
 };
 
 export default styles;
