@@ -24,6 +24,14 @@ const messages = [
     "מסיים...",
 ];
 
+function downloadURI(uri) {
+    var link = document.createElement("a");
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 export default function FilesForPrinting() {
     const [selected, setSelected] = React.useState("קבלת_שבת");
     const [msgIndex, setMsgIndex] = React.useState(0);
@@ -176,7 +184,10 @@ export default function FilesForPrinting() {
                                 if (selected) {
                                     setMsgIndex(0);
                                     setIsProgressOpen(true);
-                                    window.location.href = `/files/tunes/מנגינות_ל${selected}.pdf`;
+                                    downloadURI(
+                                        `/files/tunes/מנגינות_ל${selected}.pdf`
+                                    );
+                                    setIsProgressOpen(false);
                                 } else {
                                     alert("לא נבחר אף קובץ");
                                 }
