@@ -322,6 +322,7 @@
     {
         "key": "maariv-yom-haatzmaut",
         "name": "ערבית ליל יום העצמאות",
+        "collection": "יום העצמאות",
         "sections": [
             {
                 "name": "הדו לה' כי טוב",
@@ -456,6 +457,7 @@
     {
         "key": "shacharit-yom-haatzmaut",
         "name": "שחריות ליום העצמאות",
+        "collection": "יום העצמאות",
         "sections": [
             {
                 "name": "פסוקי דזמרה",
