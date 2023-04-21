@@ -49,7 +49,7 @@ export class MongoDBGateway {
 
     async getTunes(subsectionIds) {
         if (!subsectionIds) return null;
-        if (typeof subsectionIds == "string") {
+        if (typeof subsectionIds == "string" || typeof subsectionIds == "number") {
             return await this.#get(`/tunes?subsectionId=${subsectionIds}`);
         } else if (subsectionIds.length == 0) {
             return await this.#get(`/tunes?subsectionId=${subsectionIds[0]}`);
