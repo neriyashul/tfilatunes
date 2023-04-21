@@ -11,7 +11,7 @@ const tfilot = getTfilot();
 
 function filenameToTfila(name) {
     for (let tfila of tfilot) {
-        if (name.includes(tfila.name.replace(" ", "_"))) {
+        if (name.includes(tfila.name.replaceAll(" ", "_"))) {
             return tfila;
         }
     }
