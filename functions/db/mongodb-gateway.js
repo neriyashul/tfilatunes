@@ -20,8 +20,6 @@ export class MongoDBGateway {
     }
 
     async #get(url) {
-        console.log("url", url);
-        console.log("baseURl", this.baseURL);
         const fullUrl = joinURLs(this.baseURL, url);
         const response = await fetch(fullUrl, {
             headers: {
@@ -58,6 +56,10 @@ export class MongoDBGateway {
                 `/tunes?subsectionIds=${JSON.stringify(subsectionIds)}`
             );
         }
+    }
+
+    async getAllTunes() {
+        return await this.#get(`/tunes`);
     }
 
     async getTune(id, subsectionId) {

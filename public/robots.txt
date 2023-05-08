@@ -4,3 +4,5 @@ Disallow:
 
 User-agent: *
 Allow: /
+
+Sitemap: http://tfilatunes.com/sitemap.xml
