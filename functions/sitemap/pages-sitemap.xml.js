@@ -2,8 +2,14 @@ import Mustache from "mustache";
 import template from "./sitemap-template.xml.txt";
 import tfilot from "../db/data/tfilot.json";
 import { Cache } from "../utils/cache";
-import { createRecord } from "./record"
+import { createRecord } from "./record";
 
+const indexRecord = {
+    loc: "https://tfilatunes.com",
+    lastmod: "2023-05-08",
+    changefreq: "monthly",
+    priority: 1.0,
+};
 
 async function generateMustacheView(cache) {
     const lastMods =
@@ -29,7 +35,7 @@ async function generateMustacheView(cache) {
     );
     await cache.set("pagesLastModifications", JSON.stringify(lastMods));
 
-    return { urls: Object.values(urlRecords) };
+    return { urls: [indexRecord, ...Object.values(urlRecords)] };
 }
 
 export async function onRequestGet({ env }) {
