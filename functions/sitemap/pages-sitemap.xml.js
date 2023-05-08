@@ -11,7 +11,7 @@ const indexRecord = {
     priority: 1.0,
 };
 
-async function generateMustacheView(cache) {
+async function getTfilaPageRecords(cache) {
     const lastMods =
         JSON.parse(await cache.get("pagesLastModifications")) || {};
 
@@ -34,8 +34,29 @@ async function generateMustacheView(cache) {
         ([url, obj]) => (lastMods[url] = obj.lastmod)
     );
     await cache.set("pagesLastModifications", JSON.stringify(lastMods));
+    return Object.values(urlRecords);
+}
 
-    return { urls: [indexRecord, ...Object.values(urlRecords)] };
+function getMenuPageRecords() {
+    const pages = [
+        "https://tfilatunes.com/files",
+        "https://tfilatunes.com/add-tune",
+        "https://tfilatunes.com/contribute",
+        "https://tfilatunes.com/about"
+    ]
+    return pages.map((url) => ({
+        loc: url,
+        lastmod: "2023-05-08",
+        changefreq: "monthly",
+        priority: 0.95,
+    }));
+}
+
+async function generateMustacheView(cache) {
+    const tfilotRecords = await getTfilaPageRecords(cache);
+    const menuRecords = getMenuPageRecords();
+
+    return { urls: [indexRecord, ...menuRecords, ...tfilotRecords] };
 }
 
 export async function onRequestGet({ env }) {
