@@ -137,7 +137,6 @@ export async function onRequestPost({ request, env }) {
             }
         }
 
-        console.log("inputJson", inputJson);
         let tune = formatTune(inputJson);
 
         if (password) {
