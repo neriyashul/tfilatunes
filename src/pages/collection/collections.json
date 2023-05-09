@@ -11,5 +11,18 @@
                 "name": "שחרית"
             }
         ]
+    },
+    "yom-yerushalayim": {
+        "name": "יום ירושלים",
+        "pages": [
+            {
+                "url": "/tunes?text=maariv-yom-yerushalayim",
+                "name": "ערבית"
+            },
+            {
+                "url": "/tunes?text=shacharit-yom-yerushalayim",
+                "name": "שחרית"
+            }
+        ]
     }
 }

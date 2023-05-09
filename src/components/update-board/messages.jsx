@@ -36,7 +36,7 @@ export default [
         ),
     },
     {
-        id: "tfila-yom-haatzmaut",
+        id: "tfila-yom-yerushalayim",
         getMessage: () => (
             <>
                 תפילות ל
@@ -45,11 +45,12 @@ export default [
                     component="a"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="/collection/yom-haatzmaut"
+                    href="/collection/yom-yerushalayim"
                 >
-                    יום&nbsp;העצמאות
+                    יום&nbsp;ירושלים
                 </Box>
             </>
         ),
     },
+    
 ];

@@ -40,7 +40,16 @@ export default function Home() {
                             to="/collection/yom-haatzmaut"
                             {...buttonProps}
                         >
-                            יום העצמאות
+                            יום&nbsp;העצמאות
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button
+                            component={Link}
+                            to="/collection/yom-yerushalayim"
+                            {...buttonProps}
+                        >
+                            יום&nbsp;ירושלים
                         </Button>
                     </Grid>
                 </Grid>
