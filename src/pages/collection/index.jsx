@@ -11,6 +11,7 @@ import collections from "./collections.json";
 import NotFound from "../404";
 import styles from "./style";
 import { Helmet } from "react-helmet-async";
+import { useLayoutEffect } from "react";
 
 export default function PageCollection({ setHeader }) {
     const param = useParams();
@@ -19,7 +20,7 @@ export default function PageCollection({ setHeader }) {
     const collection = collections[key];
     if (!key || !collection) return <NotFound />;
 
-    setHeader(collection.name);
+    useLayoutEffect(() => setHeader(collection.name), [collection]);
 
     return (
         <List>
