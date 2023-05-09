@@ -4,7 +4,7 @@ import {
     getSubsections,
     getTfilot,
     getSubsectionName,
-} from "../../db/metadata";
+} from "../../db/data/metadata";
 import { MongoDBGateway } from "../../db/mongodb-gateway";
 
 const tfilot = getTfilot();
@@ -62,7 +62,6 @@ function groupByRate(tunes) {
         tunes: v,
     }));
     groups.sort((a, b) => (Number(a.rate) > Number(b.rate) ? -1 : 1));
-    console.log("groups", groups);
     return groups;
 }
 

@@ -1,4 +1,4 @@
-import tfilot from "./data/tfilot.json";
+import tfilot from "./tfilot.json";
 
 export function getTfilot() {
     return tfilot.map((tfila) => ({ key: tfila.key, name: tfila.name }));
