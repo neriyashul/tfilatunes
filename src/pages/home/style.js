@@ -28,7 +28,7 @@ const styles = {
         marginTop: { xs: "15vh", md: "22vh" },
         alignItems: "center",
         justifyContent: "center",
-        px: 20
+        px: 20,
     },
 };
 export default styles;

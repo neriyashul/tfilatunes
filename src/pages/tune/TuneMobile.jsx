@@ -48,9 +48,7 @@ export default function TuneMobile({
             />
             <Divider role="presentation" sx={styles.divider} />
             <Typography sx={styles.textHeader}>{subsection?.name}</Typography>
-            <Typography sx={styles.text}>
-                {parse(subsection?.text)}
-            </Typography>
+            <Typography sx={styles.text}>{parse(subsection?.text)}</Typography>
         </div>
     );
 }

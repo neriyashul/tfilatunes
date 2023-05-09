@@ -92,7 +92,9 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
     return (
         <>
             <Helmet>
-                <title>{subsection.name} במנגינת &quot;{tune.name}&quot;</title>
+                <title>
+                    {subsection.name} במנגינת &quot;{tune.name}&quot;
+                </title>
                 <meta
                     name="description"
                     content={`"${subsection.name}" במנגינה של "${tune.name}" - 'מנגינות לתפילה' הוא אתר שיתופי ללחנים ושירים עבור קטעי התפילה השונים`}
