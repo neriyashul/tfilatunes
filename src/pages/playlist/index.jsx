@@ -5,6 +5,7 @@ import PlaylistPageMobile from "./PlaylistMobile";
 import { useSearchParams } from "react-router-dom";
 import NotFound from "../404";
 import { useTfila } from "../../hooks/tfila";
+import { Helmet } from "react-helmet-async";
 
 export default function Playlist({ setHeader, setOnMenuClick }) {
     const [searchParams] = useSearchParams();
@@ -16,8 +17,9 @@ export default function Playlist({ setHeader, setOnMenuClick }) {
         return <NotFound />;
     }
 
+    let playlist;
     if (isMobile) {
-        return (
+        playlist = (
             <PlaylistPageMobile
                 tfila={tfila}
                 setHeader={setHeader}
@@ -25,6 +27,20 @@ export default function Playlist({ setHeader, setOnMenuClick }) {
             />
         );
     } else {
-        return <PlaylistPageDesktop tfila={tfila} />;
+        playlist = <PlaylistPageDesktop tfila={tfila} />;
     }
+
+    const sectionNames = tfila.sections.map((s) => s.name).join(", ");
+    return (
+        <>
+            <Helmet>
+                <title>שירים ומנגינות ל{tfila.name}</title>
+                <meta
+                    name="description"
+                    content={`רשימת לחנים, שירים ומנגינות ל${tfila.name}. בפרט, ב-${sectionNames}`}
+                />
+            </Helmet>
+            {playlist}
+        </>
+    );
 }

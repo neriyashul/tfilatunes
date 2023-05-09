@@ -6,6 +6,7 @@ import { cache } from "./utils/cache";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { CacheProvider } from "@emotion/react";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { HelmetProvider } from "react-helmet-async";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -13,7 +14,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <QueryClientProvider client={new QueryClient()}>
-                    <Router />
+                    <HelmetProvider>
+                        <Router />
+                    </HelmetProvider>
                 </QueryClientProvider>
             </ThemeProvider>
         </CacheProvider>

@@ -15,6 +15,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styles from "./style";
 import tfilot from "../../db/data/tfilot.json";
+import { Helmet } from "react-helmet-async";
 
 export default function FilesForPrinting() {
     const [selected, setSelected] = React.useState("קבלת_שבת");
@@ -50,6 +51,13 @@ export default function FilesForPrinting() {
 
     return (
         <Box sx={styles.center}>
+            <Helmet>
+                <title>קבצי מנגינות להדפסה</title>
+                <meta
+                    name="description"
+                    content="רשימת מנגינות לתפילה כקבצים להדפסה עבור שבתות וחגים - ברשימה יש אוסף שירים ולחנים לקטעי התפילה השונים"
+                />
+            </Helmet>
             <Box sx={styles.form}>
                 <Typography component="h1" sx={styles.header}>
                     קבצי&nbsp;מנגינות&nbsp;להדפסה

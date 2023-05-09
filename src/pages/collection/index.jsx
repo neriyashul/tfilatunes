@@ -9,7 +9,8 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import collections from "./collections.json";
 import NotFound from "../404";
-import styles from "./style"
+import styles from "./style";
+import { Helmet } from "react-helmet-async";
 
 export default function PageCollection({ setHeader }) {
     const param = useParams();
@@ -22,13 +23,16 @@ export default function PageCollection({ setHeader }) {
 
     return (
         <List>
+            <Helmet>
+                <title>מנגינות לתפילות {collection.name}</title>
+                <meta
+                    name="description"
+                    content={`רשימת שירים ומנגינות לתפילות ל${collection.name} - שירים ומנגינות מכל הזמנים, כמו: קרליבך, שירים חסידיים וארץ ישראליים`}
+                />
+            </Helmet>
             {collection.pages?.map((page) => (
                 <ListItem key={page.url} sx={{}}>
-                    <Paper
-                        key={page.url}
-                        elevation={0}
-                        sx={styles.paper}
-                    >
+                    <Paper key={page.url} elevation={0} sx={styles.paper}>
                         <ListItemButton
                             variant="contained"
                             component={Link}

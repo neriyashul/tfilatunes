@@ -8,6 +8,7 @@ import { useSection } from "../../hooks/tfila";
 import NotFound from "../404";
 import Loading from "../../components/loading";
 import { unpack } from "../../utils/tune";
+import { Helmet } from "react-helmet-async";
 
 export default function TunePage({ player, setHeader, setOnMenuClick }) {
     const param = useParams();
@@ -35,7 +36,7 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
 
     const { isMobile } = useScreenSize();
 
-    const idx = tune?.performances.length - 1 || 0
+    const idx = tune?.performances.length - 1 || 0;
     const performanceIndexState = useState(idx);
     const [performanceIndex] = performanceIndexState;
 
@@ -63,8 +64,9 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
 
     const performanceLabels = tune.performances.map((p) => p.label);
 
+    let tuneElem;
     if (isMobile) {
-        return (
+        tuneElem = (
             <TuneMobile
                 player={player}
                 tune={tune}
@@ -76,7 +78,7 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
             />
         );
     } else {
-        return (
+        tuneElem = (
             <TuneDesktop
                 player={player}
                 tune={tune}
@@ -86,4 +88,17 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
             />
         );
     }
+
+    return (
+        <>
+            <Helmet>
+                <title>{subsection.name} במנגינת &quot;{tune.name}&quot;</title>
+                <meta
+                    name="description"
+                    content={`"${subsection.name}" במנגינה של "${tune.name}" - 'מנגינות לתפילה' הוא אתר שיתופי ללחנים ושירים עבור קטעי התפילה השונים`}
+                />
+            </Helmet>
+            {tuneElem}
+        </>
+    );
 }

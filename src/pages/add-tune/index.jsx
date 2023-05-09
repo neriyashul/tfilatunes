@@ -23,6 +23,7 @@ import PerformanceField from "./PerformanceField";
 import tfilot from "../../db/data/tfilot.json";
 import TimeField from "./TimeField";
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const subsOptions = [];
 for (let tfila of tfilot) {
@@ -53,6 +54,13 @@ export default function AddTune() {
             method="post"
             {...formProps}
         >
+            <Helmet>
+                <title>הוספת מנגינה חדשה</title>
+                <meta
+                    name="description"
+                    content="הוספת מנגינה חדשה לקטע תפילה או חזנות. יש לך רעיון למנגינה ללכה דודי או להלל? אפשר להוסיף פה"
+                />
+            </Helmet>
             <Stack spacing={2}>
                 <Typography component="h1" sx={styles.header}>
                     הוספת&nbsp;מנגינה&nbsp;חדשה
