@@ -10,6 +10,29 @@ import Loading from "../../components/loading";
 import { unpack } from "../../utils/tune";
 import { Helmet } from "react-helmet-async";
 
+function formatTitle(tune, subsection) {
+    let strBuilder = [subsection.name];
+
+    if (subsection.name !== tune.name) {
+        strBuilder.push(` במנגינה של '${tune.name}'`);
+    }
+
+    if (tune.composer) {
+        strBuilder.push(`- ${tune.composer}`);
+    } else {
+        strBuilder.push(`בביצוע של ${tune.performer}`);
+    }
+
+    return strBuilder.join(" ");
+}
+
+function formatDescription(tune, subsection) {
+    return (
+        formatTitle(tune, subsection) +
+        `. 'מנגינות לתפילה' הוא אתר שיתופי ללחנים ושירים עבור קטעי התפילה השונים`
+    );
+}
+
 export default function TunePage({ player, setHeader, setOnMenuClick }) {
     const param = useParams();
     const { state } = useLocation();
@@ -92,12 +115,10 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
     return (
         <>
             <Helmet>
-                <title>
-                    {subsection.name} במנגינת &quot;{tune.name}&quot;
-                </title>
+                <title>{formatTitle(tune, subsection)}</title>
                 <meta
                     name="description"
-                    content={`"${subsection.name}" במנגינה של "${tune.name}" - 'מנגינות לתפילה' הוא אתר שיתופי ללחנים ושירים עבור קטעי התפילה השונים`}
+                    content={formatDescription(tune, subsection)}
                 />
             </Helmet>
             {tuneElem}
