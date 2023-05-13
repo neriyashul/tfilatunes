@@ -17,8 +17,6 @@ const styles = {
     heading: {
         position: "relative",
         fontSize: { xs: "2.5rem", md: "2.5rem" },
-        width: "80%",
-        left: "10%",
         textAlign: "center",
         marginTop: { xs: "20vh", md: "25vh" },
     },
@@ -29,6 +27,7 @@ const styles = {
         alignItems: "center",
         justifyContent: "center",
         px: 20,
+        mb: 5
     },
 };
 export default styles;
