@@ -2,18 +2,15 @@ import React from "react";
 import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { styles } from "./style";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Head from "../../components/head";
 
 export default function Contribute() {
     return (
         <Box sx={styles.container}>
-            <Helmet>
-                <title>איך אפשר לעזור?</title>
-                <meta
-                    name="description"
-                    content="עזרו לנו ברעיונות ובפיתוח האתר - אתר מנגינות לתפילה מכיל אוסף שירים ומנגינות לקטעי תפילה, קבלות שבת והלל מוזיקליים"
-                />
-            </Helmet>
+            <Head
+                title="איך אפשר לעזור"
+                description="עזרו לנו ברעיונות ובפיתוח האתר - אתר מנגינות לתפילה מכיל אוסף שירים ומנגינות לקטעי תפילה, קבלות שבת והלל מוזיקליים"
+            />
             <Typography variant="h4" component="h1" sx={styles.header}>
                 איך אפשר לעזור?
             </Typography>

@@ -2,18 +2,16 @@ import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import React from "react";
 import styles from "./style";
-import { Helmet } from "react-helmet-async";
+import Head from "../../components/head";
 
 export default function PageUnderConstruction() {
     return (
         <Box sx={styles.container}>
-            <Helmet>
-                <title>העמוד בבנייה</title>
-                <meta
-                    name="description"
-                    content="מאגר שירים ומנגינות לקטעי תפילה, קבלת שבת מוזיקלית והלל מוזיקלי. המאגר כולל שירים ומנגינות מכל הזמנים, כמו: קרליבך, שירים חסידיים וארץ ישראליים"
-                />
-            </Helmet>
+            <Head
+                title="העמוד בבנייה"
+                description="מאגר שירים ומנגינות לקטעי תפילה, קבלת שבת מוזיקלית והלל מוזיקלי. המאגר כולל שירים ומנגינות מכל הזמנים, כמו: קרליבך, שירים חסידיים וארץ ישראליים"
+                canonical={false}
+            />
             <Stack sx={styles.stack}>
                 <Box
                     component="img"

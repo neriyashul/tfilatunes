@@ -8,7 +8,7 @@ import { useSection } from "../../hooks/tfila";
 import NotFound from "../404";
 import Loading from "../../components/loading";
 import { unpack } from "../../utils/tune";
-import { Helmet } from "react-helmet-async";
+import Head from "../../components/head";
 
 function formatTitle(tune, subsection) {
     let strBuilder = [subsection.name];
@@ -114,13 +114,10 @@ export default function TunePage({ player, setHeader, setOnMenuClick }) {
 
     return (
         <>
-            <Helmet>
-                <title>{formatTitle(tune, subsection)}</title>
-                <meta
-                    name="description"
-                    content={formatDescription(tune, subsection)}
-                />
-            </Helmet>
+            <Head
+                title={formatTitle(tune, subsection)}
+                description={formatDescription(tune, subsection)}
+            />
             {tuneElem}
         </>
     );

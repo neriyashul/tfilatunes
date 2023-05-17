@@ -4,18 +4,15 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import MainBackground from "../../components/background";
 import UpdateBoard from "../../components/update-board";
-import { Helmet } from "react-helmet-async";
+import Head from "../../components/head";
 
 export default function Home() {
     return (
         <>
-            <Helmet>
-                <title>מנגינות לתפילה</title>
-                <meta
-                    name="description"
-                    content="מאגר שירים ומנגינות לקטעי התפילה השונים. כולל קבלת שבת מוזיקלית והלל מוזיקלי. רוצה לחנים ללכה דודי? עולה חזן בתפילת החג הקרובה? זה בדיוק המקום בשבילך"
-                />
-            </Helmet>
+            <Head
+                title="מנגינות לתפילה"
+                description="מאגר שירים ומנגינות לקטעי התפילה השונים. כולל קבלת שבת מוזיקלית והלל מוזיקלי. רוצה לחנים ללכה דודי? עולה חזן בתפילת החג הקרובה? זה בדיוק המקום בשבילך"
+            />
 
             <MainBackground sx={styles.background} />
             <UpdateBoard />
