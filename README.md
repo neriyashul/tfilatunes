@@ -1,12 +1,12 @@
 # tfilatunes
 ## About ##
-Tfilatunes is a collaborative collection of Hasidic tunes and music of Israel for tfilot (Jewish prayers).
-
-The url of the website is http://tfilatunes.com
+Tfilatunes is a collaborative collection of Hasidic tunes and "music of Israel" for tfilot (Jewish prayers).
+                                            
+The URL of the website is https://tfilatunes.com
 
 ## Contribute ##
 
-1. Clone:
+1. Clone the repository:
 ```
 git clone https://github.com/neriyashul/tfilatunes.git
 ```
