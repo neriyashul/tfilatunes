@@ -3,6 +3,7 @@ import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { styles } from "./style";
 import { Link } from "react-router-dom";
 import Head from "../../components/head";
+import GitHubButton from "react-github-btn";
 
 export default function Contribute() {
     return (
@@ -35,6 +36,25 @@ export default function Contribute() {
                     <MuiLink href="https://github.com/neriyashul/tfilatunes">
                         גיטהאב
                     </MuiLink>
+                </Box>
+                <Box component="li" sx={styles.listItem}>
+                    <Box sx={{ display: "flex" }}>
+                        אהבת את האתר? פרגנ/י לנו בלחיצה על ה&nbsp;
+                        <Box sx={{ justifyContent: "center" }}>
+                            <GitHubButton
+                                href="https://github.com/neriyashul/tfilatunes"
+                                data-icon="octicon-star"
+                                data-size="large"
+                                aria-label="Star neriyashul/tfilatunes on GitHub"
+                            >
+                                Star
+                            </GitHubButton>
+                        </Box>
+                        &nbsp;
+                        <MuiLink href="https://github.com/neriyashul/tfilatunes">
+                            בגיטהאב
+                        </MuiLink>
+                    </Box>
                 </Box>
             </ul>
         </Box>
