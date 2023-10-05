@@ -1,6 +1,7 @@
 # tfilatunes
 ## About ##
-Tfilatunes is a collaborative collection of songs and tunes for tfilot (Jewish prayers).
+Tfilatunes is a "musical parody" sharing platform for tfilot (Jewish prayers), 
+meaning a collaborative collection of songs and melodies for tfilot.
                                             
 The URL of the website is https://tfilatunes.com
 
