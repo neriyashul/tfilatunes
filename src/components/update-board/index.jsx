@@ -18,7 +18,7 @@ import messages from "./messages";
 
 export default function UpdateBoard() {
     const [open, setOpen] = useState(true);
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState(true);
     const isMobile = useScreenSize().isMobile;
 
     const notPostedMsgs = messages.filter(
