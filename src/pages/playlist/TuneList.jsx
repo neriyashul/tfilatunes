@@ -17,6 +17,20 @@ import Loading from "../../components/loading";
 export default function TuneList({ tunes, subsection, isLoading }) {
     const [hoveringItem, setHoveringItem] = useState();
 
+    if (tunes && tunes.length > 1) {
+        tunes.sort((a, b) => {
+            let rateA = parseInt(a.subsections[0]?.rate)
+            let rateB = parseInt(b.subsections[0]?.rate)
+            if (!isNaN(rateA) && !isNaN(rateB)) {
+                return rateB - rateA
+            } else if (isNaN(rateA)) {
+                return 1
+            } else {
+                return -1
+            }
+        })
+    }
+
     if (isLoading) {
         return <Loading />;
     }
