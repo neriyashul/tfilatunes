@@ -48,8 +48,7 @@ export const desktopStyles = {
     },
 
     sections: {
-        paddingBottom: "50px",
-        mb: "50vh",
+        mb: "93vh",
         cursor: "pointer",
     },
 
