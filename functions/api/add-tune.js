@@ -150,7 +150,8 @@ export async function onRequestPost({ request, env }) {
             }
         } else {
             let subject = `מנגינה חדשה: ${tune.name}, לקטע: ${tune.subsections.name}`;
-            sendEmail(subject, JSON.stringify(tune));
+            let templateId = "template_kgy41sa"
+            sendEmail(subject, JSON.stringify(tune), templateId);
         }
 
         return new RedirectResponse("/upload-successful");

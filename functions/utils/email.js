@@ -1,38 +1,34 @@
-function buildMessage(subject, msg) {
-    return JSON.stringify({
-        personalizations: [
-            {
-                to: [
-                    {
-                        email: "support@tfilatunes.com",
-                        name: "support",
-                    },
-                ],
-            },
-        ],
-        from: {
-            email: "auto-api@tfilatunes.com",
-            name: "מנגינות לתפילה API",
-        },
-        subject: subject,
-        content: [
-            {
-                type: "text/plain",
-                value: msg,
-            },
-        ],
-    });
-}
+export async function sendEmail(subject, msg, templateId) {
+    const serviceId = 'service_tfilatunes';
+    const publicKey = 'uzK-eVn3ezUOZYC2a';
 
-export async function sendEmail(subject, msg) {
-    const message = buildMessage(subject, msg);
-
-    const response = await fetch("https://api.mailchannels.net/tx/v1/send", {
-        method: "POST",
-        headers: {
-            "content-type": "application/json",
+    const data = {
+        service_id: serviceId,
+        template_id: templateId,
+        user_id: publicKey,
+        template_params: {
+            subject: subject,
+            to_name: 'manager',
+            message: msg,
         },
-        body: message,
-    });
-    return response.json();
+    };
+
+    try {
+        const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            console.log('Email sent successfully!');
+        } else {
+            console.error('Failed to send email:', response.statusText);
+        }
+        response.json();
+    } catch (error) {
+        console.error('Error sending email:', error);
+    }
 }
