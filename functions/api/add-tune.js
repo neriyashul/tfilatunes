@@ -101,7 +101,7 @@ function formatTune(inputJson) {
         subsections: {
             id: Number(inputJson.subsectionId),
             name: inputJson.subsectionName,
-        },
+        }
     };
 
     let performer = inputJson.performer;
@@ -151,7 +151,9 @@ export async function onRequestPost({ request, env }) {
         } else {
             let subject = `מנגינה חדשה: ${tune.name}, לקטע: ${tune.subsections.name}`;
             let templateId = "template_kgy41sa"
-            sendEmail(subject, JSON.stringify(tune), templateId);
+            let sender = inputJson.username;
+            let email = inputJson.email;
+            sendEmail(subject, JSON.stringify(tune), templateId, sender, email);
         }
 
         return new RedirectResponse("/upload-successful");

@@ -178,6 +178,20 @@ export default function AddTune() {
                 </Button>
             </Stack>
             <Stack spacing={2}>
+                <Typography component="h4">פרטים אישיים</Typography>
+                <TextField
+                    name="username"
+                    label="שם (אופציונלי)"
+                    variant="outlined"
+                />
+                <TextField
+                    name="email"
+                    label="אימייל (אופציונלי)"
+                    variant="outlined"
+
+                />
+            </Stack>
+            <Stack spacing={2}>
                 {isAdmin && <TextField {...passwordProps} />}
 
                 <Box sx={styles.center}>
