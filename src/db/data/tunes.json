@@ -1706,7 +1706,6 @@
                 "id": 300,
                 "rate": 5
             }
-            
         ]
     },
     {
@@ -4305,11 +4304,11 @@
         "id": 8308,
         "lastModified": "2023-05-17T20:40:17.156Z",
         "performance": {
-            "videoId": "Zrpz8eowu-0",
-            "startAt": null,
-            "label": "אימתי קאתי מר - יוסף משה כהנא"
+            "videoId": "wqnGCciWM3w",
+            "startAt": 14,
+            "label": "אימתי קאתי מר - צמאה"
         },
-        "performer": "יוסף משה כהנא",
+        "performer": "אברהם פריד",
         "subsections": [
             {
                 "id": 300,
@@ -5834,6 +5833,23 @@
             {
                 "id": 172,
                 "name": "טוב להודות לה'"
+            }
+        ]
+    },
+    {
+        "id": 9988,
+        "name": "עוד יותר טוב (תמיד אוהב אותי)",
+        "composer": "יאיר אליצור",
+        "performance": {
+            "videoId": "rgSvk335zis",
+            "label": "עוד יותר טוב (תמיד אוהב אותי) - ששון שאולוב",
+            "startAt": 37
+        },
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5
             }
         ]
     }
