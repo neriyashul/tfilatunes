@@ -1,195 +1,114 @@
 import React from "react";
-import {
-    Autocomplete,
-    Box,
-    Button,
-    FormControl,
-    Rating,
-    Stack,
-    TextField,
-    Typography,
-} from "@mui/material";
-import {
-    addTuneProps,
-    autoCompleteProps,
-    formProps,
-    passwordProps,
-    removeTuneProps,
-    styles,
-} from "./style";
-import AddIcon from "@mui/icons-material/Add";
-import DeleteIcon from "@mui/icons-material/Delete";
-import PerformanceField from "./PerformanceField";
-import tfilot from "../../db/data/tfilot.json";
-import TimeField from "./TimeField";
-import { useSearchParams } from "react-router-dom";
+import { Box, Typography, Paper } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import Head from "../../components/head";
 
-const subsOptions = [];
-for (let tfila of tfilot) {
-    for (let section of tfila.sections) {
-        if (section.subsections) {
-            for (let sub of section.subsections) {
-                subsOptions.push({
-                    id: sub.id,
-                    name: sub.name,
-                    tfila: tfila.name,
-                });
-            }
-        }
-    }
-}
+const email = "support@tfilatunes.com";
 
 export default function AddTune() {
-    const [subsection, setSubsection] = React.useState(null);
-    const [performances, setPerformances] = React.useState([]);
-
-    const [searchParams] = useSearchParams();
-    const isAdmin = searchParams.get("admin");
-
     return (
         <Box
-            component="form"
-            action="/api/add-tune"
-            method="post"
-            {...formProps}
+            sx={{
+                minHeight: "70vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                px: 2,
+                py: 4,
+            }}
         >
             <Head
                 title="הוספת מנגינה חדשה"
-                description="הוספת מנגינה חדשה לקטע תפילה או חזנות. יש לך רעיון למנגינה ללכה דודי או להלל? אפשר להוסיף פה"
+                description="שלחו אלינו את המנגינות שברצונכם להעלות. כתבו לכתובת support@tfilatunes.com"
             />
-            <Stack spacing={2}>
-                <Typography component="h1" sx={styles.header}>
-                    הוספת&nbsp;מנגינה&nbsp;חדשה
-                </Typography>
-                <Typography component="h4">פרטי המנגינה</Typography>
-                <TextField
-                    name="name"
-                    label="שם המנגינה"
-                    variant="outlined"
-                    required
-                />
-                <TextField
-                    name="performer"
-                    label="מבצע"
-                    variant="outlined"
-                    required
-                />
-                <TextField
-                    name="composer"
-                    label="מלחין (אופציונלי)"
-                    variant="outlined"
-                />
-                <Stack>
-                    <Typography
-                        component="legend"
-                        sx={{ fontSize: "1.1rem", color: "text.secondary" }}
-                    >
-                        התאמה למילים (אופציונלי)
-                    </Typography>
-                    <Rating name="rate" size="large" />
-                </Stack>
-            </Stack>
-            <Stack spacing={2}>
-                <Typography component="h4">סרטון הדגמה</Typography>
-                <TextField
-                    name="link"
-                    label="קישור לסרטון ביוטיוב (השיר המקורי ללא שינוי המילים)"
-                    variant="outlined"
-                    required
-                />
-                <TimeField name="startAt" />
-            </Stack>
-            <Stack spacing={2}>
-                <Typography component="h4">פרטי קטע התפילה</Typography>
-                <FormControl>
-                    <Autocomplete
-                        options={subsOptions}
-                        value={subsection}
-                        onChange={(event, newValue) => {
-                            if (!newValue) setPerformances([]);
-                            setSubsection(newValue);
-                        }}
-                        renderInput={(params) => (
-                            <TextField
-                                {...params}
-                                label="בחר קטע"
-                                required={!subsection}
-                            />
-                        )}
-                        renderGroup={(params) => (
-                            <li key={params.key}>
-                                <Box sx={styles.subheader}>{params.group}</Box>
-                                <ul style={styles.item}>{params.children}</ul>
-                            </li>
-                        )}
-                        {...autoCompleteProps}
-                    />
-                    {subsection && (
-                        <>
-                            <input
-                                type="hidden"
-                                name="subsectionId"
-                                value={subsection.id}
-                            />
-                            <input
-                                type="hidden"
-                                name="subsectionName"
-                                value={subsection.name}
-                            />
-                        </>
-                    )}
-                </FormControl>
-
-                {performances.map((perf, index) => (
-                    <Stack spacing={2} key={index}>
-                        <Typography>{index + 1 + ")"}</Typography>
-
-                        <PerformanceField subsectionId={subsection.id} />
-                        <Button
-                            onClick={() => {
-                                setPerformances((prev) =>
-                                    prev.filter((x) => x !== perf)
-                                );
-                            }}
-                            startIcon={<DeleteIcon />}
-                            {...removeTuneProps}
-                        >
-                            הסר מנגינה
-                        </Button>
-                    </Stack>
-                ))}
-
-                <Button
-                    startIcon={<AddIcon />}
-                    onClick={() => {
-                        if (subsection) {
-                            setPerformances((prev) => {
-                                const newElem = prev[prev.length - 1] + 1 || 1;
-                                return [...prev, newElem];
-                            });
-                        } else {
-                            alert("אף קטע לא נבחר");
-                        }
+            <Paper
+                elevation={6}
+                sx={{
+                    maxWidth: 520,
+                    width: "100%",
+                    p: 4,
+                    textAlign: "center",
+                    borderRadius: 3,
+                    border: "2px solid",
+                    borderColor: "primary.main",
+                    background:
+                        "linear-gradient(145deg, rgba(40,40,40,0.95) 0%, rgba(25,25,25,0.98) 100%)",
+                    direction: "rtl",
+                }}
+            >
+                <MusicNoteIcon
+                    sx={{
+                        fontSize: 56,
+                        color: "primary.main",
+                        mb: 2,
+                        opacity: 0.9,
                     }}
-                    {...addTuneProps}
+                />
+                <Typography
+                    component="h1"
+                    sx={{
+                        fontSize: "1.75rem",
+                        fontWeight: 700,
+                        mb: 2,
+                        color: "text.primary",
+                    }}
                 >
-                    הוסף סרטון של הקטע עם המנגינה
-                </Button>
-            </Stack>
-            <Stack spacing={2}>
-                {isAdmin && <TextField {...passwordProps} />}
-
-                <Box sx={styles.center}>
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        sx={styles.submitButton}
+                    רוצים להעלות מנגינה?
+                </Typography>
+                <Typography
+                    sx={{
+                        fontSize: "1.1rem",
+                        color: "text.secondary",
+                        lineHeight: 1.7,
+                        mb: 3,
+                    }}
+                >
+                    שלחו אלינו אימייל עם המנגינות שברצונכם להעלות לאתר
+                    <br />
+                    ונוסיף אותן בהקדם.
+                </Typography>
+                <Box
+                    sx={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 1.5,
+                        px: 3,
+                        py: 2,
+                        borderRadius: 2,
+                        bgcolor: "action.hover",
+                        border: "1px solid",
+                        borderColor: "divider",
+                    }}
+                >
+                    <EmailIcon sx={{ color: "primary.main", fontSize: 28 }} />
+                    <Typography
+                        component="a"
+                        href={`mailto:${email}`}
+                        sx={{
+                            fontSize: "1.25rem",
+                            fontWeight: 600,
+                            color: "primary.main",
+                            textDecoration: "none",
+                            "&:hover": {
+                                textDecoration: "underline",
+                            },
+                        }}
                     >
-                        שלח
-                    </Button>
+                        {email}
+                    </Typography>
                 </Box>
-            </Stack>
+                <Typography
+                    sx={{
+                        fontSize: "0.95rem",
+                        color: "text.secondary",
+                        mt: 3,
+                        textAlign: "center",
+                    }}
+                >
+                    נשמח לשמוע מכם
+                </Typography>
+            </Paper>
         </Box>
     );
 }
