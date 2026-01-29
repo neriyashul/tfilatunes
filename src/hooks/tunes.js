@@ -1,8 +1,9 @@
 import getDB from "../db/db-factory";
 import { useQuery } from "react-query";
 
-const db_type = import.meta.env.VITE_DB_TYPE;
-const db = getDB(db_type);
+// const db_type = import.meta.env.VITE_DB_TYPE;
+// const db = getDB(db_type);
+const db = getDB("file_system");
 
 export function useTunes(subsectionId) {
     const { isLoading, data, error } = useQuery(
