@@ -960,11 +960,12 @@
         "composer": "יוסף מנדלבוים (חסידות בובוב)",
         "name": "מקדש מלך",
         "id": 7384,
-        "lastModified": "2023-05-09T10:30:25.847Z",
+        "lastModified": "2026-01-29T10:30:25.847Z",
         "performance": {
-            "videoId": "h0zZp3J6t84",
-            "startAt": 19,
-            "label": "מקדש מלך - ישי ריבו"
+            "videoId": "5YzoA_1pVV8",
+            "startAt": 18,
+            "label": "מקדש מלך - ישי ריבו והלב והמעין",
+            "yt_views": 24861
         },
         "performer": "ישי ריבו",
         "subsections": [
@@ -1430,7 +1431,7 @@
             {
                 "id": 360,
                 "name": "אלי אתה",
-                "rate": 1
+                "rate": 5
             }
         ],
         "_id__baas_transaction": "662e6a63dfd058323f8ec185"
@@ -1452,7 +1453,7 @@
             {
                 "id": 50,
                 "name": "שמעה ותשמח ציון",
-                "rate": 1
+                "rate": 5
             }
         ],
         "_id__baas_transaction": "67375209f328b49206c2dce7"
@@ -2707,11 +2708,12 @@
         "id": 1206,
         "lastModified": "2023-05-17T17:55:24.075Z",
         "performance": {
-            "videoId": "lf-N2pJOQ5Y",
+            "videoId": "BAfY1trbNcA",
             "startAt": 17,
-            "label": "ושננתם לבניך ודברת בם - אליה וחיים קנר"
+            "label": "ושננתם לבניך ודברת בם",
+            "yt_views": 3520
         },
-        "performer": "אליה וחיים קנר",
+        "performer": "ראובן סירוטקין",
         "subsections": [
             {
                 "id": 180,
@@ -3127,10 +3129,10 @@
         "id": 764,
         "lastModified": "2024-11-01T12:31:01.955Z",
         "performance": {
-            "videoId": "sDD05csv3HA",
-            "startAt": 52,
-            "label": "אהבת עולם - ר' שלמה קרליבך",
-            "yt_views": 110629
+            "videoId": "p5dNzfzJVoE",
+            "startAt": 18,
+            "label": "אהבת עולם - להקת מזמור שיר מארחים את עקיבא",
+            "yt_views": 1623864
         },
         "subsections": [
             {
@@ -3775,11 +3777,12 @@
         "id": 3091,
         "lastModified": "2024-10-18T13:54:27.676Z",
         "performance": {
-            "videoId": "s_referring",
-            "startAt": null,
-            "label": "אלי אתה ואודך - אברהם פריד"
+            "videoId": "9NeP-PjmB3E",
+            "startAt": 26,
+            "label": "אלי אתה ואודך - צמאה",
+            "yt_views": 234012
         },
-        "performer": "אברהם פריד",
+        "performer": "רמי קליינשטיין",
         "subsections": [
             {
                 "id": 50,
@@ -4975,9 +4978,10 @@
         "id": 7252,
         "lastModified": "2023-03-29T20:16:38.189Z",
         "performance": {
-            "videoId": "SXe1Q0vhDWU",
-            "startAt": 6,
-            "yt_views": 46341
+            "videoId": "IavjGcwqYBk",
+            "startAt": 17,
+            "label": "מלוך - יש ריבו",
+            "yt_views": 1675524
         },
         "subsections": [
             {
@@ -5709,13 +5713,7 @@
             {
                 "id": 400,
                 "name": "הודו לה' כי טוב",
-                "rate": 5,
-                "performances": [
-                    {
-                        "label": "תפילת ליל יום העצמאות בהיכל הישיבה",
-                        "videoId": "R7mEJP3Ew9g"
-                    }
-                ]
+                "rate": 5
             }
         ]
     },
