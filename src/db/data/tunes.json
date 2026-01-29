@@ -1,10 +1,6199 @@
-[  {
-    "id": 1482,
-    "videoId": "h7wrNubj7nM",
-    "startAt": 5,
-    "label": "ירושלים של זהב - שולי נתן",
-    "yt_views": 1280000,
-    "performer": "שולי נתן",
-    "lastModified": "2026-01-29T10:30:25.847Z"
-  }  
+[
+    {
+        "_id": "64013299266c6b40001d4511",
+        "id": 1,
+        "name": "דוד מלך ישראל",
+        "composer": "ר' שלמה קרליבך",
+        "performance": {
+            "videoId": "lBfa7fGPpxQ",
+            "startAt": 24,
+            "yt_views": 82042
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Kippalive - קבלת שבת קרליבך",
+                        "videoId": "80Bv83ljgUw",
+                        "startAt": 319,
+                        "endAt": 295,
+                        "yt_views": 608940
+                    }
+                ]
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            },
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית ביום ירושלים",
+                        "videoId": "Bckl1_p7P8Y",
+                        "startAt": 1359,
+                        "yt_views": 868
+                    }
+                ]
+            },
+            {
+                "id": 360,
+                "name": "אלי אתה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית ביום ירושלים",
+                        "videoId": "Bckl1_p7P8Y",
+                        "startAt": 1405,
+                        "yt_views": 868
+                    }
+                ]
+            }
+        ],
+        "lastModified": "2023-03-28T12:36:45.265Z"
+    },
+    {
+        "_id": "641dab93b8984b50b36d0afc",
+        "id": 5,
+        "name": "מזמור לדוד ה' רועי לא אחסר",
+        "composer": "ר' בן ציון שנקר",
+        "performance": {
+            "videoId": "QC3n1uMT-0Q",
+            "startAt": 20,
+            "label": "אהוד בנאי - מזמור לדוד",
+            "yt_views": 819753
+        },
+        "subsections": [
+            {
+                "id": 10,
+                "name": "לכו נרננה",
+                "rate": 4
+            },
+            {
+                "id": 20,
+                "name": "ארבעים שנה",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6422f1292e20ecd5f73ea24f",
+        "composer": "",
+        "name": "עוד ישמע",
+        "id": 6642,
+        "lastModified": "2023-03-28T13:52:41.701Z",
+        "performance": {
+            "videoId": "RiiakgIM270",
+            "yt_views": 355723
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "rate": 5
+            },
+            {
+                "id": 470,
+                "name": "שיר המעלות",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "עוד ישמע שיר המעלות",
+                        "videoId": "G7OIpysJ9C0",
+                        "startAt": 1,
+                        "yt_views": 692
+                    }
+                ]
+            }
+        ],
+        "performer": "להקת מנגינות"
+    },
+    {
+        "_id": "64247af69c7b10e539d064f4",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מקימי",
+        "id": 811,
+        "lastModified": "2023-03-29T17:52:54.989Z",
+        "performance": {
+            "videoId": "L3eqyby0yR8",
+            "startAt": 26,
+            "label": "מקימי - ר' שלמה קרליבך",
+            "yt_views": 32472
+        },
+        "subsections": [
+            {
+                "id": 230,
+                "rate": 5
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642497704035f04dd2cf6fa1",
+        "composer": "ר' שלום חאריטונוב",
+        "name": "כחומר ביד היוצר",
+        "id": 4780,
+        "lastModified": "2023-03-29T19:54:24.538Z",
+        "performance": {
+            "videoId": "mbAgjF418mE",
+            "startAt": 18,
+            "label": "כחומר ביד היוצר - נתן גושן",
+            "yt_views": 1901702
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש אלול",
+                        "videoId": "x6Tk4Idas3E",
+                        "startAt": 836,
+                        "yt_views": 14014
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6424a0974035f04dd2d188f1",
+        "composer": "ר' שלמה קרליבך",
+        "name": "יהי שלום בחילך",
+        "id": 7063,
+        "lastModified": "2023-05-17T19:47:04.332Z",
+        "performance": {
+            "videoId": "x-C3TOvAqLc",
+            "startAt": 32,
+            "label": "יהי שלום בחילך - ר' שלמה קרליבך",
+            "yt_views": 89074
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "ישיבת צפת, הלל ראש חודש, א אלול התשפב",
+                        "videoId": "adgHfovBQGU",
+                        "startAt": 90,
+                        "yt_views": 420
+                    }
+                ]
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש סיון",
+                        "videoId": "CmIvLvrxodI",
+                        "startAt": 1184,
+                        "yt_views": 6900
+                    }
+                ]
+            }
+        ],
+        "performer": "ר' שלמה קרליבך"
+    },
+    {
+        "_id": "6426e01c57ea2554fd02a892",
+        "composer": "ר' שלמה קרליבך",
+        "name": "המעביר בניו / מזמור שירו",
+        "id": 236,
+        "lastModified": "2023-03-31T13:31:38.031Z",
+        "performance": {
+            "videoId": "7qiJCdFEqIo",
+            "startAt": null,
+            "label": "המעביר בניו / מזמור שירו - ר' שלמה קרליבך",
+            "yt_views": 71196
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5
+            },
+            {
+                "id": 70,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "מזמור שירו - שלמה כ\"ץ ויצחק מאיר",
+                        "videoId": "W4KWnNRmv-s",
+                        "startAt": 7,
+                        "yt_views": 17961
+                    }
+                ]
+            },
+            {
+                "id": 300,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6428b9960213a1733e44e095",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אורך ימים אשביעהו",
+        "id": 2419,
+        "lastModified": "2023-04-10T12:14:48.243Z",
+        "performance": {
+            "videoId": "fz0k2yFfNq4",
+            "startAt": 14,
+            "label": "אורך ימים אשביעהו - ר' שלמה קרליבך",
+            "yt_views": 69456
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64292f3b57ea2554fd76c0ab",
+        "composer": "ר' אברהם מלוביצקי",
+        "name": "כי הרבית",
+        "id": 3475,
+        "lastModified": "2023-04-02T07:31:07.231Z",
+        "performance": {
+            "videoId": "ihsyQwYr1nU",
+            "startAt": 30,
+            "label": "כי הרבית - אברהם פריד",
+            "yt_views": 574567
+        },
+        "performer": "אברהם פריד",
+        "subsections": [
+            {
+                "id": 270,
+                "rate": 5
+            },
+            {
+                "id": 400,
+                "name": "הודו לה' כי טוב",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "642932bb0213a1733e4ea199",
+        "composer": "חסידי אדמו\"ר הצמח צדק",
+        "name": "ניגון חסידי הצמח צדק",
+        "id": 5151,
+        "lastModified": "2023-04-02T07:46:54.607Z",
+        "performance": {
+            "videoId": "B4zf8T0MeWY",
+            "startAt": 8,
+            "label": "ניגון חסידי הצמח צדק - ניגוני חב\"ד",
+            "yt_views": 69685
+        },
+        "performer": "ניגוני חב\"ד",
+        "subsections": [
+            {
+                "id": 270,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל מירושלים | הרב שמואל אליהו | תשפ\"ג",
+                        "videoId": "1v4VgxkqUzc",
+                        "startAt": 4149,
+                        "yt_views": 20467
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילה חגיגית ליום ירושלים - יצחק מאיר בליווי נגנים",
+                        "videoId": "6Uw3_F3haOA",
+                        "startAt": 1294,
+                        "yt_views": 2955
+                    }
+                ]
+            },
+            {
+                "id": 330,
+                "rate": 5
+            },
+            {
+                "id": 340,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל לראש חודש - רועי ואחיה פרינס",
+                        "videoId": "Bfg1xSjU4sM",
+                        "startAt": 738,
+                        "yt_views": 96561
+                    }
+                ]
+            },
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642954757a433fb3b9ed50a0",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שובי נפשי למנוחיכי (מהיר)",
+        "id": 3811,
+        "lastModified": "2023-04-02T10:09:57.884Z",
+        "performance": {
+            "videoId": "DoWaUsVPonw",
+            "startAt": 33,
+            "label": "שובי נפשי למנוחיכי (מהיר) - אהרון רזאל חיים דוד ושלמה כ\"ץ",
+            "yt_views": 15954
+        },
+        "performer": "אהרון רזאל חיים דוד ושלמה כ\"ץ",
+        "subsections": [
+            {
+                "id": 280
+            }
+        ]
+    },
+    {
+        "_id": "642969efa10bf6d61cd7f146",
+        "composer": "אבינועם וולפסון (עממי)",
+        "name": "מה אשיב לה'",
+        "id": 8696,
+        "lastModified": "2023-04-02T11:41:35.142Z",
+        "performance": {
+            "videoId": "0_FxkeFhamg",
+            "startAt": 32,
+            "label": "מה אשיב לה' - מרדכי בן דוד",
+            "yt_views": 1040428
+        },
+        "performer": "מרדכי בן דוד",
+        "subsections": [
+            {
+                "id": 290,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6429710b0213a1733e586d9e",
+        "composer": "חב\"ד",
+        "name": "הללו את ה'",
+        "id": 3856,
+        "lastModified": "2023-04-02T12:11:55.649Z",
+        "performance": {
+            "videoId": "20ZdBS_XxWo",
+            "startAt": 14,
+            "label": "הללו את ה' - עקיבא",
+            "yt_views": 863636
+        },
+        "performer": "עקיבא",
+        "subsections": [
+            {
+                "id": 300,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6429f25fa10bf6d61cfa54ab",
+        "composer": "ר' חיים בנט",
+        "name": "קול רינה",
+        "id": 1642,
+        "lastModified": "2023-04-02T21:23:43.176Z",
+        "performance": {
+            "videoId": "x351PY-K7hI",
+            "startAt": 20,
+            "label": "קול רינה - רננו חסידים",
+            "yt_views": 977
+        },
+        "performer": "רננו חסידים",
+        "subsections": [
+            {
+                "id": 320
+            }
+        ]
+    },
+    {
+        "_id": "642ad3427a433fb3b93fa6c9",
+        "composer": "עממי - אשכנזי",
+        "name": "לא אמות",
+        "id": 9257,
+        "lastModified": "2023-04-03T13:23:14.370Z",
+        "performance": {
+            "videoId": "Bfg1xSjU4sM",
+            "startAt": 608,
+            "label": "לא אמות - רועי ואחיה פרינס",
+            "yt_views": 96561
+        },
+        "performer": "רועי ואחיה פרינס",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642adb467a433fb3b9420d4d",
+        "composer": "",
+        "name": "ברוך ה'",
+        "id": 7103,
+        "lastModified": "2023-04-26T07:00:40.584Z",
+        "performance": {
+            "videoId": "-j-DoEGVRzo",
+            "startAt": 4,
+            "label": "ברוך ה' - זושא ופומפדיסא",
+            "yt_views": 1200894
+        },
+        "performer": "זושא ופומפדיסא",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b09fec34722bb96668226",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ברכי נפשי",
+        "id": 2988,
+        "lastModified": "2023-04-26T06:53:30.052Z",
+        "performance": {
+            "videoId": "qC0d0BDppT0",
+            "startAt": 37,
+            "label": "ברכי נפשי - ר' שלמה קרליבך",
+            "yt_views": 92248
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשירה וניגונים מהכותל הדרומי | הרב שמואל אליהו | חוה\"מ פסח תשפ''ב",
+                        "videoId": "f_2OipR9mJQ",
+                        "startAt": 7303,
+                        "yt_views": 27315
+                    }
+                ]
+            },
+            {
+                "id": 130,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אנא בכח - ישיבת ההסדר ירוחם",
+                        "videoId": "sqABjzNGOsg",
+                        "startAt": 23,
+                        "yt_views": 32564
+                    }
+                ]
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            },
+            {
+                "id": 370,
+                "name": "יהללוך ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 2165,
+                        "yt_views": 379
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b1062c34722bb9667c3e8",
+        "composer": "הבעל שם טוב",
+        "name": "ניגון הבעל שם טוב",
+        "id": 3422,
+        "lastModified": "2023-04-03T17:44:02.717Z",
+        "performance": {
+            "videoId": "jRPkjm5HAoA",
+            "startAt": 44,
+            "label": "ניגון הבעל שם טוב - להקת עלמא",
+            "yt_views": 428638
+        },
+        "performer": "להקת עלמא",
+        "subsections": [
+            {
+                "id": 340,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b3600e3481bbdb0e1fbe9",
+        "composer": "משה לאופר",
+        "name": "יהללוך ה' אלוקינו",
+        "id": 9538,
+        "lastModified": "2023-04-03T20:24:32.936Z",
+        "performance": {
+            "videoId": "UnuDenjmDWE",
+            "startAt": 24,
+            "label": "יהללוך ה' אלוקינו - גלעד פוטולסקי",
+            "yt_views": 2064
+        },
+        "performer": "גלעד פוטולסקי",
+        "subsections": [
+            {
+                "id": 370,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b479fc34722bb9672479f",
+        "composer": "חיים קירש",
+        "name": "ארץ חיטה ושעורה",
+        "id": 3213,
+        "lastModified": "2023-04-03T21:39:43.251Z",
+        "performance": {
+            "videoId": "GFId7VsG2kc",
+            "startAt": 6,
+            "label": "ארץ חיטה ושעורה - חנה ואורי שפיצר",
+            "yt_views": 10002
+        },
+        "performer": "חנה ואורי שפיצר",
+        "subsections": [
+            {
+                "id": 50,
+                "rate": 4
+            },
+            {
+                "id": 60,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b5a22c34722bb96753aa9",
+        "composer": "ישי לפידות",
+        "name": "פיה פתחה בחכמה",
+        "id": 3494,
+        "lastModified": "2023-04-03T22:58:42.669Z",
+        "performance": {
+            "videoId": "2L_klyAUxgQ",
+            "startAt": 24,
+            "label": "פיה פתחה בחכמה - ישי לפידות עמירן דביר מנדי ג׳רופי ואוהד מושקוביץ",
+            "yt_views": 109387
+        },
+        "performer": "ישי לפידות עמירן דביר מנדי ג׳רופי ואוהד מושקוביץ",
+        "subsections": [
+            {
+                "id": 90,
+                "rate": 3
+            }
+        ]
+    },
+    {
+        "_id": "642b6088c34722bb96764c0f",
+        "composer": "ר' שלמה קרליבך",
+        "name": "Lord Get Me High",
+        "id": 4951,
+        "lastModified": "2023-04-03T23:26:00.753Z",
+        "performance": {
+            "videoId": "5WPYtyRn9s8",
+            "startAt": 4,
+            "label": "Lord Get Me High - ר' שלמה קרליבך",
+            "yt_views": 72427
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 130,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - אנא בכוח",
+                        "videoId": "RcPedAnhxxs",
+                        "startAt": 38,
+                        "yt_views": 361931
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642ff7eeaf6f106498a7d4be",
+        "composer": "חב\"ד",
+        "name": "ושמחת בחגך",
+        "id": 7154,
+        "lastModified": "2023-04-07T11:01:02.860Z",
+        "performance": {
+            "videoId": "zjSjFkneU9A",
+            "startAt": 6,
+            "label": "ושמחת בחגך - יוסף משה כהנא",
+            "yt_views": 16206
+        },
+        "performer": "יוסף משה כהנא",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אלחנן משמרתי",
+                        "videoId": "khocgZZbe-Q",
+                        "yt_views": 15445
+                    }
+                ]
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אלחנן משמרתי",
+                        "videoId": "khocgZZbe-Q",
+                        "startAt": 90,
+                        "yt_views": 15445
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6433eb342fb059fe2304bc77",
+        "composer": "עממי",
+        "name": "מן המיצר",
+        "id": 5435,
+        "lastModified": "2023-04-10T10:55:48.920Z",
+        "performance": {
+            "videoId": "Bfg1xSjU4sM",
+            "startAt": 504,
+            "label": "מן המיצר - רועי ואחיה פרינס",
+            "yt_views": 96561
+        },
+        "performer": "רועי ואחיה פרינס",
+        "subsections": [
+            {
+                "id": 310,
+                "name": "מן המצר",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6434082073c9a74c543828cb",
+        "composer": "ר' שלמה קרליבך",
+        "name": "סימן טוב ומזל טוב",
+        "id": 9465,
+        "lastModified": "2023-04-10T12:59:12.556Z",
+        "performance": {
+            "videoId": "rU_gk2GyNSg",
+            "startAt": null,
+            "label": "סימן טוב ומזל טוב - ר' שלמה קרליבך",
+            "yt_views": 18245
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "643c4140da08352b038ef886",
+        "composer": "ר' מנדל פולק",
+        "name": "יודו לה' חסדו",
+        "id": 2569,
+        "lastModified": "2023-04-16T18:41:04.495Z",
+        "performance": {
+            "videoId": "w58-TqegRtE",
+            "startAt": 12,
+            "label": "יודו לה' חסדו - גלעד פוטולסקי",
+            "yt_views": 64574
+        },
+        "performer": "גלעד פוטולסקי",
+        "subsections": [
+            {
+                "id": 400,
+                "name": "הודו לה' כי טוב",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643c6bd5da08352b0396c045",
+        "composer": "סול זים",
+        "name": "תפילה לשלום המדינה",
+        "id": 7478,
+        "lastModified": "2023-04-16T21:42:45.342Z",
+        "performance": {
+            "videoId": "1zm1XwHMGEc",
+            "startAt": 40,
+            "label": "תפילה לשלום המדינה - שי אברמסון",
+            "yt_views": 78907
+        },
+        "performer": "שי אברמסון",
+        "subsections": [
+            {
+                "id": 490,
+                "name": "אבינו שבשמים צור ישראל וגואל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643c6e2cda08352b03972137",
+        "composer": "ר' עזריאל דוד פסטג",
+        "name": "אני מאמין",
+        "id": 9874,
+        "lastModified": "2023-04-16T21:52:44.751Z",
+        "performance": {
+            "videoId": "zIY8OF0HQ7g",
+            "startAt": 27,
+            "label": "אני מאמין - אברהם פריד, יונתן רזאל, חנן בן ארי ונאור כרמי",
+            "yt_views": 503930
+        },
+        "performer": "אברהם פריד, יונתן רזאל, חנן בן ארי ונאור כרמי",
+        "subsections": [
+            {
+                "id": 480,
+                "name": "אני מאמין",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64442e5c0fba3c57e4c7ab80",
+        "composer": "מנשה בהרב",
+        "name": "האמיני יום יבוא",
+        "id": 5591,
+        "lastModified": "2023-04-26T07:25:08.349Z",
+        "performance": {
+            "videoId": "AlpO_rI44i8",
+            "startAt": 23,
+            "label": "האמיני יום יבוא - יפה ירקוני",
+            "yt_views": 25259
+        },
+        "performer": "יפה ירקוני",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יותם סגל - ערבית יום ירושלים תשע\"ו",
+                        "videoId": "2LKbdVTOUno",
+                        "startAt": 648,
+                        "yt_views": 126
+                    }
+                ]
+            },
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6444312dd0d81ee136c1dca3",
+        "composer": "סטיב גודמן",
+        "name": "שלום לך ארץ נהדרת",
+        "id": 2599,
+        "lastModified": "2023-04-22T19:10:37.372Z",
+        "performance": {
+            "videoId": "DgvmC-F5jsE",
+            "startAt": 9,
+            "label": "שלום לך ארץ נהדרת - יהורם גאון",
+            "yt_views": 3197276
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית - יום העצמאות - קדומים",
+                        "videoId": "wZHh4kt1lzo",
+                        "startAt": 357,
+                        "yt_views": 761
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "644eb409586726b65b970a88",
+        "name": "כד יתבין ישראל",
+        "composer": "ר' מאיר שפירא מלובלין",
+        "performer": "יוסף משה כהנא",
+        "performance": {
+            "videoId": "tD-VABuCn6Y",
+            "startAt": 10,
+            "label": "כד יתבין ישראל - לחיים הפקות",
+            "yt_views": 8731
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 4286
+    },
+    {
+        "_id": "644fbc19732bcd6d8529963a",
+        "composer": "עממי - אשכנזי",
+        "name": "ויאתיו כל לעבדך",
+        "id": 4606,
+        "lastModified": "2023-05-01T13:18:17.530Z",
+        "performance": {
+            "videoId": "4Hhmwffd-5A",
+            "startAt": 4,
+            "label": "ויאתיו כל לעבדך - ישיבת בית אל",
+            "yt_views": 69886
+        },
+        "performer": "ישיבת בית אל",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644fc381dbde6d47de4cf807",
+        "name": "צה\"ל צועד (מארש צה\"ל)",
+        "composer": "",
+        "performer": "להקת צה\"ל",
+        "performance": {
+            "videoId": "A4lPIHihwNE",
+            "startAt": 3,
+            "label": "צה\"ל צועד - להקת צה\"ל",
+            "yt_views": 1031504
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 4370
+    },
+    {
+        "_id": "645a1ed6d8ec3f2c37791108",
+        "composer": "יואל צליק",
+        "name": "התנערי",
+        "id": 179,
+        "lastModified": "2023-05-09T10:22:14.961Z",
+        "performance": {
+            "videoId": "cnUgUZkrcVM",
+            "startAt": 183,
+            "label": "התנערי - להקת כנפי רוח",
+            "yt_views": 68567
+        },
+        "performer": "להקת כנפי רוח",
+        "subsections": [
+            {
+                "id": 160,
+                "name": "בואי בשלום",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "645a20c12cb9064303002268",
+        "composer": "יוסף מנדלבוים (חסידות בובוב)",
+        "name": "מקדש מלך",
+        "id": 7384,
+        "lastModified": "2026-01-29T10:30:25.847Z",
+        "performance": {
+            "videoId": "5YzoA_1pVV8",
+            "startAt": 18,
+            "label": "מקדש מלך - ישי ריבו והלב והמעין",
+            "yt_views": 24861
+        },
+        "performer": "ישי ריבו",
+        "subsections": [
+            {
+                "id": 150,
+                "name": "מקדש מלך",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "645ff0203f6e0e323df7c372",
+        "composer": "",
+        "name": "ניגון העגלה / רבינו שאג בקול גדול",
+        "id": 4270,
+        "lastModified": "2023-05-13T20:16:32.445Z",
+        "performance": {
+            "videoId": "lx9foHGdX4s",
+            "startAt": 27,
+            "label": "ניגון העגלה / רבינו שאג בקול גדול - הלב והמעיין",
+            "yt_views": 61330
+        },
+        "performer": "הלב והמעיין",
+        "subsections": [
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת שחרית חגיגית של ישיבות ההסדר | יום ירושלים תשפ\"ב",
+                        "videoId": "fw1q8W85omo",
+                        "startAt": 4935,
+                        "yt_views": 6965
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "645ff4043c275aeee47aa331",
+        "composer": "ר' שלמה קרליבך",
+        "name": "הודו לה' כי טוב",
+        "id": 8030,
+        "lastModified": "2023-05-13T20:33:08.707Z",
+        "performance": {
+            "videoId": "h7ez5kMKZ4o",
+            "startAt": 16,
+            "label": "הודו לה' כי טוב - ר' שלמה קרליבך",
+            "yt_views": 36027
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת שחרית חגיגית ליום ירושלים",
+                        "videoId": "KPCTDhjvtRQ",
+                        "startAt": 2622,
+                        "yt_views": 119
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "645ffaa629584bf16525f37c",
+        "composer": "ר' חיים בנט",
+        "name": "לפיכך אנחנו חייבים",
+        "id": 5145,
+        "lastModified": "2023-05-13T21:01:26.634Z",
+        "performance": {
+            "videoId": "-HuojXSfLcM",
+            "startAt": 11,
+            "label": "לפיכך אנחנו חייבים - ישיבת רמת גן",
+            "yt_views": 643999
+        },
+        "performer": "ישיבת רמת גן",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 989,
+                        "yt_views": 379
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64624ee13f6e0e323d7fd210",
+        "composer": "יוסי גרין וגרשון פרנקל",
+        "name": "ירושלים אורו של עולם",
+        "id": 564,
+        "lastModified": "2023-05-15T15:40:46.045Z",
+        "performance": {
+            "videoId": "gYx9wxzALZY",
+            "startAt": 23,
+            "label": "ירושלים אורו של עולם - אברהם פריד",
+            "yt_views": 124327
+        },
+        "performer": "אברהם פריד",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "6464f109e67ccca18807638a",
+        "composer": "ר' שלמה קרליבך",
+        "name": "והאר עינינו",
+        "id": 2182,
+        "lastModified": "2023-05-21T13:06:38.741Z",
+        "performance": {
+            "videoId": "2U4pyUGk6Hw",
+            "startAt": 60,
+            "label": "והאר עינינו - ר' שלמה קרליבך",
+            "yt_views": 112734
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "\"אודך\" בניגון \"והאר עיינינו\" שגיא בן ברוך ויוסי צידוביץ",
+                        "videoId": "2f_YIwEd0PY",
+                        "startAt": 1,
+                        "yt_views": 52
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6464f9c2569d9fbe0a3b2672",
+        "composer": "חב\"ד",
+        "name": "ניגון שמחה (הנחמדים מזהב ומפז רב)",
+        "id": 5383,
+        "lastModified": "2023-05-17T15:58:58.871Z",
+        "performance": {
+            "videoId": "j9GrD3nd9pk",
+            "startAt": 21,
+            "label": "ניגון שמחה (הנחמדים מזהב ומפז רב) - אברהם פריד",
+            "yt_views": 96419
+        },
+        "performer": "אברהם פריד",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "646e4db51648f46659923c7e",
+        "name": "צמאה נפשי",
+        "composer": "",
+        "performer": "להקת המדרגות",
+        "performance": {
+            "videoId": "n5EIeDk_TNM",
+            "startAt": null,
+            "label": "צמאה נפשי - להקת המדרגות",
+            "yt_views": 322043
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "שחרית חגיגית 'ברוב עם הדרת מלך' בבוקרו של יום ירושלים 2023",
+                        "videoId": "zFfjR5_Uccs",
+                        "startAt": 4532,
+                        "yt_views": 9032
+                    }
+                ]
+            }
+        ],
+        "id": 5042
+    },
+    {
+        "_id": "648b78081fa13c0f396ec63e",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מזמור שירו לה'",
+        "id": 8780,
+        "lastModified": "2023-06-15T20:43:52.694Z",
+        "performance": {
+            "videoId": "wwPWY5KNHQQ",
+            "startAt": 36,
+            "label": "מזמור שירו לה' - ר' שלמה קרליבך",
+            "yt_views": 466074
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 30,
+                "name": "שירו לה' שיר חדש",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "shiru lashem",
+                        "videoId": "orrMsTQ0VTA",
+                        "yt_views": 48312
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "654e2d3117a3ab2f4ade60de",
+        "composer": "מודז'יץ",
+        "name": "לכה דודי",
+        "id": 4671,
+        "lastModified": "2023-11-10T13:16:33.070Z",
+        "performance": {
+            "videoId": "FLZXap_0zlw",
+            "startAt": 4,
+            "label": "לכה דודי - יצחק מאיר",
+            "yt_views": 62352
+        },
+        "performer": "יצחק מאיר",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6568fca9a3b5b557f73aa176",
+        "composer": "ר' שמואל ברזיל",
+        "name": "ובא לציון גואל",
+        "id": 4066,
+        "lastModified": "2023-11-30T21:20:41.972Z",
+        "performance": {
+            "videoId": "HQNw5_SKeGI",
+            "startAt": 26,
+            "label": "ובא לציון גואל - אלישע בירנבאום",
+            "yt_views": 38267
+        },
+        "performer": "אלישע בירנבאום",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "65690cf71a068ec251ce4460",
+        "composer": "ברוך לוין",
+        "name": "חשוף",
+        "id": 2996,
+        "lastModified": "2023-11-30T22:30:15.793Z",
+        "performance": {
+            "videoId": "4hJV48khR-A",
+            "startAt": 28,
+            "label": "חשוף - שוואקי",
+            "yt_views": 1168330
+        },
+        "performer": "שוואקי",
+        "subsections": [
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר - הלל חנוכה - לייב מבית ליבא-בעי פרדס חנה",
+                        "videoId": "yHjKjyY71d4",
+                        "startAt": 2953,
+                        "yt_views": 5314
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65690ed31a068ec251f1849e",
+        "composer": "עממי",
+        "name": "ימי החנוכה",
+        "id": 3456,
+        "lastModified": "2023-11-30T22:38:11.252Z",
+        "performance": {
+            "videoId": "UlVrrlRVDUI",
+            "startAt": 9,
+            "label": "ימי החנוכה - שירי החגים",
+            "yt_views": 1469996
+        },
+        "performer": "שירי החגים",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "65ce5e099ef6db6d4d07c609",
+        "composer": "עממי",
+        "name": "שושנת יעקב",
+        "id": 5902,
+        "lastModified": "2024-02-15T19:12:06.274Z",
+        "performance": {
+            "videoId": "yOnVaBc6vr8",
+            "startAt": null,
+            "label": "שושנת יעקב - חיליק פרנק",
+            "yt_views": 13852
+        },
+        "performer": "חיליק פרנק",
+        "subsections": [
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל ראש חודש אדר בבית כנסת אבוהב",
+                        "videoId": "Dx6RoMky-Bc",
+                        "startAt": 1901,
+                        "yt_views": 6084
+                    }
+                ]
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש אדר",
+                        "videoId": "U_wVRBSF9-w",
+                        "startAt": 1103,
+                        "yt_views": 37165
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65ce6a9f1a8b56289453b144",
+        "composer": "עממי",
+        "name": "חג פורים חג פורים",
+        "id": 225,
+        "lastModified": "2024-02-15T19:50:05.768Z",
+        "performance": {
+            "videoId": "fHGk9XnG_wU",
+            "startAt": 8,
+            "label": "חג פורים חג פורים - דורית ראובני",
+            "yt_views": 146161
+        },
+        "performer": "דורית ראובני",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            },
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5
+            },
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "662e53fedfd058323f3b4698",
+        "composer": "ר׳ אהרן מקרלין",
+        "name": "יה אכסוף",
+        "id": 8632,
+        "lastModified": "2024-04-28T13:49:50.663Z",
+        "performance": {
+            "videoId": "AbgrfuWyaHQ",
+            "startAt": 87,
+            "label": "יה אכסוף - קרלין",
+            "yt_views": 224537
+        },
+        "performer": "קרלין",
+        "subsections": [
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל  בחברון | הרב שמואל אליהו חוה\"מ פסח תשפ\"ד",
+                        "videoId": "ZqnzrL5RXJc",
+                        "startAt": 5749,
+                        "yt_views": 14162
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "662e6a4e7f7eb4a4abe0a5b8",
+        "composer": "עממי",
+        "name": "עוז והדר / עם הנצח לא מפחד",
+        "id": 2093,
+        "lastModified": "2024-04-28T15:25:12.886Z",
+        "performance": {
+            "videoId": "DIFc46nCcvw",
+            "startAt": 16,
+            "label": "עוז והדר / עם הנצח לא מפחד - יוסף קרדונר",
+            "yt_views": 47006
+        },
+        "performer": "יוסף קרדונר",
+        "subsections": [
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "name": "אלי אתה",
+                "rate": 5
+            }
+        ],
+        "_id__baas_transaction": "662e6a63dfd058323f8ec185"
+    },
+    {
+        "_id": "673751f5f328b49206c1d3e5",
+        "composer": "",
+        "name": "גולני שלי",
+        "id": 8740,
+        "lastModified": "2024-11-15T13:51:49.956Z",
+        "performance": {
+            "videoId": "ezuuUUox2bQ",
+            "startAt": 24,
+            "label": "גולני שלי - יהורם גאון",
+            "yt_views": 592601
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 50,
+                "name": "שמעה ותשמח ציון",
+                "rate": 5
+            }
+        ],
+        "_id__baas_transaction": "67375209f328b49206c2dce7"
+    },
+    {
+        "_id": "68275e996c953dc73d475020",
+        "composer": "ר' זושא מאניפולי",
+        "name": "מזמור לתודה",
+        "id": 5239,
+        "lastModified": "2025-05-16T15:49:45.333Z",
+        "performance": {
+            "videoId": "oOGVv41R-to",
+            "startAt": 16,
+            "label": "מזמור לתודה - גיא קהלני ומשה דדון",
+            "yt_views": 401189
+        },
+        "performer": "גיא קהלני ומשה דדון",
+        "subsections": [
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר - ברוך הבא (ר' זושא מאניפולי)",
+                        "videoId": "elitvlJW2DU",
+                        "startAt": 15,
+                        "yt_views": 4121
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64013299266c6b40001d4513",
+        "id": 3,
+        "name": "שומרים הפקד",
+        "composer": "ר' שלמה קרליבך",
+        "performance": {
+            "videoId": "CIAWk9Im_DA",
+            "startAt": 70,
+            "label": "שומרים הפקד - ר' שלמה קרליבך",
+            "yt_views": 25465
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Kippalive - קבלת שבת קרליבך",
+                        "videoId": "80Bv83ljgUw",
+                        "startAt": 295,
+                        "endAt": 346,
+                        "yt_views": 608940
+                    }
+                ]
+            },
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשירה וניגונים מהכותל הדרומי | הרב שמואל אליהו | חוה\"מ פסח תשפ\"ב",
+                        "videoId": "f_2OipR9mJQ",
+                        "startAt": 4125,
+                        "yt_views": 27315
+                    }
+                ]
+            },
+            {
+                "id": 250,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל // א' דחוה\"מ פסח",
+                        "videoId": "f1RUk3maIPo",
+                        "startAt": 476,
+                        "yt_views": 16383
+                    }
+                ]
+            }
+        ],
+        "lastModified": "2023-04-01T22:51:13.382Z",
+        "performer": "ר' שלמה קרליבך"
+    },
+    {
+        "_id": "642449b34035f04dd2b27914",
+        "composer": "האדמו\"ר בעל ה'קדושת ציון' מבאבוב",
+        "name": "ניגון באבוב",
+        "id": 6784,
+        "lastModified": "2023-03-29T14:22:43.537Z",
+        "performance": {
+            "videoId": "H6mdYvy4umM",
+            "startAt": 17,
+            "label": "ניגון באבוב - מקהלת מלכות",
+            "yt_views": 1102917
+        },
+        "subsections": [
+            {
+                "id": 30,
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "6424a862f799e33f03cdabbb",
+        "composer": "",
+        "name": "המלוכה והממשלה",
+        "id": 4432,
+        "lastModified": "2023-03-29T21:06:42.538Z",
+        "performance": {
+            "videoId": "KzeFiGrasYs",
+            "startAt": 11,
+            "label": "המלוכה והממשלה - גלעד פוטולסקי ותזמורת שלהבת",
+            "yt_views": 12207
+        },
+        "performer": "גלעד פוטולסקי ותזמורת שלהבת",
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Chanukah/Rosh Chodesh Teves Musical Hallel!",
+                        "videoId": "7toEjADxf-M",
+                        "startAt": 127,
+                        "yt_views": 2238
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6424aa17060c0eb0729059f3",
+        "composer": "יוסף קרדונר",
+        "name": "מקימי",
+        "id": 2820,
+        "lastModified": "2023-03-29T21:13:59.356Z",
+        "performance": {
+            "videoId": "GXyyGReUh1Y",
+            "yt_views": 215362
+        },
+        "subsections": [
+            {
+                "id": 230,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6425ae37a10bf6d61c1acf18",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אליהו הנביא",
+        "id": 1394,
+        "lastModified": "2023-04-09T15:54:01.938Z",
+        "performance": {
+            "videoId": "ZvME3z7UQVw",
+            "startAt": 40,
+            "label": "אליהו הנביא - ר' שלמה קרליבך",
+            "yt_views": 198288
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "בצאת ישראל - הלל - קרליבך",
+                        "videoId": "nfZ9uvHAAwo",
+                        "yt_views": 53040
+                    },
+                    {
+                        "label": "Hallel Yom Yerushalayim - Rabbi Shlomo Katz on the tayelet",
+                        "videoId": "Dg_rPoTDIFM",
+                        "startAt": 242,
+                        "yt_views": 8354
+                    }
+                ]
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6428b8ef0213a1733e44ce77",
+        "composer": "מיוחס לר' זושא מנאפולי",
+        "name": "מזמור לתודה",
+        "id": 6490,
+        "lastModified": "2023-04-01T23:06:23.115Z",
+        "performance": {
+            "videoId": "ht_NsahsWeY",
+            "startAt": 2,
+            "label": "מזמור לתודה - להקת נשמחה",
+            "yt_views": 179197
+        },
+        "performer": "להקת נשמחה",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64291e93a10bf6d61ccd582d",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ויאתיו (ויתנו לך כתר מלוכה)",
+        "id": 1228,
+        "lastModified": "2023-04-02T06:20:03.284Z",
+        "performance": {
+            "videoId": "mAmxggRF52I",
+            "startAt": 138,
+            "label": "ויאתיו (ויתנו לך כתר מלוכה) - ר' שלמה קרליבך",
+            "yt_views": 74698
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5
+            },
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64292b607a433fb3b9e0a5cd",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ישראל בטח בה'",
+        "id": 788,
+        "lastModified": "2023-04-02T07:14:40.136Z",
+        "performance": {
+            "videoId": "XxP7z5C_y_8",
+            "startAt": null,
+            "label": "ישראל בטח בה' - ר' שלמה קרליבך",
+            "yt_views": 10777
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 260
+            }
+        ]
+    },
+    {
+        "_id": "64292d07a10bf6d61ccea590",
+        "composer": "שייקה פייקוב",
+        "name": "ארץ ארץ ארץ",
+        "id": 1119,
+        "lastModified": "2023-04-02T07:21:43.712Z",
+        "performance": {
+            "videoId": "WvnWZJLRK2Q",
+            "startAt": 22,
+            "label": "ארץ ארץ ארץ - יהורם גאון",
+            "yt_views": 133622
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 260,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הרב שמואל אליהו בתל אביב | חוה\"מ סוכות תשפ\"ג",
+                        "videoId": "fIiqRYueiwo",
+                        "startAt": 1826,
+                        "yt_views": 10627
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642966a057ea2554fd7f3269",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אנא ה' כי אני עבדך",
+        "id": 6640,
+        "lastModified": "2023-04-02T11:27:28.538Z",
+        "performance": {
+            "videoId": "g-sTY08ORU4",
+            "startAt": 24,
+            "label": "אנא ה' כי אני עבדך - ר' שלמה קרליבך",
+            "yt_views": 156895
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 290,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשירה וניגונים מהכותל הדרומי | הרב שמואל אליהו | חוה\"מ פסח תשפ\"ב",
+                        "videoId": "f_2OipR9mJQ",
+                        "startAt": 5953,
+                        "yt_views": 27315
+                    }
+                ]
+            },
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642974187a433fb3b9f2925f",
+        "composer": "פנחס ברייער",
+        "name": "השבעתי",
+        "id": 2826,
+        "lastModified": "2023-04-02T12:24:56.221Z",
+        "performance": {
+            "videoId": "_jm6CzO9z8g",
+            "startAt": 16,
+            "label": "השבעתי - ישי ריבו",
+            "yt_views": 6025598
+        },
+        "performer": "ישי ריבו",
+        "subsections": [
+            {
+                "id": 300,
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "642974697a433fb3b9f2a2b1",
+        "composer": "עממי - אשכנזי",
+        "name": "הללו את ה'",
+        "id": 4744,
+        "lastModified": "2023-04-02T12:26:17.931Z",
+        "performance": {
+            "videoId": "Bfg1xSjU4sM",
+            "startAt": 415,
+            "label": "הללו את ה' - רועי ואחיה פרינס",
+            "yt_views": 96561
+        },
+        "performer": "רועי ואחיה פרינס",
+        "subsections": [
+            {
+                "id": 300,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642984be0213a1733e5c09e0",
+        "composer": "האדמו\"ר האמרי אש ממודז'יץ",
+        "name": "הללו את ה'",
+        "id": 3981,
+        "lastModified": "2023-04-02T13:36:39.238Z",
+        "performance": {
+            "videoId": "BzgmEReOEJE",
+            "startAt": 8,
+            "label": "הללו את ה' - אברימי רוט",
+            "yt_views": 7577
+        },
+        "performer": "אברימי רוט",
+        "subsections": [
+            {
+                "id": 300,
+                "rate": 5
+            },
+            {
+                "id": 140,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642acf140213a1733e9dcd43",
+        "composer": "עממי - אשכנזי",
+        "name": "קול רינה",
+        "id": 6166,
+        "lastModified": "2023-04-03T13:05:24.896Z",
+        "performance": {
+            "videoId": "Bfg1xSjU4sM",
+            "startAt": 552,
+            "label": "קול רינה - רועי ואחיה פרינס",
+            "yt_views": 96561
+        },
+        "performer": "רועי ואחיה פרינס",
+        "subsections": [
+            {
+                "id": 320
+            }
+        ]
+    },
+    {
+        "_id": "642ad6ee7a433fb3b940b885",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שמחה לארצך",
+        "id": 7519,
+        "lastModified": "2023-04-03T13:38:54.684Z",
+        "performance": {
+            "videoId": "vJ4ZroAALnA",
+            "startAt": 120,
+            "label": "שמחה לארצך - ר' שלמה קרליבך",
+            "yt_views": 139793
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "2022 הלל מוסיקלי יום העצמאות Shlomo Abramson",
+                        "videoId": "rM4XVo4Nlmw",
+                        "startAt": 228,
+                        "yt_views": 3325
+                    }
+                ]
+            },
+            {
+                "id": 330,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הרב שמואל אליהו בתל אביב | חוה\"מ סוכות תשפ\"ג",
+                        "videoId": "fIiqRYueiwo",
+                        "startAt": 4237,
+                        "yt_views": 10627
+                    }
+                ]
+            },
+            {
+                "id": 110,
+                "rate": 4
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642add667a433fb3b942aecf",
+        "composer": "ברסלב",
+        "name": "מה שהיה היה",
+        "id": 7242,
+        "lastModified": "2023-04-03T14:06:30.451Z",
+        "performance": {
+            "videoId": "fTYWwS3O93g",
+            "startAt": 1,
+            "label": "מה שהיה היה - רועי הרוש ואבי פודולינסקי",
+            "yt_views": 84931
+        },
+        "performer": "רועי הרוש ואבי פודולינסקי",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b033ac34722bb9664fe71",
+        "composer": "אלי ליפסקר",
+        "name": "אודך",
+        "id": 6852,
+        "lastModified": "2023-04-03T16:47:54.114Z",
+        "performance": {
+            "videoId": "k1pLeLtL7as",
+            "startAt": null,
+            "label": "אודך - גלעד פוטולסקי",
+            "yt_views": 12989
+        },
+        "performer": "גלעד פוטולסקי",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b0bf8a13883dfe45470d1",
+        "composer": "ר' לוי יצחק מברדיצ'ב",
+        "name": "ניגון ברדיצ׳ב",
+        "id": 6844,
+        "lastModified": "2023-04-03T17:25:12.616Z",
+        "performance": {
+            "videoId": "fzTwJYvalaA",
+            "startAt": 18,
+            "label": "ניגון ברדיצ׳ב - עקיבא",
+            "yt_views": 4488942
+        },
+        "performer": "עקיבא",
+        "subsections": [
+            {
+                "id": 340,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b2850a13883dfe459c7bb",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ופרוס עלינו",
+        "id": 5023,
+        "lastModified": "2023-04-03T19:26:08.554Z",
+        "performance": {
+            "videoId": "3ZHm1A7hHcw",
+            "startAt": null,
+            "label": "ופרוס עלינו - ר' שלמה קרליבך",
+            "yt_views": 69514
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b2932a13883dfe459f25d",
+        "composer": "אביהו מדינה",
+        "name": "אל תירא ישראל",
+        "id": 3853,
+        "lastModified": "2023-04-03T19:29:54.431Z",
+        "performance": {
+            "videoId": "qXVQmXCSuyc",
+            "startAt": 40,
+            "label": "אל תירא ישראל - אביהו מדינה",
+            "yt_views": 271238
+        },
+        "performer": "אביהו מדינה",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b2a03c74fa2c3649a6e16",
+        "composer": "עוזי חיטמן",
+        "name": "תודה על כל מה שנתת",
+        "id": 4290,
+        "lastModified": "2023-04-03T19:33:23.190Z",
+        "performance": {
+            "videoId": "jo9EGxiYQ0Q",
+            "startAt": 22,
+            "label": "תודה על כל מה שנתת - עוזי חיטמן",
+            "yt_views": 342712
+        },
+        "performer": "עוזי חיטמן",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b3592c34722bb966efe04",
+        "composer": "נורית הירש",
+        "name": "עושה שלום במרומיו",
+        "id": 8038,
+        "lastModified": "2023-04-03T20:22:42.041Z",
+        "performance": {
+            "videoId": "lAEJXdfOLAw",
+            "startAt": 35,
+            "label": "עושה שלום במרומיו - יגאל בשן",
+            "yt_views": 109587
+        },
+        "performer": "יגאל בשן",
+        "subsections": [
+            {
+                "id": 370,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשמחת חג עם הרב שמואל אליהו בתל אביב | חוה\"מ סוכות תשפ''ג",
+                        "videoId": "fIiqRYueiwo",
+                        "startAt": 5976,
+                        "yt_views": 10627
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b5e3bc34722bb9675eae9",
+        "composer": "עובדיה חממה",
+        "name": "אנא בכח",
+        "id": 4309,
+        "lastModified": "2023-04-03T23:16:11.443Z",
+        "performance": {
+            "videoId": "70I6ihs1xoA",
+            "startAt": 52,
+            "label": "אנא בכח - עובדיה חממה",
+            "yt_views": 6307089
+        },
+        "performer": "עובדיה חממה",
+        "subsections": [
+            {
+                "id": 130
+            }
+        ]
+    },
+    {
+        "_id": "642b5fc5c34722bb96762bca",
+        "composer": "ר' פנחס ברייער",
+        "name": "הנני בידך",
+        "id": 3296,
+        "lastModified": "2023-04-03T23:22:45.637Z",
+        "performance": {
+            "videoId": "LYtBfTpGcQ8",
+            "startAt": 21,
+            "label": "הנני בידך - אברהם פריד",
+            "yt_views": 3155082
+        },
+        "performer": "אברהם פריד",
+        "subsections": [
+            {
+                "id": 130,
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "642bbf0ea13883dfe4730140",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מזמור שיר",
+        "id": 2618,
+        "lastModified": "2023-04-04T06:09:18.658Z",
+        "performance": {
+            "videoId": "YXlfSt3yEFE",
+            "startAt": 20,
+            "label": "מזמור שיר - ר' שלמה קרליבך",
+            "yt_views": 196743
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 170
+            }
+        ]
+    },
+    {
+        "_id": "642bcdb8c74fa2c364b67c96",
+        "composer": "עממי",
+        "name": "התקווה",
+        "id": 1588,
+        "lastModified": "2023-04-04T07:11:52.258Z",
+        "performance": {
+            "videoId": "DGOEhvlz2eQ",
+            "startAt": 7,
+            "label": "התקווה - הפילהרמונית הישראלית",
+            "yt_views": 378848
+        },
+        "performer": "הפילהרמונית הישראלית",
+        "subsections": [
+            {
+                "id": 180,
+                "rate": 5
+            },
+            {
+                "id": 470,
+                "name": "שיר המעלות",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילה חגיגית לכבוד יום העצמאות ה-72 עם כיפה-לייב",
+                        "videoId": "fMeHOCcDTGE",
+                        "startAt": 3478,
+                        "yt_views": 5086
+                    }
+                ]
+            },
+            {
+                "id": 300,
+                "name": "הללו את ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל ליום העצמאות ה'תשפ\"ב - ישיבת אור עציון",
+                        "videoId": "kenFR83JjBE",
+                        "startAt": 764,
+                        "yt_views": 2322
+                    }
+                ]
+            },
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית - יום העצמאות - קדומים",
+                        "videoId": "wZHh4kt1lzo",
+                        "startAt": 1666,
+                        "yt_views": 761
+                    }
+                ]
+            },
+            {
+                "id": 360,
+                "name": "אלי אתה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית - יום העצמאות - קדומים",
+                        "videoId": "wZHh4kt1lzo",
+                        "startAt": 1666,
+                        "yt_views": 761
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642c76abc74fa2c364e91d30",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שירו לה' שיר חדש",
+        "id": 8085,
+        "lastModified": "2023-04-04T19:12:43.505Z",
+        "performance": {
+            "videoId": "zO7aAA5glpQ",
+            "startAt": 2,
+            "label": "שירו לה' שיר חדש - ר' שלמה קרליבך",
+            "yt_views": 453230
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 70,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642c776cc74fa2c364e940c9",
+        "composer": "",
+        "name": "אשר בחר בנו",
+        "id": 6379,
+        "lastModified": "2023-04-04T19:15:56.601Z",
+        "performance": {
+            "videoId": "TKDihj1k8Ec",
+            "startAt": null,
+            "label": "אשר בחר בנו - הר המור",
+            "yt_views": 61374
+        },
+        "performer": "הר המור",
+        "subsections": [
+            {
+                "id": 70,
+                "rate": 5
+            }
+        ],
+        "_id__baas_transaction": "6464ee9ea203476af2eadf62"
+    },
+    {
+        "_id": "642d7711c74fa2c364242638",
+        "composer": "",
+        "name": "ניגון סיפור מעשיות",
+        "id": 7450,
+        "lastModified": "2023-04-05T13:26:41.331Z",
+        "performance": {
+            "videoId": "HdeqxFTtCdA",
+            "startAt": null,
+            "label": "ניגון סיפור מעשיות - יצחק מאיר",
+            "yt_views": 53938
+        },
+        "performer": "יצחק מאיר",
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642d8e22c74fa2c3642abbd8",
+        "composer": "ר' שלמה קרליבך",
+        "name": "כי מציון תצא תורה",
+        "id": 8007,
+        "lastModified": "2023-04-26T06:55:25.065Z",
+        "performance": {
+            "videoId": "C8_3u9dUbIs",
+            "startAt": 2,
+            "label": "כי מציון תצא תורה - ר' שלמה קרליבך",
+            "yt_views": 41934
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 400,
+                "name": "הודו לה' כי טוב",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Tefila B’Tachana 🇮🇱 Annual Musical Tefila for Yom HaAtzmaut",
+                        "videoId": "MuMimVump6Y",
+                        "startAt": 663,
+                        "yt_views": 2520
+                    }
+                ]
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6432ece62fb059fe23e35c81",
+        "composer": "ר' שלמה קרליבך",
+        "name": "יבנה יבנה יבנה המקדש",
+        "id": 7704,
+        "lastModified": "2023-05-17T15:17:00.162Z",
+        "performance": {
+            "videoId": "Iioy1HwsffE",
+            "startAt": 13,
+            "label": "יבנה יבנה יבנה המקדש - ר' שלמה קרליבך",
+            "yt_views": 53606
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "2022 הלל מוסיקלי יום העצמאות Shlomo Abramson",
+                        "videoId": "rM4XVo4Nlmw",
+                        "startAt": 33,
+                        "yt_views": 3325
+                    }
+                ]
+            },
+            {
+                "id": 300,
+                "name": "הללו את ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש תמוז - לייב מקרון ליבא-בעי פרדס-חנה",
+                        "videoId": "eY9Z5qPAo8E",
+                        "startAt": 1558,
+                        "yt_views": 11312
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6433f6bbe8b5e543939efd80",
+        "composer": "עממי",
+        "name": "כי מציון תצא תורה",
+        "id": 1215,
+        "lastModified": "2023-04-10T11:44:59.716Z",
+        "performance": {
+            "videoId": "TUuO20sl5-Q",
+            "startAt": null,
+            "label": "כי מציון תצא תורה - הקפות שניות בהר המור",
+            "yt_views": 8266
+        },
+        "performer": "הקפות שניות בהר המור",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643407245349dca64d46d55f",
+        "composer": "נעמי שמר",
+        "name": "יש לי חג (יום יום חג)",
+        "id": 9288,
+        "lastModified": "2023-04-10T12:55:00.271Z",
+        "performance": {
+            "videoId": "_vXJFgCQOB4",
+            "startAt": 13,
+            "label": "יש לי חג (יום יום חג) - הגשש החיוור",
+            "yt_views": 159814
+        },
+        "performer": "הגשש החיוור",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64340fb2e8b5e54393ad3ceb",
+        "composer": "",
+        "name": "המלך בשדה",
+        "id": 4342,
+        "lastModified": "2023-04-10T13:31:30.657Z",
+        "performance": {
+            "videoId": "cRSymrNamDs",
+            "startAt": 12,
+            "label": "המלך בשדה - אורי פרידמן",
+            "yt_views": 65429
+        },
+        "performer": "אורי פרידמן",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643c6ab4426e7c1273d91f6b",
+        "composer": "דובי זלצר",
+        "name": "ארץ צבי",
+        "id": 3861,
+        "lastModified": "2023-04-16T21:37:56.643Z",
+        "performance": {
+            "videoId": "n5GF3C-_Shw",
+            "startAt": 8,
+            "label": "ארץ צבי - יהורם גאון",
+            "yt_views": 159367
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 50,
+                "name": "שמעה ותשמח ציון",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "64442ec316ceeb687d31592d",
+        "composer": "נעמי שמר",
+        "name": "מחר",
+        "id": 6599,
+        "lastModified": "2023-04-22T19:00:19.347Z",
+        "performance": {
+            "videoId": "FVFwCL_pvGY",
+            "startAt": 7,
+            "label": "מחר - להקת הנחל",
+            "yt_views": 173273
+        },
+        "performer": "להקת הנחל",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644e13f6732bcd6d85da9096",
+        "composer": "הרמן צבי ארליך",
+        "name": "פה בארץ חמדת אבות",
+        "id": 7003,
+        "lastModified": "2023-04-30T07:08:38.777Z",
+        "performance": {
+            "videoId": "FV8VrPycFos",
+            "startAt": 8,
+            "label": "פה בארץ חמדת אבות - מקהלת צה\"ל",
+            "yt_views": 311852
+        },
+        "performer": "מקהלת צה\"ל",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644ede54586726b65b970a89",
+        "name": "שושנת יעקב",
+        "composer": "חסידות גור",
+        "performer": "חיליק פרנק ומקהלת מלכות",
+        "performance": {
+            "videoId": "IO8NELuzJtI",
+            "startAt": null,
+            "label": "שושנת יעקב - חיליק פרנק ומקהלת מלכות",
+            "yt_views": 61529
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 2399
+    },
+    {
+        "_id": "644fc11edbde6d47de4cf806",
+        "name": "הופה היי",
+        "composer": "יגאל בשן",
+        "performer": "יגאל בשן, עוזי חיטמן, ויונתן מילר",
+        "performance": {
+            "videoId": "GCw9PCknXaQ",
+            "startAt": 19,
+            "label": "הופה היי - יגאל בשן, עוזי חיטמן, ויונתן מילר",
+            "yt_views": 1998430
+        },
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 509
+    },
+    {
+        "_id": "64595ad0eabd34327091d4f2",
+        "composer": "",
+        "name": "ואמרתם כה לחי / לכבוד התנא האלוקי",
+        "id": 1159,
+        "lastModified": "2023-05-08T20:25:52.343Z",
+        "performance": {
+            "videoId": "Na_jSNUDqKM",
+            "startAt": 23,
+            "label": "ואמרתם כה לחי / לכבוד התנא האלוקי - יוסף משה כהנא",
+            "yt_views": 224421
+        },
+        "performer": "יוסף משה כהנא",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "645a2122d8ec3f2c3779b4b2",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מקדש מלך",
+        "id": 4633,
+        "lastModified": "2023-05-09T10:32:02.804Z",
+        "performance": {
+            "videoId": "D46drRD0SK4",
+            "startAt": 28,
+            "label": "מקדש מלך - ר' שלמה קרליבך",
+            "yt_views": 208449
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 150,
+                "name": "מקדש מלך",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "645bdcbad9bca0b945e4dc25",
+        "composer": "",
+        "name": "מעל פסגת הר הצופים",
+        "id": 5280,
+        "lastModified": "2023-05-10T18:04:42.744Z",
+        "performance": {
+            "videoId": "f2HUGPujiWM",
+            "startAt": 5,
+            "label": "מעל פסגת הר הצופים - יהורם גאון",
+            "yt_views": 985618
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "לכה דודי - ישראל כץ",
+                        "videoId": "pdufOO516SY",
+                        "yt_views": 179
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "645e49eb91aedda1972f9500",
+        "composer": "עקיבא נוף",
+        "name": "שישו את ירושלים",
+        "id": 1779,
+        "lastModified": "2023-05-12T14:15:07.462Z",
+        "performance": {
+            "videoId": "zEKx73daLMk",
+            "startAt": 7,
+            "label": "שישו את ירושלים - צמד דרום",
+            "yt_views": 45120
+        },
+        "performer": "צמד דרום",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל - יום ירושלים",
+                        "videoId": "fQa_0VbrlPM",
+                        "startAt": 259,
+                        "yt_views": 1116
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "645fed230963ee983d7a8160",
+        "composer": "ר' שלמה קרליבך",
+        "name": "תתן אחרית לעמך / נחמו נחמו עמי",
+        "id": 840,
+        "lastModified": "2023-05-13T20:03:47.421Z",
+        "performance": {
+            "videoId": "GAfCioh7Mp4",
+            "startAt": 21,
+            "label": "תתן אחרית לעמך / נחמו נחמו עמי - הראל טל",
+            "yt_views": 4511368
+        },
+        "performer": "הראל טל",
+        "subsections": [
+            {
+                "id": 180,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "צדיק כתמר 2 - רבי שלמה קרליבך",
+                        "videoId": "FekuXmQJ56Y",
+                        "startAt": 17,
+                        "yt_views": 6676
+                    }
+                ]
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            },
+            {
+                "id": 290,
+                "name": "מה אשיב לה'",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת שחרית חגיגית של ישיבות ההסדר | יום ירושלים תשפ\"ב",
+                        "videoId": "fw1q8W85omo",
+                        "startAt": 4455,
+                        "yt_views": 6965
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "645ffd020963ee983d7d82a2",
+        "composer": "",
+        "name": "נפשי",
+        "id": 5848,
+        "lastModified": "2023-05-13T21:11:30.779Z",
+        "performance": {
+            "videoId": "-6hnYAEUV2M",
+            "startAt": 17,
+            "label": "נפשי - ישי ריבו ומוטי שטיינמץ",
+            "yt_views": 13667455
+        },
+        "performer": "ישי ריבו ומוטי שטיינמץ",
+        "subsections": [
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 1600,
+                        "yt_views": 379
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6465150ce67ccca188143c82",
+        "composer": "ראובן סירוטקין",
+        "name": "ושננתם לבניך ודברת בם",
+        "id": 1206,
+        "lastModified": "2023-05-17T17:55:24.075Z",
+        "performance": {
+            "videoId": "BAfY1trbNcA",
+            "startAt": 17,
+            "label": "ושננתם לבניך ודברת בם",
+            "yt_views": 3520
+        },
+        "performer": "ראובן סירוטקין",
+        "subsections": [
+            {
+                "id": 180,
+                "name": "צדיק כתמר",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "646a1cda7498335ee1b4cd1e",
+        "composer": "איתן כ\"ץ",
+        "name": "ניגון אלול",
+        "id": 8152,
+        "lastModified": "2023-05-21T13:30:02.574Z",
+        "performance": {
+            "videoId": "q-OIy6N9Dz8",
+            "startAt": 5,
+            "label": "ניגון אלול - איתן כ\"ץ",
+            "yt_views": 189322
+        },
+        "performer": "איתן כ\"ץ",
+        "subsections": [
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "2022 הלל מוסיקלי יום העצמאות Shlomo Abramson",
+                        "videoId": "rM4XVo4Nlmw",
+                        "startAt": 339,
+                        "yt_views": 3325
+                    }
+                ]
+            },
+            {
+                "id": 360,
+                "name": "אלי אתה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "2022 הלל מוסיקלי יום העצמאות Shlomo Abramson",
+                        "videoId": "rM4XVo4Nlmw",
+                        "startAt": 339,
+                        "yt_views": 3325
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "649579c7d4e3f79b6cd89f9d",
+        "composer": "ר' שלמה קרליבך",
+        "name": "עם ישראל חי",
+        "id": 5131,
+        "lastModified": "2023-06-23T10:53:59.228Z",
+        "performance": {
+            "videoId": "V0zzQSa_7Fw",
+            "startAt": 40,
+            "label": "עם ישראל חי - ר' שלמה קרליבך",
+            "yt_views": 12352
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל חול המועד פסח תשפ\"ג תל אביב | הרב שמואל אליהו",
+                        "videoId": "bFEffXEJDXw",
+                        "startAt": 2079,
+                        "yt_views": 11248
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65690ff4e8d7ec8f8857173c",
+        "composer": "ברסלב",
+        "name": "מעוז צור",
+        "id": 6032,
+        "lastModified": "2023-11-30T22:43:00.237Z",
+        "performance": {
+            "videoId": "V7EjkJ2FaM8",
+            "startAt": 20,
+            "label": "מעוז צור - אביתר בנאי",
+            "yt_views": 62631
+        },
+        "performer": "אביתר בנאי",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "656c961f0a481acbe9daedf9",
+        "composer": "עממי",
+        "name": "סביבון סוב סוב סוב",
+        "id": 510,
+        "lastModified": "2023-12-03T14:52:15.457Z",
+        "performance": {
+            "videoId": "uCe9pDWtxmI",
+            "startAt": 10,
+            "label": "סביבון סוב סוב סוב - שירי החגים",
+            "yt_views": 148091
+        },
+        "performer": "שירי החגים",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "65ce4e6e9ef6db6d4d6ebe7e",
+        "composer": "עממי - חסידות סוקלען",
+        "name": "ליהודים ליהודים",
+        "id": 174,
+        "lastModified": "2024-02-15T17:52:42.838Z",
+        "performance": {
+            "videoId": "Mzsd4r9iOtY",
+            "startAt": 13,
+            "label": "ליהודים ליהודים - יצחק מאיר",
+            "yt_views": 4226
+        },
+        "performer": "יצחק מאיר",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל ראש חודש אדר א - ליבע",
+                        "videoId": "QYAssbYwYno",
+                        "startAt": 1062,
+                        "yt_views": 4129
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5
+            },
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "name": "אלי אתה",
+                "rate": 5
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "65ce68a79ef6db6d4d811a16",
+        "composer": "עממי",
+        "name": "משנכנס אדר (מישה מישה)",
+        "id": 3252,
+        "lastModified": "2024-02-15T19:40:23.959Z",
+        "performance": {
+            "videoId": "84uE8xpLZGI",
+            "startAt": 7,
+            "label": "משנכנס אדר (מישה מישה) - שירי ילדים",
+            "yt_views": 2219690
+        },
+        "performer": "שירי ילדים",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "662e5e0febcfefaafd0bc434",
+        "composer": "ר׳ שלמה קרליבך",
+        "name": "אדיר הוא",
+        "id": 6041,
+        "lastModified": "2024-04-28T14:32:47.987Z",
+        "performance": {
+            "videoId": "R2PBZ52cOlo",
+            "startAt": 63,
+            "label": "אדיר הוא - ר׳ שלמה קרליבך",
+            "yt_views": 76215
+        },
+        "performer": "ר׳ שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "הלל במערת המכפלה חוה\"מ פסח תשפ''ג | הרב שמואל אליהו",
+                        "videoId": "0F5gKbqFJXE",
+                        "startAt": 6067,
+                        "yt_views": 15055
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "662e66d77f7eb4a4abd31fef",
+        "composer": "עממי - מרוקו",
+        "name": "כי אשמרה שבת",
+        "id": 8530,
+        "lastModified": "2024-04-28T15:12:02.597Z",
+        "performance": {
+            "videoId": "l7unv5xFt7A",
+            "startAt": 28,
+            "label": "כי אשמרה שבת - איציק אשל",
+            "yt_views": 2878182
+        },
+        "performer": "איציק אשל",
+        "subsections": [
+            {
+                "id": 290,
+                "name": "מה אשיב לה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "מחרוזת שירי הלל | להקת המעיין מתארחת בישיבת ירוחם",
+                        "videoId": "1P78SSElCTI",
+                        "startAt": 158,
+                        "yt_views": 385897
+                    }
+                ]
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אלחנן משמרתי - הלל יום ב' דחוה\"מ פסח תשפ\"ד",
+                        "videoId": "5DapRl986aA",
+                        "startAt": 161,
+                        "yt_views": 9086
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "662e6810a93fee0d85ae2c0b",
+        "composer": "עממי",
+        "name": "ואמרתם כה לחי",
+        "id": 2158,
+        "lastModified": "2024-04-28T15:15:28.615Z",
+        "performance": {
+            "videoId": "Na_jSNUDqKM",
+            "startAt": 15,
+            "label": "ואמרתם כה לחי - יוסף משה כהנא",
+            "yt_views": 224421
+        },
+        "performer": "יוסף משה כהנא",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אלחנן משמרתי - הלל יום ב' דחוה\"מ פסח תשפ\"ד",
+                        "videoId": "5DapRl986aA",
+                        "startAt": 273,
+                        "yt_views": 9086
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "67124d4cb0bce12ca825aba2",
+        "composer": "",
+        "name": "אנחנו מאמינים",
+        "id": 5866,
+        "lastModified": "2024-10-18T11:58:04.279Z",
+        "performance": {
+            "videoId": "QNYF-fiLB4c",
+            "startAt": 52,
+            "label": "אנחנו מאמינים - מרדכי בן דוד",
+            "yt_views": 3596059
+        },
+        "performer": "מרדכי בן דוד",
+        "subsections": [
+            {
+                "id": 260,
+                "name": "ישראל בטח בה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "641dab93b8984b50b36d0afd",
+        "id": 6,
+        "name": "לא אבוא",
+        "composer": "יוסי גרין",
+        "performance": {
+            "videoId": "GIfgJ-4Hz3Q",
+            "startAt": 30,
+            "label": "לא אבוא - אברהם פריד",
+            "yt_views": 95225
+        },
+        "subsections": [
+            {
+                "id": 10,
+                "name": "לכו נרננה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אברימי רוט | לכו נרננה | נוסח גרין",
+                        "videoId": "hzSBf-PqZE0",
+                        "startAt": 108,
+                        "yt_views": 6511
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "name": "ארבעים שנה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "אברימי רוט | ארבעים שנה | נוסח גרין",
+                        "videoId": "Ls9Btn-CQlo",
+                        "startAt": 4,
+                        "yt_views": 2989
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "641dab93b8984b50b36d0afb",
+        "id": 4,
+        "name": "לכו נרננה",
+        "composer": "ר' שלמה קרליבך",
+        "performance": {
+            "videoId": "9Uigo_ZA2oA",
+            "startAt": 2,
+            "yt_views": 837020
+        },
+        "subsections": [
+            {
+                "id": 10,
+                "name": "לכו נרננה",
+                "rate": 5
+            },
+            {
+                "id": 20,
+                "name": "ארבעים שנה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "קבלת שבת נוסח קרליבך ┃ יונתן גבנט",
+                        "videoId": "IYzR7jhuYH8",
+                        "startAt": 67,
+                        "endAt": 142,
+                        "yt_views": 48846
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64247a98a4c1e016ac70056a",
+        "composer": "עממי - אשכנזי",
+        "name": "ברכה על ההלל",
+        "id": 9160,
+        "performer": "רועי ואחיה פרינס",
+        "lastModified": "2023-03-29T17:51:20.310Z",
+        "performance": {
+            "videoId": "Bfg1xSjU4sM",
+            "label": "ברכה - רועי ואחיה פרינס",
+            "yt_views": 96561
+        },
+        "subsections": [
+            {
+                "id": 210,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642492e6a4c1e016ac75fb10",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אהבת עולם",
+        "id": 764,
+        "lastModified": "2024-11-01T12:31:01.955Z",
+        "performance": {
+            "videoId": "p5dNzfzJVoE",
+            "startAt": 18,
+            "label": "אהבת עולם - להקת מזמור שיר מארחים את עקיבא",
+            "yt_views": 1623864
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש סיון",
+                        "videoId": "CmIvLvrxodI",
+                        "startAt": 863,
+                        "yt_views": 6900
+                    }
+                ]
+            },
+            {
+                "id": 50,
+                "name": "שמעה ותשמח ציון",
+                "rate": 5
+            }
+        ],
+        "performer": "ר' שלמה קרליבך"
+    },
+    {
+        "_id": "6424a3d10a9a36452c412832",
+        "composer": "נעמי שמר",
+        "name": "על הדבש ועל העוקץ",
+        "id": 5674,
+        "lastModified": "2023-03-29T20:47:13.412Z",
+        "performance": {
+            "videoId": "9xETAic8buQ",
+            "startAt": 12,
+            "label": "על הדבש ועל העוקץ - יוסי בנאי",
+            "yt_views": 590756
+        },
+        "subsections": [
+            {
+                "id": 140,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יותם סגל - ערבית יום ירושלים תשע\"ו",
+                        "videoId": "2LKbdVTOUno",
+                        "startAt": 711,
+                        "yt_views": 126
+                    }
+                ]
+            },
+            {
+                "id": 220,
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשמחת חג עם הרב שמואל אליהו בתל אביב",
+                        "videoId": "fIiqRYueiwo",
+                        "startAt": 804,
+                        "yt_views": 10627
+                    }
+                ]
+            },
+            {
+                "id": 290,
+                "name": "מה אשיב לה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "\"מה אשיב\" על פי \"על הדבש ועל העוקץ\" ליל עצמאות תשפ\"ג",
+                        "videoId": "yIBKXTqB6kg",
+                        "startAt": null,
+                        "yt_views": 36
+                    }
+                ]
+            },
+            {
+                "id": 330,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת יום העצמאות המרכזית בבית הכנסת הגדול בתל אביב",
+                        "videoId": "Tbi6EjzqmFY",
+                        "startAt": 6629,
+                        "yt_views": 1826
+                    }
+                ]
+            },
+            {
+                "id": 400,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילה חגיגית לכבוד יום העצמאות ה-72 עם כיפה-לייב",
+                        "videoId": "fMeHOCcDTGE",
+                        "startAt": 891,
+                        "yt_views": 5086
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6424a9acf799e33f03ce025e",
+        "composer": "מודז'יץ",
+        "name": "הנה אל ישועתי (הבדלה)",
+        "id": 1208,
+        "lastModified": "2023-03-29T21:12:12.162Z",
+        "performance": {
+            "videoId": "GuSpBoqlif4",
+            "label": "הנה א-ל ישועתי - יצחק מאיר",
+            "yt_views": 12812
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "Hallel Yom Yerushalayim - Rabbi Shlomo Katz on the tayelet - May 2021",
+                        "videoId": "Dg_rPoTDIFM",
+                        "startAt": 108,
+                        "yt_views": 8354
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6424aacfad7b58d655d8ea77",
+        "composer": "אפרים רוזנבלום",
+        "name": "מי כה' אלוקינו (מקימי)",
+        "id": 9123,
+        "lastModified": "2023-03-29T21:17:03.772Z",
+        "performance": {
+            "videoId": "8C--VjZVQ5E",
+            "startAt": 31,
+            "label": "מקימי - מונה רוזנבלום ומרדכי בן דוד",
+            "yt_views": 71653
+        },
+        "subsections": [
+            {
+                "id": 230,
+                "rate": 5
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6428779f7a433fb3b9cca81d",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אדיר הוא",
+        "id": 6328,
+        "lastModified": "2023-04-03T17:36:01.274Z",
+        "performance": {
+            "videoId": "R2PBZ52cOlo",
+            "startAt": 62,
+            "label": "אדיר הוא - ר' שלמה קרליבך",
+            "yt_views": 76215
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "המניין של יצחק מאיר - ראש חודש ניסן",
+                        "videoId": "DSgBKfWN6LM",
+                        "startAt": 843,
+                        "yt_views": 16011
+                    }
+                ]
+            },
+            {
+                "id": 340,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל בניגון פסח תשע״ט בכותל - אודך כי עניתני ועד אנא ה׳ הצליחה נא",
+                        "videoId": "LUIVvW4EDno",
+                        "startAt": 253,
+                        "yt_views": 5934
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642930a5a10bf6d61ccf0b15",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שים שלום (ברכנו אבינו)",
+        "id": 8769,
+        "lastModified": "2023-04-02T07:37:09.804Z",
+        "performance": {
+            "videoId": "f2MNKn_GkSY",
+            "startAt": 20,
+            "label": "שים שלום (ברכנו אבינו) - ר' שלמה קרליבך",
+            "yt_views": 112462
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 270,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "ה' זכרנו יברך - איגוד רבני קהילות",
+                        "videoId": "1jgMVvbQzA8",
+                        "startAt": 15,
+                        "yt_views": 969
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64294994a10bf6d61cd275e4",
+        "composer": "עממי",
+        "name": "יברך את בית ישראל",
+        "id": 8093,
+        "lastModified": "2023-04-02T09:23:32.696Z",
+        "performance": {
+            "videoId": "NBiteSHWsH8",
+            "startAt": null,
+            "label": "יברך את בית ישראל - גלעד פוטולסקי",
+            "yt_views": 5788
+        },
+        "performer": "גלעד פוטולסקי",
+        "subsections": [
+            {
+                "id": 270,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64294ded0213a1733e529205",
+        "composer": "ר' ישראל מרוזי'ן",
+        "name": "ואני נתתי לך / יפרח בימיו צדיק",
+        "id": 9081,
+        "lastModified": "2023-04-02T09:42:39.330Z",
+        "performance": {
+            "videoId": "uVSUL5pZw-U",
+            "startAt": 26,
+            "label": "ואני נתתי לך / יפרח בימיו צדיק - ארז לב ארי",
+            "yt_views": 75722
+        },
+        "performer": "ארז לב ארי",
+        "subsections": [
+            {
+                "id": 140,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "איציק אשל ומנדי ג'רופי - לכה דודי",
+                        "videoId": "2KdKZwsAPWY",
+                        "startAt": 7,
+                        "yt_views": 577155
+                    }
+                ]
+            },
+            {
+                "id": 270,
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשירה וניגונים מהכותל הדרומי | הרב שמואל אליהו | חוה\"מ פסח תשפ\"ב",
+                        "videoId": "f_2OipR9mJQ",
+                        "startAt": 4720,
+                        "yt_views": 27315
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6429677257ea2554fd7f56bc",
+        "composer": "ר' שלמה קרליבך",
+        "name": "למען אחי ורעי",
+        "id": 5680,
+        "lastModified": "2023-04-02T11:30:58.588Z",
+        "performance": {
+            "videoId": "byqV6A6PuWc",
+            "startAt": 17,
+            "label": "למען אחי ורעי - ר' שלמה קרליבך",
+            "yt_views": 268658
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 290,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל הרב שמואל אליהו בתל אביב | חוה\"מ סוכות תשפ\"ג",
+                        "videoId": "fIiqRYueiwo",
+                        "startAt": 3141,
+                        "yt_views": 10627
+                    }
+                ]
+            },
+            {
+                "id": 190,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "ה' מלך - יצחק מאיר",
+                        "videoId": "4d0U8RYFBbQ",
+                        "startAt": 19,
+                        "yt_views": 114723
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64296b880213a1733e578886",
+        "composer": "נעמי שמר",
+        "name": "אל בורות המים",
+        "id": 7375,
+        "lastModified": "2023-04-02T11:48:24.300Z",
+        "performance": {
+            "videoId": "JfJ3DrI7-6w",
+            "startAt": 13,
+            "label": "אל בורות המים - נעמי שמר",
+            "yt_views": 133677
+        },
+        "performer": "נעמי שמר",
+        "subsections": [
+            {
+                "id": 290,
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת יום העצמאות בבית הכנסת הגדול בתל אביב",
+                        "videoId": "Tbi6EjzqmFY",
+                        "startAt": 6228,
+                        "yt_views": 1826
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642977da57ea2554fd821224",
+        "composer": "ר' אברהם מלוביצקי",
+        "name": "עולה על הכל",
+        "id": 5544,
+        "lastModified": "2023-04-02T12:40:58.926Z",
+        "performance": {
+            "videoId": "r0D6pGdlvNU",
+            "startAt": 64,
+            "label": "עולה על הכל - איציק אשל",
+            "yt_views": 4130993
+        },
+        "performer": "איציק אשל",
+        "subsections": [
+            {
+                "id": 300,
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש אלול",
+                        "videoId": "x6Tk4Idas3E",
+                        "startAt": 1612,
+                        "yt_views": 14014
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64297ac30213a1733e5a28b1",
+        "composer": "עממי",
+        "name": "המלך בשדה",
+        "id": 7655,
+        "lastModified": "2023-04-02T12:53:23.722Z",
+        "performance": {
+            "videoId": "cRSymrNamDs",
+            "startAt": 12,
+            "label": "המלך בשדה - אורי פרידמן",
+            "yt_views": 65429
+        },
+        "performer": "אורי פרידמן",
+        "subsections": [
+            {
+                "id": 300,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642995fb0213a1733e5f6e9d",
+        "composer": "ר' ברוך חייט",
+        "name": "כל העולם כולו גשר צר מאוד",
+        "id": 4745,
+        "lastModified": "2023-04-02T14:52:17.159Z",
+        "performance": {
+            "videoId": "KaN2AP-PMKM",
+            "startAt": 48,
+            "label": "כל העולם כולו - יוסף קרדונר וישראל דגן",
+            "yt_views": 118181
+        },
+        "performer": "יוסף קרדונר וישראל דגן",
+        "subsections": [
+            {
+                "id": 310,
+                "rate": 5
+            },
+            {
+                "id": 180,
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "642b0963c34722bb966660c7",
+        "composer": "האחים ולדמן",
+        "name": "בני היכלא",
+        "id": 8666,
+        "lastModified": "2023-04-03T17:14:11.058Z",
+        "performance": {
+            "videoId": "325hv06dMuI",
+            "startAt": 15,
+            "label": "בני היכלא - ר' דודי ליבוביץ",
+            "yt_views": 220285
+        },
+        "performer": "ר' דודי ליבוביץ",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            },
+            {
+                "id": 140,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b0c79c74fa2c36494de19",
+        "composer": "יונתן רזאל",
+        "name": "והיא שעמדה",
+        "id": 6568,
+        "lastModified": "2023-04-03T17:27:21.128Z",
+        "performance": {
+            "videoId": "KKV07h85lHY",
+            "startAt": 25,
+            "label": "והיא שעמדה - יונתן רזאל",
+            "yt_views": 5191053
+        },
+        "performer": "יונתן רזאל",
+        "subsections": [
+            {
+                "id": 340,
+                "rate": 5
+            },
+            {
+                "id": 350,
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "הלל בניגון פסח תשע״ט בכותל - ברוך הבא בשם ה׳",
+                        "videoId": "jOql07xBLq4",
+                        "yt_views": 5927
+                    }
+                ]
+            },
+            {
+                "id": 360,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל בניגון פסח תשע״ט בכותל - ברוך הבא בשם ה׳",
+                        "videoId": "jOql07xBLq4",
+                        "startAt": 94,
+                        "yt_views": 5927
+                    }
+                ]
+            },
+            {
+                "id": 450,
+                "name": "מי שעשה ניסים",
+                "rate": 3,
+                "performances": [
+                    {
+                        "label": "תפילה חגיגית ליום ירושלים - יצחק מאיר בליווי נגנים",
+                        "videoId": "6Uw3_F3haOA",
+                        "startAt": 2249,
+                        "yt_views": 2955
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b0cbaa13883dfe45495d1",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שפכי כמים ליבך",
+        "id": 2443,
+        "lastModified": "2023-04-03T17:28:26.804Z",
+        "performance": {
+            "videoId": "FIRUPZeWPG8",
+            "startAt": 16,
+            "label": "שפכי כמים ליבך - ר' שלמה קרליבך",
+            "yt_views": 287832
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 180,
+                "name": "צדיק כתמר",
+                "rate": 5
+            },
+            {
+                "id": 340,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b24e1c74fa2c3649987f4",
+        "composer": "ר' ברוך צ'ייט",
+        "name": "כל העולם כולו",
+        "id": 6092,
+        "lastModified": "2023-04-03T19:11:29.007Z",
+        "performance": {
+            "videoId": "KaN2AP-PMKM",
+            "startAt": null,
+            "label": "כל העולם כולו - יוסף קרדונר וישראל דגן",
+            "yt_views": 118181
+        },
+        "performer": "יוסף קרדונר וישראל דגן",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b25d2e3481bbdb0deba25",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ניגון קראקוב",
+        "id": 7547,
+        "lastModified": "2023-04-03T19:15:30.821Z",
+        "performance": {
+            "videoId": "uPbNv4g-kRM",
+            "startAt": 108,
+            "label": "ניגון קראקוב - ר' שלמה קרליבך",
+            "yt_views": 232077
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "performances": [
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 1705,
+                        "yt_views": 379
+                    }
+                ]
+            },
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר - הלל חנוכה - לייב מבית ליבא-בעי פרדס חנה",
+                        "videoId": "yHjKjyY71d4",
+                        "startAt": 3128,
+                        "yt_views": 5314
+                    },
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 1877,
+                        "yt_views": 379
+                    }
+                ]
+            },
+            {
+                "id": 360,
+                "rate": 5,
+                "name": "אלי אתה",
+                "performances": [
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 1916,
+                        "yt_views": 379
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b26a5c34722bb966bf486",
+        "composer": "ר' הלל פלאי",
+        "name": "הבט (אלוקים צבאות שוב נא)",
+        "id": 1030,
+        "lastModified": "2023-04-03T19:19:01.181Z",
+        "performance": {
+            "videoId": "DlqrPfhMziU",
+            "startAt": 22,
+            "label": "הבט (אלוקים צבאות שוב נא) - מרדכי בן דוד",
+            "yt_views": 282894
+        },
+        "performer": "מרדכי בן דוד",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b276fc74fa2c36499f3c4",
+        "composer": "ר' שניאור זלמן מלאדי (חב\"ד)",
+        "name": "אלי אתה ואודך",
+        "id": 3091,
+        "lastModified": "2024-10-18T13:54:27.676Z",
+        "performance": {
+            "videoId": "9NeP-PjmB3E",
+            "startAt": 26,
+            "label": "אלי אתה ואודך - צמאה",
+            "yt_views": 234012
+        },
+        "performer": "רמי קליינשטיין",
+        "subsections": [
+            {
+                "id": 50,
+                "rate": 5
+            },
+            {
+                "id": 180,
+                "name": "צדיק כתמר",
+                "rate": 5
+            },
+            {
+                "id": 330,
+                "rate": 5
+            },
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            },
+            {
+                "id": 130,
+                "name": "אנא בכח",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b27efe3481bbdb0df13e8",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אשא עיני",
+        "id": 9293,
+        "lastModified": "2023-04-03T19:24:31.999Z",
+        "performance": {
+            "videoId": "9uk2GLTZyg0",
+            "startAt": 58,
+            "label": "אשא עיני - ר' שלמה קרליבך",
+            "yt_views": 377229
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b58dbc74fa2c364a2e1f5",
+        "composer": "יעקב שוואקי",
+        "name": "מהרה",
+        "id": 7305,
+        "lastModified": "2023-04-03T22:53:15.450Z",
+        "performance": {
+            "videoId": "cT_hWihgIa4",
+            "startAt": 45,
+            "label": "מהרה - יעקב שוואקי",
+            "yt_views": 303305
+        },
+        "performer": "יעקב שוואקי",
+        "subsections": [
+            {
+                "id": 90,
+                "rate": 3
+            }
+        ]
+    },
+    {
+        "_id": "642bbe00e3481bbdb0f8213d",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מזמור לדוד",
+        "id": 5455,
+        "lastModified": "2023-04-04T06:04:48.221Z",
+        "performance": {
+            "videoId": "fqYoFMxaOx8",
+            "startAt": 2,
+            "label": "מזמור לדוד - ר' שלמה קרליבך",
+            "yt_views": 644740
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 110,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642bcec6e3481bbdb0fbc1de",
+        "composer": "ר' ברוך צ'ייט",
+        "name": "מי האיש החפץ חיים",
+        "id": 3225,
+        "lastModified": "2023-04-04T07:16:22.147Z",
+        "performance": {
+            "videoId": "PsO0y0FR8A4",
+            "startAt": 13,
+            "label": "מי האיש החפץ חיים - אביתר צדוק",
+            "yt_views": 1358689
+        },
+        "performer": "אביתר צדוק",
+        "subsections": [
+            {
+                "id": 180,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642bcff7c34722bb96892ac8",
+        "composer": "אמיתי נאמן",
+        "name": "צדיק כתמר יפרח",
+        "id": 5035,
+        "lastModified": "2023-04-04T07:21:27.600Z",
+        "performance": {
+            "videoId": "GmSqICL2aAs",
+            "startAt": 12,
+            "label": "צדיק כתמר יפרח - אברהם פררה",
+            "yt_views": 297709
+        },
+        "performer": "אברהם פררה",
+        "subsections": [
+            {
+                "id": 180
+            }
+        ]
+    },
+    {
+        "_id": "642c7634c34722bb96b42b1a",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שמעה ותשמח ציון",
+        "id": 8388,
+        "lastModified": "2023-04-04T19:10:44.975Z",
+        "performance": {
+            "videoId": "gxwwp5zx7nY",
+            "startAt": 1,
+            "label": "שמעה ותשמח ציון - ר' שלמה קרליבך",
+            "yt_views": 343954
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 50,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642d75cac34722bb96e7b072",
+        "composer": "",
+        "name": "טוב להודות לה'",
+        "id": 7965,
+        "lastModified": "2023-04-05T13:21:14.203Z",
+        "performance": {
+            "videoId": "VqMV3Psqw6M",
+            "startAt": 26,
+            "label": "טוב להודות לה' - גלעד פוטולסקי - שלהבת",
+            "yt_views": 22730
+        },
+        "performer": "גלעד פוטולסקי - שלהבת",
+        "subsections": [
+            {
+                "id": 180,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642d7a29c74fa2c36424fb97",
+        "composer": "עממי בבלי",
+        "name": "מה נאוו עלי",
+        "id": 738,
+        "lastModified": "2023-04-05T13:39:53.929Z",
+        "performance": {
+            "videoId": "S2Yxq1It-zY",
+            "startAt": 16,
+            "label": "מה נאוו עלי - חיבת הפיוט",
+            "yt_views": 142634
+        },
+        "performer": "חיבת הפיוט",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל יום ירושלים - ישי אנגלמן",
+                        "videoId": "OaO6cLC1X4E",
+                        "startAt": 469,
+                        "yt_views": 379
+                    }
+                ]
+            },
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6432dd972fb059fe23e0bd8b",
+        "composer": "נפתלי קמפה",
+        "name": "בצאת ישראל",
+        "id": 327,
+        "lastModified": "2023-04-09T15:45:27.851Z",
+        "performance": {
+            "videoId": "P765E53ypOQ",
+            "startAt": 34,
+            "label": "בצאת ישראל ממצרים - נפתלי קמפה",
+            "yt_views": 388827
+        },
+        "performer": "נפתלי קמפה",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6432de20e8b5e54393788aa5",
+        "composer": "הדברי ישראל ממודז'יץ",
+        "name": "בצאת ישראל",
+        "id": 7452,
+        "lastModified": "2023-04-09T15:47:44.676Z",
+        "performance": {
+            "videoId": "Jy41fIZmEQQ",
+            "startAt": null,
+            "label": "בצאת ישראל - ישיבת אורות שאול",
+            "yt_views": 627
+        },
+        "performer": "ישיבת אורות שאול",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6433f224e8b5e543939e10d9",
+        "composer": "",
+        "name": "אחד יחיד ומיוחד",
+        "id": 2256,
+        "lastModified": "2023-04-10T11:25:24.627Z",
+        "performance": {
+            "videoId": "H8-KNd0VFTk",
+            "startAt": null,
+            "label": "אחד יחיד ומיוחד - ויז'ניץ",
+            "yt_views": 77027
+        },
+        "performer": "ויז'ניץ",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6433f9aa73c9a74c5434f855",
+        "composer": "ר' שלמה קרליבך",
+        "name": "הרחמן הוא יקים",
+        "id": 4858,
+        "lastModified": "2023-04-10T11:57:30.166Z",
+        "performance": {
+            "videoId": "j_OKvIc4hJ8",
+            "startAt": 11,
+            "label": "הרחמן הוא יקים - ר' שלמה קרליבך",
+            "yt_views": 49775
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6433fa9b73c9a74c54352f2b",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ופרוש עלינו סוכת שלומך",
+        "id": 3265,
+        "lastModified": "2023-04-10T12:01:31.762Z",
+        "performance": {
+            "videoId": "3ZHm1A7hHcw",
+            "startAt": null,
+            "label": "ופרוש עלינו סוכת שלומך - ר' שלמה קרליבך",
+            "yt_views": 69514
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643404bc5349dca64d464436",
+        "composer": "ר' שלמה קרליבך",
+        "name": "בורא עולם בקניין",
+        "id": 5958,
+        "lastModified": "2023-04-10T12:44:44.728Z",
+        "performance": {
+            "videoId": "yL9JfTdpBTE",
+            "startAt": 48,
+            "label": "בורא עולם בקניין - להקת מנגינות",
+            "yt_views": 55012
+        },
+        "performer": "להקת מנגינות",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 4
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "6434179f73c9a74c543cc156",
+        "composer": "רובי בנט",
+        "name": "כאייל תערוג",
+        "id": 4681,
+        "lastModified": "2023-04-10T14:05:19.309Z",
+        "performance": {
+            "videoId": "nPEhIxGOWQ8",
+            "startAt": 31,
+            "label": "כאייל תערוג - יעקב שוואקי",
+            "yt_views": 1078737
+        },
+        "performer": "יעקב שוואקי",
+        "subsections": [
+            {
+                "id": 180,
+                "name": "צדיק כתמר",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "64386ed79b8e0d8f61e9edb2",
+        "composer": "צבי בן פורת",
+        "name": "צדיק כתמר יפרח",
+        "id": 8554,
+        "lastModified": "2023-04-13T21:06:31.720Z",
+        "performance": {
+            "videoId": "HLS9s1k46ww",
+            "startAt": 10,
+            "label": "צדיק כתמר יפרח - רוחמה רז",
+            "yt_views": 2837
+        },
+        "performer": "רוחמה רז",
+        "subsections": [
+            {
+                "id": 180,
+                "name": "צדיק כתמר",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643c639e5fcef6ef2268c202",
+        "composer": "פנחס מינקובסקי",
+        "name": "שיר המעלות בשוב ה'",
+        "id": 4687,
+        "lastModified": "2023-04-16T21:07:42.681Z",
+        "performance": {
+            "videoId": "AohADpVtmZo",
+            "startAt": 25,
+            "label": "שיר המעלות בשוב ה' - שי אברמסון",
+            "yt_views": 9602
+        },
+        "performer": "שי אברמסון",
+        "subsections": [
+            {
+                "id": 470,
+                "name": "שיר המעלות",
+                "rate": 5
+            },
+            {
+                "id": 450,
+                "name": "מי שעשה ניסים",
+                "rate": 3,
+                "performances": [
+                    {
+                        "label": "תפילות מנחה וערבית חגיגית ליום ירושלים למרגלות מערת המכפלה!",
+                        "videoId": "Dy79G0ChEOk",
+                        "startAt": 4293,
+                        "yt_views": 221
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "643c714782ace1951c921db2",
+        "composer": "עממי",
+        "name": "אני מאמין",
+        "id": 2964,
+        "lastModified": "2023-04-16T22:05:59.254Z",
+        "performance": {
+            "videoId": "M5CzwBt0dFY",
+            "startAt": null,
+            "label": "אני מאמין - אני מאמין והתקווה לטקסים - עירית בן-ישר",
+            "yt_views": 24192
+        },
+        "performer": "אני מאמין והתקווה לטקסים - עירית בן-ישר",
+        "subsections": [
+            {
+                "id": 480,
+                "name": "אני מאמין",
+                "rate": 5
+            },
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5
+            },
+            {
+                "id": 350,
+                "name": "ברוך הבא",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית - יום העצמאות - קדומים",
+                        "videoId": "wZHh4kt1lzo",
+                        "startAt": 1755,
+                        "yt_views": 761
+                    }
+                ]
+            },
+            {
+                "id": 360,
+                "name": "אלי אתה",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית - יום העצמאות - קדומים",
+                        "videoId": "wZHh4kt1lzo",
+                        "startAt": 1755,
+                        "yt_views": 761
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64442bced0d81ee136c0ddf7",
+        "composer": "נעמי שמר",
+        "name": "הכל פתוח עוד לא מאוחר",
+        "id": 6118,
+        "lastModified": "2023-04-22T18:47:42.849Z",
+        "performance": {
+            "videoId": "ryXmue6dutA",
+            "startAt": 10,
+            "label": "הכל פתוח עוד לא מאוחר - עופר לוי ולאה לופטין",
+            "yt_views": 781546
+        },
+        "performer": "עופר לוי ולאה לופטין",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64442d5216ceeb687d3116d5",
+        "composer": "דובי זלצר",
+        "name": "כל הכבוד | קזבלן",
+        "id": 1155,
+        "lastModified": "2023-04-22T18:54:10.127Z",
+        "performance": {
+            "videoId": "sXv5iHhs_Lc",
+            "startAt": 6,
+            "label": "כל הכבוד | קזבלן - יהורם גאון",
+            "yt_views": 1188914
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64442fae1a35abe7f22a3aac",
+        "composer": "",
+        "name": "ים השיבולים",
+        "id": 4044,
+        "lastModified": "2023-04-22T19:04:14.870Z",
+        "performance": {
+            "videoId": "OHxXw7MmQm4",
+            "startAt": 9,
+            "label": "ים השיבולים - הגבעטרון",
+            "yt_views": 1137394
+        },
+        "performer": "הגבעטרון",
+        "subsections": [
+            {
+                "id": 10,
+                "name": "לכו נרננה",
+                "rate": 5
+            },
+            {
+                "id": 20,
+                "name": "ארבעים שנה",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644433a716ceeb687d323fa7",
+        "composer": "עממי יווני",
+        "name": "שיר השיירה",
+        "id": 3283,
+        "lastModified": "2023-04-22T19:21:11.826Z",
+        "performance": {
+            "videoId": "qElqp7mNc8g",
+            "startAt": 19,
+            "label": "שיר השיירה - אריק איינשטיין ומיקי גבריאלוב",
+            "yt_views": 1214601
+        },
+        "performer": "אריק איינשטיין ומיקי גבריאלוב",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "ניגוני יום העצמאות - בית פרת",
+                        "videoId": "mu7fyQtv3U8",
+                        "startAt": 9,
+                        "yt_views": 2780
+                    }
+                ]
+            },
+            {
+                "id": 300,
+                "name": "הללו את ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל חגיגית - יום העצמאות - קדומים",
+                        "videoId": "wZHh4kt1lzo",
+                        "startAt": 968,
+                        "yt_views": 761
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "644d923dcd07660a0eadb173",
+        "composer": "רפי גבאי",
+        "name": "שארם א שייח",
+        "id": 3051,
+        "lastModified": "2023-04-29T21:55:09.866Z",
+        "performance": {
+            "videoId": "_n70c_IDJ5c",
+            "startAt": 9,
+            "label": "שארם א שייח - רן אלירן",
+            "yt_views": 183317
+        },
+        "performer": "רן אלירן",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644e2dc5732bcd6d85ef9ce7",
+        "composer": "דתיה בן דור",
+        "name": "איך יודעים שבא אביב",
+        "id": 8055,
+        "lastModified": "2023-04-30T08:58:45.573Z",
+        "performance": {
+            "videoId": "gv1qNbPz3aQ",
+            "startAt": 1,
+            "label": "איך יודעים שבא אביב - נירה רבינוביץ",
+            "yt_views": 176669
+        },
+        "performer": "נירה רבינוביץ",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644e41f34d8e9868706ba613",
+        "id": 7329,
+        "name": "והערב נא",
+        "composer": "",
+        "performer": "יעקב שוואקי",
+        "performance": {
+            "videoId": "wIp80YoIfEI",
+            "startAt": null,
+            "label": "והערב נא - יעקב שוואקי",
+            "yt_views": 109672
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644e5a67586726b65b970a87",
+        "name": "אשרינו מה טוב חלקנו",
+        "composer": "",
+        "performer": "נחמן וניסים סבג",
+        "performance": {
+            "videoId": "cgdtXVYI5WM",
+            "startAt": 27,
+            "label": "אשרינו מה טוב חלקנו - נחמן וניסים סבג",
+            "yt_views": 4414620
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 4
+            }
+        ],
+        "id": 4714
+    },
+    {
+        "_id": "644fbce0dbde6d47de4cf804",
+        "name": "באו זרים (יאתיו חשמונאים)",
+        "composer": "דוד כוכב",
+        "performer": "עקיבא מרגליות",
+        "performance": {
+            "videoId": "uWstbWd82iU",
+            "startAt": 7,
+            "label": "באו זרים - עקיבא מרגליות",
+            "yt_views": 66309
+        },
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 881
+    },
+    {
+        "_id": "644fbd57dbde6d47de4cf805",
+        "name": "חייב איניש לבסומי",
+        "composer": "עממי",
+        "performer": "חיליק פרנק ומקהלת ידידים",
+        "performance": {
+            "videoId": "EIgt1v6wYNQ",
+            "startAt": 1,
+            "label": "מיחייב איניש לבסומי - חיליק פרנק ומקהלת ידידים",
+            "yt_views": 247801
+        },
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 4
+            }
+        ],
+        "id": 8180
+    },
+    {
+        "_id": "64593d9eeabd3432708c5206",
+        "composer": "",
+        "name": "בר יוחאי נמשחת אשריך",
+        "id": 3503,
+        "lastModified": "2023-05-08T18:21:18.069Z",
+        "performance": {
+            "videoId": "LSDICGBZz1w",
+            "startAt": 44,
+            "label": "בר יוחאי נמשחת אשריך - איציק אשל",
+            "yt_views": 1227902
+        },
+        "performer": "איציק אשל",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "645e4c3091aedda197304d98",
+        "composer": "יאיר רוזנבלום",
+        "name": "על כפיו יביא (ברחובנו הצר)",
+        "id": 9956,
+        "lastModified": "2023-05-12T14:24:48.592Z",
+        "performance": {
+            "videoId": "IvkrFsEdTe4",
+            "startAt": 9,
+            "label": "על כפיו יביא (ברחובנו הצר) - ביני לנדאו",
+            "yt_views": 735172
+        },
+        "performer": "ביני לנדאו",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל - יום ירושלים",
+                        "videoId": "fQa_0VbrlPM",
+                        "startAt": 577,
+                        "yt_views": 1116
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6465054505f3765cf4fe2577",
+        "composer": "ר' חיים בנט",
+        "name": "מזמור שיר ליום השבת",
+        "id": 1160,
+        "lastModified": "2023-05-17T16:48:05.303Z",
+        "performance": {
+            "videoId": "hqW4YSV7-48",
+            "startAt": 24,
+            "label": "מזמור שיר ליום השבת - יידל ורדיגר",
+            "yt_views": 4015
+        },
+        "performer": "יידל ורדיגר",
+        "subsections": [
+            {
+                "id": 170,
+                "name": "מזמור שיר",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "64653bb10efba603c0681b71",
+        "composer": "חב\"ד",
+        "name": "אימתי קאתי מר",
+        "id": 8308,
+        "lastModified": "2023-05-17T20:40:17.156Z",
+        "performance": {
+            "videoId": "wqnGCciWM3w",
+            "startAt": 14,
+            "label": "אימתי קאתי מר - צמאה",
+            "yt_views": 595534
+        },
+        "performer": "אברהם פריד",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש סיון",
+                        "videoId": "CmIvLvrxodI",
+                        "startAt": 1615,
+                        "yt_views": 6900
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "646954e57498335ee19549c3",
+        "composer": "",
+        "name": "תפילה לשלום המדינה",
+        "id": 5108,
+        "lastModified": "2023-05-20T23:16:53.647Z",
+        "performance": {
+            "videoId": "yPOFS_Xddd0",
+            "startAt": 10,
+            "label": "תפילה לשלום המדינה - בית ספר תל\"י בית וגן",
+            "yt_views": 87308
+        },
+        "performer": "בית ספר תל\"י בית וגן",
+        "subsections": [
+            {
+                "id": 490,
+                "name": "אבינו שבשמים צור ישראל וגואלו",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "646a1f497498335ee1b546bf",
+        "composer": "אלי רובינשטיין",
+        "name": "לך ירושלים",
+        "id": 1668,
+        "lastModified": "2023-05-21T13:40:25.136Z",
+        "performance": {
+            "videoId": "4BNYFACZ5KE",
+            "startAt": 13,
+            "label": "לך ירושלים - יהורם גאון",
+            "yt_views": 166272
+        },
+        "performer": "יהורם גאון",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "\"הללו את ה\" בניגון \"לך ירושלים\" שגיא בן ברוך ויוסי צידוביץ",
+                        "videoId": "y5HjI643gjM",
+                        "startAt": 18,
+                        "yt_views": 46
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "646a20c25fe3fea7595d6fdc",
+        "composer": "דוד זהבי",
+        "name": "שתלתם ניגונים",
+        "id": 7900,
+        "lastModified": "2023-05-21T13:46:42.920Z",
+        "performance": {
+            "videoId": "0FBDfnBvdmw",
+            "startAt": 15,
+            "label": "שתלתם ניגונים - עירית סנדנר",
+            "yt_views": 9514
+        },
+        "performer": "עירית סנדנר",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "\"שובי נפשי\" על פי \"שתלתם ניגונים\" בית כנסת \"מרכז אברהם\" רחובות",
+                        "videoId": "Mk3ex2cWZL8",
+                        "startAt": 18,
+                        "yt_views": 54
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "646f6865a34ef22934234301",
+        "composer": "חב\"ד",
+        "name": "וביום שמחתכם",
+        "id": 990,
+        "lastModified": "2023-05-25T13:53:41.973Z",
+        "performance": {
+            "videoId": "XHCkwD_5oLg",
+            "startAt": 19,
+            "label": "וביום שמחתכם - יוסי כץ",
+            "yt_views": 4831
+        },
+        "performer": "יוסי כץ",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "654e310f17a3ab2f4a0137d4",
+        "composer": "דז'יקוב",
+        "name": "מארש לכה דודי",
+        "id": 9987,
+        "lastModified": "2023-11-10T13:33:03.424Z",
+        "performance": {
+            "videoId": "T3Af8l8FLwg",
+            "startAt": 11,
+            "label": "מארש לכה דודי - דודו פישר, יעקב מוצן, אברימי רוט ושלמה שמלה",
+            "yt_views": 55357
+        },
+        "performer": "דודו פישר, יעקב מוצן, אברימי רוט ושלמה שמלה",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי"
+            }
+        ],
+        "_id__baas_transaction": "654e31c0889b05881b5569b6"
+    },
+    {
+        "_id": "654e3f9ce57ab4039d049ec5",
+        "composer": "ארי גולדוואג",
+        "name": "יה ריבון",
+        "id": 3641,
+        "lastModified": "2023-11-10T14:35:08.516Z",
+        "performance": {
+            "videoId": "L16bkB7BDYQ",
+            "startAt": 47,
+            "label": "יה ריבון - ארי גולדוואג",
+            "yt_views": 107933
+        },
+        "performer": "ארי גולדוואג",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ],
+        "_id__baas_transaction": "654e405c889b05881bf48f29"
+    },
+    {
+        "_id": "6568edb2a3b5b557f789f860",
+        "composer": "עממי",
+        "name": "יוונים יוונים",
+        "id": 1591,
+        "lastModified": "2023-11-30T20:16:50.554Z",
+        "performance": {
+            "videoId": "BzMywDLlJ6I",
+            "startAt": 12,
+            "label": "יוונים יוונים - בני פרידמן",
+            "yt_views": 55610
+        },
+        "performer": "בני פרידמן",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר - הלל חנוכה - לייב מבית ליבא-בעי פרדס חנה",
+                        "videoId": "yHjKjyY71d4",
+                        "startAt": 1123,
+                        "yt_views": 5314
+                    }
+                ]
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "65691112a3b5b557f75e17d5",
+        "composer": "פרחי לונדון",
+        "name": "יוונים נקבצו עלי",
+        "id": 5032,
+        "lastModified": "2023-11-30T22:47:46.344Z",
+        "performance": {
+            "videoId": "KfBlnQ-QJTo",
+            "startAt": 6,
+            "label": "יוונים נקבצו עלי - בני פרידמן",
+            "yt_views": 60815
+        },
+        "performer": "בני פרידמן",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5
+            },
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר - הלל חנוכה - לייב מבית ליבא-בעי פרדס חנה",
+                        "videoId": "yHjKjyY71d4",
+                        "startAt": 2161,
+                        "yt_views": 5314
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "65ce64351a8b562894fca30c",
+        "composer": "עממי - נורית הירש",
+        "name": "ומרדכי יצא",
+        "id": 2933,
+        "lastModified": "2024-02-15T19:22:32.153Z",
+        "performance": {
+            "videoId": "Q8ayqGTp51Y",
+            "startAt": 10,
+            "label": "ומרדכי יצא - הדודאים",
+            "yt_views": 46867
+        },
+        "performer": "הדודאים",
+        "subsections": [
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש אדר",
+                        "videoId": "U_wVRBSF9-w",
+                        "startAt": 2121,
+                        "yt_views": 37165
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "641dab93b8984b50b36d0afe",
+        "id": 7,
+        "name": "נר לי דקיק",
+        "composer": "דניאל סמבורסקי",
+        "performance": {
+            "videoId": "IpugvjdGAH0",
+            "startAt": 6,
+            "label": "נר לי",
+            "yt_views": 36815
+        },
+        "subsections": [
+            {
+                "id": 10,
+                "name": "לכו נרננה",
+                "rate": 5
+            },
+            {
+                "id": 20,
+                "name": "ארבעים שנה",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6424480fa4c1e016ac604a5a",
+        "composer": "חב\"ד",
+        "name": "ניגון שמחה",
+        "id": 1739,
+        "lastModified": "2023-04-02T14:33:29.344Z",
+        "performance": {
+            "videoId": "HVVoDFXtsAk",
+            "startAt": 18,
+            "label": "ניגון שמחה - אברהם פריד",
+            "yt_views": 146865
+        },
+        "subsections": [
+            {
+                "id": 30,
+                "rate": 4
+            },
+            {
+                "id": 250,
+                "rate": 5
+            },
+            {
+                "id": 300,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל בשירה וניגונים מהכותל הדרומי | הרב שמואל אליהו | חוה\"מ פסח תשפ''ב",
+                        "videoId": "f_2OipR9mJQ",
+                        "startAt": 6479,
+                        "yt_views": 27315
+                    }
+                ]
+            }
+        ],
+        "performer": "אברהם פריד"
+    },
+    {
+        "_id": "6424487b0a9a36452c27c600",
+        "composer": "דב פרימר",
+        "name": "על הניסים",
+        "id": 8864,
+        "lastModified": "2023-03-29T14:17:31.993Z",
+        "performance": {
+            "videoId": "cXnz21mjzxY",
+            "startAt": 6,
+            "label": "על הניסים - יזהר כהן",
+            "yt_views": 11946
+        },
+        "subsections": [
+            {
+                "id": 30,
+                "rate": 4
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            },
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל ראש חודש טבת (חנוכה תשעח) - ישיבת צפת",
+                        "videoId": "IguLjvf_itU",
+                        "startAt": 1360,
+                        "yt_views": 4259
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64244a84a4c1e016ac611b0b",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אשר ברא",
+        "id": 8057,
+        "lastModified": "2023-04-10T12:50:34.589Z",
+        "performance": {
+            "videoId": "sFsBgA4AE0A",
+            "startAt": 26,
+            "label": "אשר ברא - ר' שלמה קרליבך",
+            "yt_views": 45959
+        },
+        "subsections": [
+            {
+                "id": 30,
+                "rate": 4
+            },
+            {
+                "id": 250,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל מוזיקלי - בצאת ישראל ממצרים",
+                        "videoId": "h7gEfgBsCJE",
+                        "startAt": 5,
+                        "yt_views": 3774
+                    }
+                ]
+            },
+            {
+                "id": 70,
+                "rate": 5
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ],
+        "performer": "ר' שלמה קרליבך"
+    },
+    {
+        "_id": "64249ca64035f04dd2d0a0fc",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מלוך",
+        "id": 7252,
+        "lastModified": "2023-03-29T20:16:38.189Z",
+        "performance": {
+            "videoId": "IavjGcwqYBk",
+            "startAt": 17,
+            "label": "מלוך - יש ריבו",
+            "yt_views": 1675524
+        },
+        "subsections": [
+            {
+                "id": 220,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "מי כה' אלוקינו - הלל - קרליבך",
+                        "videoId": "Z4Lyxniy_WY-M"
+                    },
+                    {
+                        "label": "תפילת הלל פסח חגיגית בבית הרב איתמר אלדר",
+                        "videoId": "JexRPkO1M3k",
+                        "startAt": 881,
+                        "yt_views": 1701
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6426e4f057ea2554fd0437dc",
+        "composer": "ר' שלמה קרליבך",
+        "name": "יבנה המקדש",
+        "id": 4399,
+        "lastModified": "2023-03-31T13:49:36.349Z",
+        "performance": {
+            "videoId": "uBY5z0QfnNo",
+            "startAt": 199,
+            "label": "יבנה המקדש - ר' שלמה קרליבך",
+            "yt_views": 12557
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 250,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "בצאת ישראל ממצרים | ינון אהרוני ופתחיה ספולטר",
+                        "videoId": "kFb9az9OAf4",
+                        "startAt": 18,
+                        "yt_views": 10380
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת יום ירושלים - רבבה | תש\"פ",
+                        "videoId": "AWC8m_CiWzI",
+                        "startAt": 1710,
+                        "yt_views": 582
+                    }
+                ]
+            },
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל - יום ירושלים",
+                        "videoId": "fQa_0VbrlPM",
+                        "startAt": 889,
+                        "yt_views": 1116
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64294f9657ea2554fd7b5195",
+        "composer": "ר' שלמה קרליבך",
+        "name": "השמיעיני את קולך",
+        "id": 1165,
+        "lastModified": "2023-06-23T10:10:28.016Z",
+        "performance": {
+            "videoId": "HRF5rRz2ZxI",
+            "startAt": null,
+            "label": "השמיעיני את קולך - ר' שלמה קרליבך",
+            "yt_views": 53230
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 270,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל - ראש חודש כסליו שתפ\"א",
+                        "videoId": "JIEWoYhAmB4",
+                        "startAt": 862,
+                        "yt_views": 150
+                    }
+                ]
+            },
+            {
+                "id": 140,
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל ראש חודש תמוז עם הרב שמואל אליהו מאביתר",
+                        "videoId": "KxoKCKEeotI",
+                        "startAt": 2748,
+                        "yt_views": 11058
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6429524657ea2554fd7bc825",
+        "composer": "נעמי שמר",
+        "name": "ירושלים של זהב",
+        "id": 1482,
+        "lastModified": "2026-01-29T10:30:25.847Z",
+        "performance": {
+            "videoId": "h7wrNubj7nM",
+            "startAt": 5,
+            "label": "ירושלים של זהב - שולי נתן",
+            "yt_views": 1280000
+        },
+        "performer": "שולי נתן",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילה חגיגית ליום ירושלים - יצחק מאיר בליווי נגנים",
+                        "videoId": "6Uw3_F3haOA",
+                        "startAt": 1226,
+                        "yt_views": 2955
+                    }
+                ]
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "תפילת הלל - יום ירושלים",
+                        "videoId": "fQa_0VbrlPM",
+                        "startAt": 73,
+                        "yt_views": 1116
+                    }
+                ]
+            },
+            {
+                "id": 270,
+                "rate": 5
+            },
+            {
+                "id": 290,
+                "name": "מה אשיב לה'",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "\"מה אשיב ל ה'\" בניגון \"ירושלים של זהב\" בית כנסת \"מרכז אברהם\" רחובות",
+                        "videoId": "4dR9xe59Wjo",
+                        "startAt": 25,
+                        "yt_views": 88
+                    }
+                ]
+            },
+            {
+                "id": 450,
+                "name": "מי שעשה ניסים",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "תפילת יום ירושלים - רבבה | תש\"פ",
+                        "videoId": "AWC8m_CiWzI",
+                        "startAt": 2598,
+                        "yt_views": 582
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6429542aa10bf6d61cd4421c",
+        "composer": "ר' שלמה קרליבך",
+        "name": "שובי נפשי למנוחיכי (איטי)",
+        "id": 6279,
+        "lastModified": "2023-04-02T10:08:42.397Z",
+        "performance": {
+            "videoId": "32z8VwyeG08",
+            "startAt": 24,
+            "label": "שובי נפשי למנוחיכי (איטי) - להקת נשמחה",
+            "yt_views": 110726
+        },
+        "performer": "להקת נשמחה",
+        "subsections": [
+            {
+                "id": 280
+            }
+        ]
+    },
+    {
+        "_id": "64295f0b57ea2554fd7de172",
+        "composer": "אביהו מדינה",
+        "name": "שבחי ירושלים",
+        "id": 6164,
+        "lastModified": "2023-04-02T10:55:07.773Z",
+        "performance": {
+            "videoId": "zpLJWjlZt9Y",
+            "startAt": 66,
+            "label": "שבחי ירושלים - אביהו מדינה",
+            "yt_views": 1404158
+        },
+        "performer": "אביהו מדינה",
+        "subsections": [
+            {
+                "id": 280,
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "6429696ea10bf6d61cd7d85a",
+        "composer": "ר' שלמה קרליבך",
+        "name": "לך אזבח",
+        "id": 7774,
+        "lastModified": "2023-04-02T11:39:26.340Z",
+        "performance": {
+            "videoId": "XNWv0tFQTVY",
+            "startAt": 30,
+            "label": "לך אזבח - ר' שלמה קרליבך",
+            "yt_views": 11129
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 290,
+                "rate": 5,
+                "performances": [
+                    {
+                        "videoId": "HYW7ozPRpmE",
+                        "startAt": 16,
+                        "label": "מה אשיב לה' - ר' אייל יעקובוביץ",
+                        "yt_views": 195294
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642996f00213a1733e5f9c70",
+        "composer": "",
+        "name": "מן המיצר",
+        "id": 8423,
+        "lastModified": "2023-04-02T14:53:36.450Z",
+        "performance": {
+            "videoId": "U6X_3WXrhzg",
+            "startAt": 60,
+            "label": "מן המיצר - גלעד פוטולסקי",
+            "yt_views": 11777
+        },
+        "performer": "גלעד פוטולסקי",
+        "subsections": [
+            {
+                "id": 310,
+                "rate": 5
+            }
+        ],
+        "_id__baas_transaction": "642998b0a10bf6d61ce09503"
+    },
+    {
+        "_id": "642ad0390213a1733e9e1bdc",
+        "composer": "ר' ברוך צ'ייט",
+        "name": "לא אמות",
+        "id": 5129,
+        "lastModified": "2023-04-03T13:10:17.952Z",
+        "performance": {
+            "videoId": "a1kNZFgxXK4",
+            "startAt": 36,
+            "label": "לא אמות - מרדכי בן דוד",
+            "yt_views": 594124
+        },
+        "performer": "מרדכי בן דוד",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642ad3a07a433fb3b93fc139",
+        "composer": "ר' שלמה קרליבך",
+        "name": "פתחו לי",
+        "id": 9982,
+        "lastModified": "2023-04-03T13:24:48.855Z",
+        "performance": {
+            "videoId": "FKMGLpwUs6U",
+            "startAt": 21,
+            "label": "פתחו לי - ר' שלמה קרליבך",
+            "yt_views": 57607
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642ad5fda10bf6d61c29086c",
+        "composer": "ר' הלל פלאי",
+        "name": "אוחילה לאל",
+        "id": 131,
+        "lastModified": "2023-04-03T13:34:53.408Z",
+        "performance": {
+            "videoId": "yEKFKtrRZYM",
+            "startAt": 14,
+            "label": "אוחילה לאל - ישי ריבו",
+            "yt_views": 5235060
+        },
+        "performer": "ישי ריבו",
+        "subsections": [
+            {
+                "id": 330,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש אלול",
+                        "videoId": "x6Tk4Idas3E",
+                        "startAt": 1963,
+                        "yt_views": 14014
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b11a8a13883dfe45591e4",
+        "composer": "",
+        "name": "בספר חיים",
+        "id": 2710,
+        "lastModified": "2023-04-03T17:49:28.509Z",
+        "performance": {
+            "videoId": "D47DH6HMou4",
+            "startAt": 15,
+            "label": "בספר חיים - מרדכי בן דוד",
+            "yt_views": 29784
+        },
+        "performer": "מרדכי בן דוד",
+        "subsections": [
+            {
+                "id": 340,
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר וחברים - הלל ראש חודש אלול - לייב מקרון ליבא-בעי",
+                        "videoId": "x6Tk4Idas3E",
+                        "startAt": 2232,
+                        "yt_views": 14014
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b2244a13883dfe458c426",
+        "composer": "דוד ויינקרנץ",
+        "name": "יברכך ה' מציון",
+        "id": 3636,
+        "lastModified": "2023-05-21T13:11:26.860Z",
+        "performance": {
+            "videoId": "5yeMKbjlx5k",
+            "startAt": 8,
+            "label": "יברכך ה' מציון - צמד רעים",
+            "yt_views": 79571
+        },
+        "performer": "צמד רעים",
+        "subsections": [
+            {
+                "id": 350,
+                "rate": 4
+            },
+            {
+                "id": 360,
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "\"הלל\" מוזיקאלי חלק א'. יום ירושלים תשפ\"ג. שגיא בן ברוך ויוסי צידוביץ. בית כנסת \"מרכז אברהם\" רחובות",
+                        "videoId": "hkgbU8aF2P8",
+                        "startAt": 45,
+                        "yt_views": 106
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "642b3695a13883dfe45cb904",
+        "composer": "ר' בן ציון שנקר",
+        "name": "הטוב הטוב הטוב",
+        "id": 2944,
+        "lastModified": "2023-04-03T20:27:01.225Z",
+        "performance": {
+            "videoId": "6V4us4q5v-c",
+            "startAt": 24,
+            "label": "הטוב הטוב הטוב - יונתן רזאל",
+            "yt_views": 3220666
+        },
+        "performer": "יונתן רזאל",
+        "subsections": [
+            {
+                "id": 140,
+                "rate": 4
+            },
+            {
+                "id": 330,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b4549c74fa2c3649fb53e",
+        "composer": "ר' חיים בנט",
+        "name": "נר לרגלי דברך",
+        "id": 1349,
+        "lastModified": "2023-04-03T21:29:45.669Z",
+        "performance": {
+            "videoId": "6PmemMzIqb8",
+            "startAt": 10,
+            "label": "נר לרגלי דברך - עוזיה צדוק",
+            "yt_views": 21599
+        },
+        "performer": "עוזיה צדוק",
+        "subsections": [
+            {
+                "id": 50,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642b49b3a13883dfe4602aa4",
+        "composer": "ר' מאיר בלכר",
+        "name": "עז והדר לבושה / עם הנצח לא מפחד",
+        "id": 4402,
+        "lastModified": "2023-04-03T21:49:19.338Z",
+        "performance": {
+            "videoId": "DIFc46nCcvw",
+            "startAt": 16,
+            "label": "עז והדר לבושה - יוסף קרדונר",
+            "yt_views": 47006
+        },
+        "performer": "יוסף קרדונר",
+        "subsections": [
+            {
+                "id": 50,
+                "rate": 3
+            },
+            {
+                "id": 60,
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "642b5b24e3481bbdb0e84d39",
+        "composer": "ר' שלמה קרליבך",
+        "name": "משה ואהרון",
+        "id": 5768,
+        "lastModified": "2023-04-03T23:03:00.353Z",
+        "performance": {
+            "videoId": "u-WAC2ppgXQ",
+            "startAt": 1,
+            "label": "משה ואהרון - ר' שלמה קרליבך",
+            "yt_views": 472619
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 90,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642bcf17e3481bbdb0fbd515",
+        "composer": "ר' שלמה קרליבך",
+        "name": "צדיק כתמר יפרח",
+        "id": 2251,
+        "lastModified": "2023-04-04T07:17:43.806Z",
+        "performance": {
+            "videoId": "ArasIy316qU",
+            "startAt": 2,
+            "label": "צדיק כתמר יפרח - ר' שלמה קרליבך",
+            "yt_views": 129088
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 180,
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642d784fe3481bbdb05b2d22",
+        "composer": "ר' הלל פלאי",
+        "name": "ועתה בנים שירו למלך",
+        "id": 6089,
+        "lastModified": "2023-04-05T13:31:59.479Z",
+        "performance": {
+            "videoId": "VXj2neurWrU",
+            "startAt": 35,
+            "label": "ועתה בנים שירו למלך - יידל ורדיגר",
+            "yt_views": 189762
+        },
+        "performer": "יידל ורדיגר",
+        "subsections": [
+            {
+                "id": 140,
+                "rate": 4
+            },
+            {
+                "id": 180,
+                "name": "צדיק כתמר",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642f35ee49192392305075ff",
+        "composer": "ר' דוד כהן",
+        "name": "אום אני חומה / לך אמר ליבי",
+        "id": 2570,
+        "lastModified": "2023-04-06T21:13:18.196Z",
+        "performance": {
+            "videoId": "pqNOAsoolMg",
+            "startAt": 29,
+            "label": "אום אני חומה / לך אמר ליבי - ישיבת רועה ישראל",
+            "yt_views": 287174
+        },
+        "performer": "ישיבת רועה ישראל",
+        "subsections": [
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "642ff4de491923923077d880",
+        "composer": "ר' שלמה קרליבך",
+        "name": "מנוחה ושמחה",
+        "id": 7130,
+        "lastModified": "2023-04-07T10:47:58.488Z",
+        "performance": {
+            "videoId": "sbt1-R1MaPk",
+            "startAt": 19,
+            "label": "מנוחה ושמחה - ר' שלמה קרליבך",
+            "yt_views": 59889
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6432e9cd2fb059fe23e2d03e",
+        "composer": "קרלין",
+        "name": "ניגון קרלין (בר יוחאי)",
+        "id": 3242,
+        "lastModified": "2023-04-09T16:37:33.926Z",
+        "performance": {
+            "videoId": "424Lg4mC1f4",
+            "startAt": 3,
+            "yt_views": 8295
+        },
+        "performer": "קרלין",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6433f5842fb059fe23071231",
+        "composer": "",
+        "name": "מה אהבתי תורתך",
+        "id": 6874,
+        "lastModified": "2023-04-10T11:39:48.988Z",
+        "performance": {
+            "videoId": "K_IsWBdO1-g",
+            "startAt": 14,
+            "label": "מה אהבתי תותרתך - יוסף משה כהנא",
+            "yt_views": 28060
+        },
+        "performer": "יוסף משה כהנא",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6433fba2e8b5e543939ffdd1",
+        "composer": "רימינוב",
+        "name": "ובכן צדיקים",
+        "id": 6454,
+        "lastModified": "2023-10-01T12:03:49.551Z",
+        "performance": {
+            "videoId": "66y4x1Aik7k",
+            "startAt": null,
+            "label": "ובכן צדיקים - ישיבת רמת גן",
+            "yt_views": 93136
+        },
+        "performer": "ישיבת רמת גן",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל בירושלים - הרב שמואל אליהו תשפ\"ד",
+                        "videoId": "34YHeHWYhrY",
+                        "startAt": 4169,
+                        "yt_views": 19007
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6433fc8f2fb059fe23087bb9",
+        "composer": "ברסלב",
+        "name": "ובכן צדיקים",
+        "id": 8680,
+        "lastModified": "2023-04-10T12:09:51.021Z",
+        "performance": {
+            "videoId": "2ja9R04nx6E",
+            "startAt": 8,
+            "label": "ובכן צדיקים - ר' דוד רפאל בן עמי",
+            "yt_views": 8533
+        },
+        "performer": "ר' דוד רפאל בן עמי",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            },
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "6433fd1c2fb059fe23089a90",
+        "composer": "עממי",
+        "name": "ובכן צדיקים",
+        "id": 3580,
+        "lastModified": "2023-04-10T12:12:12.793Z",
+        "performance": {
+            "videoId": "VdT_IPcJDGE",
+            "startAt": 13,
+            "label": "ובכן צדיקים - ר' מיכאל שטרייכר",
+            "yt_views": 277
+        },
+        "performer": "ר' מיכאל שטרייכר",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "643c3da1426e7c1273d0ce05",
+        "composer": "הקפות אשכנזי",
+        "name": "אתה הראת לדעת",
+        "id": 4682,
+        "lastModified": "2023-04-16T18:25:37.583Z",
+        "performance": {
+            "videoId": "uNG1CwmGa70",
+            "startAt": null,
+            "label": "אתה הראת לדעת - Epes-A-Nigun",
+            "yt_views": 944
+        },
+        "performer": "Epes-A-Nigun",
+        "subsections": [
+            {
+                "id": 400,
+                "name": "הודו לה' כי טוב",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644d85bacd07660a0eaba61a",
+        "composer": "ר' שלמה קרליבך",
+        "name": "אם אשכחך ירושלים",
+        "id": 5755,
+        "lastModified": "2023-04-29T21:01:46.033Z",
+        "performance": {
+            "videoId": "1t3MPxKSESI",
+            "startAt": 3,
+            "label": "אם אשכחך ירושלים - ר' שלמה קרליבך",
+            "yt_views": 179607
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 340,
+                "name": "אנא ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644d8bd677c88d56b9f7a0dc",
+        "composer": "קובי אשרת",
+        "name": "בת שישים",
+        "id": 3269,
+        "lastModified": "2023-04-29T21:27:50.490Z",
+        "performance": {
+            "videoId": "OryIjEt9Ftg",
+            "startAt": 30,
+            "label": "בת שישים - הגבעטרון",
+            "yt_views": 1819755
+        },
+        "performer": "הגבעטרון",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "_id": "644e2bc0cd07660a0ece8dcb",
+        "composer": "יוחנן זראי",
+        "name": "מי שחלם לו",
+        "id": 9511,
+        "lastModified": "2023-04-30T08:50:08.594Z",
+        "performance": {
+            "videoId": "fyMHxeVOmfI",
+            "startAt": 8,
+            "label": "מי שחלם לו - אריק איינשטיין",
+            "yt_views": 54763
+        },
+        "performer": "אריק איינשטיין",
+        "subsections": [
+            {
+                "id": 220,
+                "name": "הללו עבדי ה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "644e4ff74d8e9868706ba614",
+        "name": "שיר העמק",
+        "composer": "דניאל סמבורסקי",
+        "performer": "הפרברים",
+        "performance": {
+            "videoId": "k2Y69eD-Cu8",
+            "startAt": 15,
+            "label": "שיר העמק - הפרברים",
+            "yt_views": 572139
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 2563
+    },
+    {
+        "_id": "644e50594d8e9868706ba615",
+        "name": "מי ימלל",
+        "composer": "",
+        "performer": "שירי חנוכה",
+        "performance": {
+            "videoId": "eDhB06IHBcE",
+            "startAt": 9,
+            "label": "מי ימלל - שירי חנוכה",
+            "yt_views": 453142
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ],
+        "id": 5730
+    },
+    {
+        "_id": "644fc7a8dbde6d47de4cf808",
+        "name": "אחת שאלתי",
+        "composer": "עממי",
+        "performer": "נפתלי קמפה",
+        "performance": {
+            "videoId": "mnDKmG3JiwQ",
+            "startAt": 7,
+            "label": "אחת שאלתי - נפתלי קמפה",
+            "yt_views": 163517
+        },
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 4
+            }
+        ],
+        "id": 1973
+    },
+    {
+        "_id": "645a1c64d8ec3f2c3778668a",
+        "composer": "לאונרד כהן",
+        "name": "הללויה",
+        "id": 7979,
+        "lastModified": "2023-05-09T10:11:48.738Z",
+        "performance": {
+            "videoId": "Cgtzg12_A1Y",
+            "startAt": 17,
+            "label": "הללויה - אוהד מושקוביץ",
+            "yt_views": 292024
+        },
+        "performer": "אוהד מושקוביץ",
+        "subsections": [
+            {
+                "id": 160,
+                "name": "בואי בשלום",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "654e2cbc889b05881b243bc7",
+        "composer": "ר' שלמה קרליבך",
+        "name": "לכה דודי",
+        "id": 7408,
+        "lastModified": "2023-11-10T13:14:36.233Z",
+        "performance": {
+            "videoId": "NC19kaPCMYM",
+            "startAt": null,
+            "label": "לכה דודי - ר' שלמה קרליבך",
+            "yt_views": 1175456
+        },
+        "performer": "ר' שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "654e2e15889b05881b2fdd2c",
+        "composer": "ברסלב",
+        "name": "לכה דודי",
+        "id": 7487,
+        "lastModified": "2023-11-10T13:20:21.959Z",
+        "performance": {
+            "videoId": "fOAu7mBN64o",
+            "startAt": null,
+            "label": "לכה דודי - יצחק מאיר",
+            "yt_views": 1188817
+        },
+        "performer": "יצחק מאיר",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "6568ce8f166f97d950da07dd",
+        "composer": "עממי",
+        "name": "מעוז צור",
+        "id": 2727,
+        "lastModified": "2023-11-30T18:03:59.896Z",
+        "performance": {
+            "videoId": "IhcO0m5s9To",
+            "startAt": 6,
+            "label": "מעוז צור - שירי חנוכה",
+            "yt_views": 355510
+        },
+        "performer": "שירי חנוכה",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "לכה דודי במנגינת מעוז צור",
+                        "videoId": "et_hciwJZdw",
+                        "startAt": 7,
+                        "yt_views": 476
+                    }
+                ]
+            },
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל ראש חודש טבת (חנוכה תשעח) - ישיבת צפת",
+                        "videoId": "IguLjvf_itU",
+                        "startAt": 2039,
+                        "yt_views": 4259
+                    }
+                ]
+            },
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "יצחק מאיר - הלל חנוכה - לייב מבית ליבא-בעי פרדס חנה",
+                        "videoId": "yHjKjyY71d4",
+                        "startAt": 2867,
+                        "yt_views": 5314
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6568f384a3b5b557f7d588de",
+        "composer": "חסידי ברסלב",
+        "name": "מצווה גדולה להיות בשמחה",
+        "id": 5607,
+        "lastModified": "2023-11-30T20:41:40.873Z",
+        "performance": {
+            "videoId": "ODkH-Mu2dTs",
+            "startAt": 27,
+            "label": "מצווה גדולה להיות בשמחה - ישראל דגן",
+            "yt_views": 203263
+        },
+        "performer": "ישראל דגן",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל עם הרב שמואל אליהו בתל אביב | חוה\"מ סוכות תשפ''ג",
+                        "videoId": "fIiqRYueiwo",
+                        "startAt": 1138,
+                        "yt_views": 10627
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "6568fd0742ee06b0bcb2b75d",
+        "composer": "ר' שלמה קרליבך",
+        "name": "ופדויי ה' ישובון",
+        "id": 8603,
+        "lastModified": "2023-11-30T21:22:15.020Z",
+        "performance": {
+            "videoId": "3ae7DOrjFPk",
+            "startAt": 47,
+            "label": "ופדויי ה' ישובון - אהרן רזאל",
+            "yt_views": 12679
+        },
+        "performer": "אהרן רזאל",
+        "subsections": [
+            {
+                "id": 250,
+                "name": "בצאת ישראל",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "656c97f8d23b5423888712a4",
+        "composer": "עמנואל עמירן",
+        "name": "באנו חושך לגרש",
+        "id": 6701,
+        "lastModified": "2023-12-03T15:00:08.692Z",
+        "performance": {
+            "videoId": "fljmo-csj08",
+            "startAt": null,
+            "label": "באנו חושך לגרש - שירי החגים",
+            "yt_views": 1111207
+        },
+        "performer": "שירי החגים",
+        "subsections": [
+            {
+                "id": 140,
+                "name": "לכה דודי",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "662e57c07f7eb4a4ab98264e",
+        "composer": "ר' מנדל פולק",
+        "name": "יודו לה׳ חסדו",
+        "id": 8653,
+        "lastModified": "2024-04-28T14:05:52.895Z",
+        "performance": {
+            "videoId": "w58-TqegRtE",
+            "startAt": 17,
+            "label": "יודו לה׳ חסדו - גלעד פוטולסקי",
+            "yt_views": 64574
+        },
+        "performer": "גלעד פוטולסקי",
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "הלל חוה״מ פסח תשפ״ד | הרב שמואל אליהו והרב איל יעקובוביץ",
+                        "videoId": "",
+                        "startAt": 5900
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "662e6431dfd058323f7d1596",
+        "composer": "מרכז הרב",
+        "name": "ושם נעלה ונראה (והראינו בבנינו)",
+        "id": 4562,
+        "lastModified": "2024-04-28T14:58:57.723Z",
+        "performance": {
+            "videoId": "iKToUkIiJQo",
+            "startAt": 161,
+            "label": "ושם נעלה ונראה (והראינו בבנינו) - להקת שיר חדש",
+            "yt_views": 824110
+        },
+        "performer": "להקת שיר חדש",
+        "subsections": [
+            {
+                "id": 330,
+                "name": "לא אמות / אודך",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "מחרוזת שירי הלל | להקת המעיין מתארחת בישיבת ירוחם",
+                        "videoId": "1P78SSElCTI",
+                        "startAt": 225,
+                        "yt_views": 385897
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "67502957f38fad71ff4f492b",
+        "composer": "פרחי שלהבת",
+        "name": "טוב להודות לה׳",
+        "id": 964,
+        "lastModified": "2024-12-04T10:05:19.674Z",
+        "performance": {
+            "videoId": "XLrxRYTQ3XQ",
+            "startAt": 42,
+            "label": "טוב להודות לה׳ - פרחי שלהבת",
+            "yt_views": 22436
+        },
+        "performer": "פרחי שלהבת",
+        "subsections": [
+            {
+                "id": 170,
+                "name": "מזמור שיר",
+                "rate": 5
+            },
+            {
+                "id": 172,
+                "name": "טוב להודות לה'",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "_id": "662e5f3fdfd058323f6c4eb7",
+        "composer": "ר׳ שלמה קרליבך",
+        "name": "אורך ימים",
+        "id": 9302,
+        "lastModified": "2024-04-28T14:37:51.398Z",
+        "performance": {
+            "videoId": "fz0k2yFfNq4",
+            "startAt": 14,
+            "label": "אורך ימים - ר׳ שלמה קרליבך",
+            "yt_views": 69456
+        },
+        "performer": "ר׳ שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 270,
+                "name": "יברך את בית ישראל",
+                "rate": 5,
+                "performances": [
+                    {
+                        "label": "מחרוזת שירי הלל | להקת המעיין מתארחת בישיבת ירוחם",
+                        "videoId": "1P78SSElCTI",
+                        "startAt": 91,
+                        "yt_views": 385897
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "662e68f57f7eb4a4abd83e3a",
+        "composer": "ר׳ שלמה קרליבך",
+        "name": "טוב להודות לה׳",
+        "id": 6969,
+        "lastModified": "2024-12-04T10:02:34.091Z",
+        "performance": {
+            "videoId": "bmKmx-ACslg",
+            "startAt": 30,
+            "label": "טוב להודות לה׳ - ר׳ שלמה קרליבך",
+            "yt_views": 74101
+        },
+        "performer": "ר׳ שלמה קרליבך",
+        "subsections": [
+            {
+                "id": 310,
+                "name": "מן המצר",
+                "rate": 4,
+                "performances": [
+                    {
+                        "label": "אלחנן משמרתי - הלל יום ב' דחוה\"מ פסח תשפ\"ד",
+                        "videoId": "5DapRl986aA",
+                        "startAt": 741,
+                        "yt_views": 9086
+                    }
+                ]
+            },
+            {
+                "id": 170,
+                "name": "מזמור שיר"
+            },
+            {
+                "id": 172,
+                "name": "טוב להודות לה'"
+            }
+        ]
+    },
+    {
+        "id": 9988,
+        "name": "עוד יותר טוב (תמיד אוהב אותי)",
+        "composer": "יאיר אליצור",
+        "performance": {
+            "videoId": "rgSvk335zis",
+            "label": "עוד יותר טוב (תמיד אוהב אותי) - ששון שאולוב",
+            "startAt": 37,
+            "yt_views": 45414096
+        },
+        "subsections": [
+            {
+                "id": 300,
+                "name": "הללו את ה' כל גויים",
+                "rate": 5
+            }
+        ]
+    }
 ]
