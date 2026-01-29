@@ -239,6 +239,7 @@ def main() -> None:
 
     start_at = prompt_int("זמן התחלה בשניות (אופציונלי, ריק אם אין): ")
     rate = prompt_int("דירוג התאמה למילים 1‑5 (אופציונלי): ")
+    yt_views = prompt_int("מספר צפיות ביוטיוב (בשביל מיון באתר): ")
 
     label = f"{name} - {performer}" if performer and performer not in name else name
 
@@ -269,6 +270,8 @@ def main() -> None:
         new_tune["performance"]["label"] = label
     if start_at is not None:
         new_tune["performance"]["startAt"] = start_at
+    if yt_views is not None:
+        new_tune["performance"]["yt_views"] = yt_views
     if rate is not None:
         new_tune["subsections"][0]["rate"] = rate
 

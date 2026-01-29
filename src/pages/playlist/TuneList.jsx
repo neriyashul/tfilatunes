@@ -19,16 +19,10 @@ export default function TuneList({ tunes, subsection, isLoading }) {
 
     if (tunes && tunes.length > 1) {
         tunes.sort((a, b) => {
-            let rateA = parseInt(a.subsections[0]?.rate)
-            let rateB = parseInt(b.subsections[0]?.rate)
-            if (!isNaN(rateA) && !isNaN(rateB)) {
-                return rateB - rateA
-            } else if (isNaN(rateA)) {
-                return 1
-            } else {
-                return -1
-            }
-        })
+            const viewsA = typeof a.yt_views === "number" ? a.yt_views : 0;
+            const viewsB = typeof b.yt_views === "number" ? b.yt_views : 0;
+            return viewsB - viewsA;
+        });
     }
 
     if (isLoading) {

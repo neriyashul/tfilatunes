@@ -10,7 +10,22 @@ export function useTunes(subsectionId) {
         () => Promise.resolve(db.getTunes(subsectionId)),
         { enabled: Boolean(subsectionId) }
     );
-    return { isLoading, tunes: data, error };
+    const tunes =
+        data?.map((tune) => {
+            const subsection = tune.subsections?.[0];
+            const subsectionViews = subsection?.performances?.[0]?.yt_views;
+            const performanceViews = tune.performance?.yt_views;
+
+            // Prefer the main tune performance views ("first tune") over subsection performances.
+            const yt_views = performanceViews ?? subsectionViews ?? 0;
+
+            return {
+                ...tune,
+                yt_views,
+            };
+        }) ?? data;
+
+    return { isLoading, tunes, error };
 }
 
 export function useTune(id, subsectionId) {
