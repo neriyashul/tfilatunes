@@ -11,7 +11,7 @@ const PrintIcon = React.lazy(() => import("@mui/icons-material/Print"));
 
 const links = {
     "/": "דף הבית",
-    "/files": "קבצים להדפסה",
+    // "/files": "קבצים להדפסה",
     "/add-tune": "הוספת מנגינה",
     "/contribute": "איך אפשר לעזור",
     "/about": "אודות",
@@ -25,8 +25,8 @@ function getIcon(url) {
             return <AddCircleIcon />;
         case "/contribute":
             return <CodeIcon />;
-        case "/files":
-            return <PrintIcon />;
+        // case "/files":
+        //     return <PrintIcon />;
         case "/about":
             return <InfoIcon />;
         default:
