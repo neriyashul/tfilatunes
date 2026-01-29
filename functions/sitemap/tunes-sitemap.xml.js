@@ -2,19 +2,12 @@ import Mustache from "mustache";
 import template from "./sitemap-template.xml.txt";
 import { Cache } from "../utils/cache";
 import { createRecord } from "./record";
-import { MongoDBGateway } from "../db/mongodb-gateway";
-
-async function getTunes(env) {
-    const db = new MongoDBGateway(env);
-    return await db.getAllTunes();
-}
+import tunes from "../db/data/server-tunes.json";
 
 async function generateMustacheView(env, cache) {
     let lastMods = JSON.parse(await cache.get("tunesLastModifications")) || {};
 
     const urlRecords = [];
-    const tunes = await getTunes(env);
-
     for (let tune of tunes) {
         for (let sub of tune.subsections) {
             let url = `https://tfilatunes.com/tunes/${tune.id}?subId=${sub.id}`;

@@ -3,8 +3,9 @@
 Simple terminal UI to add a tune into the local JSON databases.
 
 It updates:
-- src/db/data/tunes.json   (used by the front‑end file‑system DB)
-- functions/db/data/tunes.json (if it exists, for functions)
+- src/db/data/tunes.json        (used by the front‑end file‑system DB)
+- functions/db/data/server-tunes.json (if it exists)
+- functions/db/data/tunes.json   (if it exists, for functions)
 
 The script lets you:
 1. Pick a subsection (by ID) from src/db/data/tfilot.json
@@ -21,6 +22,7 @@ from typing import Any, Dict, List, Optional
 ROOT = Path(__file__).resolve().parent
 
 SRC_TUNES_PATH = ROOT / "src" / "db" / "data" / "tunes.json"
+SERVER_TUNES_PATH = ROOT / "functions" / "db" / "data" / "server-tunes.json"
 FUNC_TUNES_PATH = ROOT / "functions" / "db" / "data" / "tunes.json"
 TFILOT_PATH = ROOT / "src" / "db" / "data" / "tfilot.json"
 
@@ -278,6 +280,12 @@ def main() -> None:
     tunes.append(new_tune)
     save_json(SRC_TUNES_PATH, tunes)
 
+    # Try to keep server-tunes.json in sync, if it exists
+    if SERVER_TUNES_PATH.exists():
+        server_tunes = load_json(SERVER_TUNES_PATH)
+        server_tunes.append(new_tune)
+        save_json(SERVER_TUNES_PATH, server_tunes)
+
     # Try to keep the functions copy in sync, if it exists
     if FUNC_TUNES_PATH.exists():
         func_tunes = load_json(FUNC_TUNES_PATH)
@@ -286,6 +294,8 @@ def main() -> None:
 
     print("\nהמנגינה נוספה בהצלחה!")
     print(f"- קובץ עודכן: {SRC_TUNES_PATH}")
+    if SERVER_TUNES_PATH.exists():
+        print(f"- קובץ עודכן: {SERVER_TUNES_PATH}")
     if FUNC_TUNES_PATH.exists():
         print(f"- קובץ עודכן: {FUNC_TUNES_PATH}")
     print(f"- מזהה המנגינה החדש: {new_id}")
